@@ -1,0 +1,218 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", "Arial", "sans-serif";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  outline: 100px black solid;
+}
+
+.page__content {
+  margin: 0 auto;
+  width: 1920px;
+  min-width: 320px;
+  background: #f4f7f7;
+  min-height: 100vh;
+  /* outline: 8px red solid;*/
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  max-width: 1920px;
+  background: #f4f7f7;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1160px;
+  height: 80px;
+  /* outline: 8px rgb(12, 9, 185) solid;*/
+}
+
+.header__logo {
+  width: 95px;
+  height: 72px;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 733px;
+  /* outline: 8px rgb(163, 9, 155) solid;*/
+}
+
+.header__nav-lists {
+  display: flex;
+  justify-content: space-around;
+  width: 733px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header__nav-item {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #15d1d9;
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 206px;
+  height: 48px;
+  border: 1px solid #02b4be;
+  border-radius: 20px;
+}
+
+.header__textTelephone {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26.4px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #15d1d9;
+}
+
+.header__text {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin: 0;
+  max-width: 176px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.content {
+  min-height: 50vh;
+  flex: 1;
+  /*outline: 8px rgb(12, 9, 185) solid;*/
+}
+
+.footer {
+  flex-shrink: 0;
+  height: 872px;
+  max-width: 1920px;
+  background: #f4f7f7;
+  /*outline: 8px rgb(133, 5, 69) solid;*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__content {
+  /* outline: 8px rgb(5, 133, 11) solid;*/
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__block-lists {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.footer__title {
+  margin: 0;
+  margin-bottom: 20px;
+  max-width: 150px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2f3e53;
+}
+.footer__lists {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.footer__lists-item {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #2f3e53;
+}
+
+.footer__information {
+}
+.footer__lists-link {
+  color: #2f3e53;
+  text-decoration: none;
+}
+
+.footer__openingHours {
+}
+.footer__text {
+  margin: 0;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  max-width: 240px;
+  color: #2f3e53;
+  text-decoration: none;
+}
+
+.footer__contacts {
+}
+.footer__socials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  width: 184px;
+}
+.footer__icon {
+}
+
+.footer__paragraph {
+  margin: 0;
+  max-width: 473px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #111111;
+  margin-top: 80px;
+}
