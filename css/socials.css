@@ -1,0 +1,142 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 80px;
+  background-color: #fff;
+}
+.socials__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Stengazeta";
+  color: var(--color-primary);
+}
+.socials__buttonbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  width: 100%;
+  padding: 0 5px;
+}
+.socials__buttonbox-button {
+  font-family: "Roboto";
+  font-size: 24px;
+  color: #fff;
+  background: var(--color-primary);
+  border-radius: 20px;
+  padding: 8px 5px 8px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  width: 360px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.socials__buttonbox-button:hover {
+  background-color: #00c5cd;
+}
+.socials__buttonbox-button:active {
+  box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.socials_banner {
+  padding: 120px 5px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(2, 180, 190, 0.25),
+      rgba(2, 180, 190, 0.25)
+    ),
+    url("../images/banner-socials.webp");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
+}
+.socials-text {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 800;
+  color: var(--color-white);
+  padding: 0 150px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.hide-on-desctop-socials-banner {
+  display: none;
+}
+@media (max-width: 1250px) {
+  .socials__buttonbox {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 900px) {
+  .socials__buttonbox {
+    flex-direction: column;
+    align-content: center;
+  }
+  .socials__buttonbox-button {
+    width: 87%;
+    display: grid;
+    white-space: nowrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    padding-right: 20px;
+  }
+  .socials__title {
+    display: none;
+  }
+  .socials-text {
+    padding: 0 30px;
+    font-size: 20px;
+  }
+  .socials_banner {
+    padding: 80px 0;
+    margin-bottom: 30px;
+  }
+  .socials {
+    margin-bottom: 40px;
+  }
+  .socials__buttonbox-button--text {
+    grid-column: 2;
+    justify-self: center;
+  }
+  .socials__buttonbox-button--img {
+    grid-column: 3;
+    justify-self: end;
+  }
+}
+@media (max-width: 500px) {
+  .hide-on-desctop-socials-banner {
+    display: flex;
+  }
+  .socials__buttonbox-button--text {
+    font-size: 15px;
+  }
+  .socials__buttonbox-button--img {
+    width: 45px;
+    height: auto;
+  }
+  .socials__buttonbox-button {
+    border-radius: 30px;
+    width: 100%;
+    padding: 5px 10px 5px 0px;
+  }
+  .socials__buttonbox {
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .socials-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .hide-on-mobile-socials-banner {
+    display: none;
+  }
+  .socials_banner {
+    padding: 40px 15px;
+    margin-bottom: 20px;
+  }
+}

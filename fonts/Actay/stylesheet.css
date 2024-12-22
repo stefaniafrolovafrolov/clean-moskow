@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Actay-Regular";
+  src: url("Actay-Regular.woff2") format("woff2"),
+    url("Actay-Regular.woff") format("woff");
+  font-weight: 400;
+}

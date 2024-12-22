@@ -1,0 +1,851 @@
+@import url("./header.css");
+@import url("./footer.css");
+
+:root {
+  --color-primary: #15d1d9;
+  --color-secondary: #2f3e53;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", "Arial", "sans-serif";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  /* outline: 100px black solid; */
+}
+
+html,
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "Stengazeta";
+  font-weight: 800;
+}
+
+/* MAIN CONTENT */
+
+/* PRICES */
+
+/* Наши цены на химчистку */
+
+.pricing__header {
+  color: #02b4be;
+  font-size: 52px;
+  line-height: 64px;
+}
+
+.pricing__text {
+  /* 15% скидка всем новым клиентам ! Антибактериальная обработка в подарок, гарантия результате */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 31px;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  color: #2f3e53;
+}
+
+.pricing__image {
+  display: none;
+}
+
+.pricing__consultation {
+  /* Group 3 */
+  width: 800px;
+  margin: auto;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  align-items: center;
+}
+
+.pricing__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.button {
+  width: 300px;
+  background-color: #15d1d9;
+  color: white;
+  padding: 16px 0px; /* Увеличенный отступ для больших кнопок */
+  margin: 10px 0px; /* Немного увеличенное расстояние между кнопками */
+  text-decoration: none;
+  border-radius: 15px; /* Более плавные границы */
+  font-size: 24px; /* Увеличенный текст */
+  font-weight: bold;
+  text-align: center; /* Центрирование текста */
+  align-items: center;
+  display: inline-block; /* Чтобы кнопки занимали только свою ширину */
+  transition: background-color 0.3s, transform 0.2s; /* Плавный переход для эффекта */
+}
+
+.pricing__button:hover,
+.contact__button:hover {
+  background-color: #007a7a;
+  transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+}
+
+.pricing__button-icon,
+.contact__button-icon {
+  display: none;
+}
+
+.pricing__calculate.button {
+  display: none;
+}
+
+.prices__title,
+.item,
+.prices__title_phone {
+  color: #02b4be;
+  font-size: 42px;
+}
+
+.prices__title_phone {
+  display: none;
+}
+
+.prices__clarification {
+  /* Уточните материал вашей обивки у менеджера */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  line-height: 31px;
+  font-size: 24px;
+  align-items: center;
+  text-align: center;
+  color: #2f3e53;
+}
+
+.items {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  gap: 5px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.item {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; /* Располагаем элементы вертикально */
+  justify-content: space-between; /* Равномерно распределяем пространство */
+  height: 100%; /* Убедитесь, что блок имеет достаточную высоту */
+  position: relative; /* Для контекста абсолютного позиционирования (если нужно) */
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.item img {
+  display: block;
+  height: 300px;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.item p {
+  height: 50px;
+  font-size: 20px;
+  color: #000;
+  margin: 0 15px 10px;
+}
+
+.pricing-info {
+  display: none;
+}
+
+/* Секция шагов */
+.steps {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.step {
+  width: 200px;
+  height: 160px;
+}
+
+.steps__title {
+  font-size: 40px;
+  color: #15d1d9;
+  margin-bottom: 30px;
+}
+
+.steps__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.step__number {
+  font-size: 24px;
+  position: relative;
+  font-weight: bold;
+  color: #fff;
+  background-color: #15d1d9;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  z-index: 2;
+}
+
+.step__number::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* Центр блока по вертикали */
+  left: 60%;
+  right: 0;
+  width: 600%;
+  height: 2px; /* Толщина линии */
+  background-color: #15d1d9; /* Цвет линии */
+  transform: translateY(-50%); /* Уточняем центрирование */
+  z-index: 0;
+}
+
+.step__number.last::before {
+  width: 0%;
+}
+
+.step__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.step__description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Секция контактов */
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background-size: cover; /* Картинка растягивается, сохраняя пропорции */
+  background-position: center; /* Центрирование картинки */
+  background-color: rgba(0, 118, 165, 0.4); /* Полупрозрачный голубой фильтр */
+  background-image: url("../images-prices/contact_coachImage.png");
+  max-width: 1160px;
+  height: 400px;
+  margin: auto;
+  display: flex; /* Используем Flexbox */
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+  flex-direction: column; /* Строка элементов по вертикали */
+  background-blend-mode: overlay; /* Наложение цвета на изображение */
+}
+
+.contact__title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #333;
+  font-family: "Roboto";
+  width: 80%;
+  color: #f4f7f7;
+  margin: auto;
+}
+
+.carousel {
+  display: none;
+}
+
+.contact__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.cleaning {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cleaning__image {
+  width: 100%;
+  height: auto;
+}
+
+.cleaning__left {
+  width: 65%;
+}
+
+.cleaning__right {
+  width: 35%;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.cleaning__text {
+  font-size: 24px;
+  color: #53c8dd;
+  font-family: "Stengazeta";
+  margin-bottom: 20px;
+  line-height: 26px;
+}
+.cleaning__form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.cleaning__form-title {
+  font-size: 20px;
+  color: #53c8dd;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.cleaning__form-label {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: #00000080;
+}
+
+.cleaning__form-input {
+  width: auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: left;
+  margin: 10px 0px;
+}
+
+.cleaning__form-button {
+  padding: 10px 20px;
+  background-color: #53c8dd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: auto; /* Default width can be adjusted */
+  margin: 0; /* Allow custom positioning with margin */
+}
+
+.cleaning__form-button:hover {
+  background-color: #45b2c2;
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    margin: 0px;
+  }
+
+  .container {
+    width: 100%; /* Делаем ширину контейнера максимально адаптивной */
+  }
+
+  .pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
+    gap: 0px; /* Зазор между колонками, можно изменить по необходимости */
+    width: 100%; /* Гарантия, что сетка занимает всю ширину контейнера */
+    box-sizing: border-box; /* Учитываем отступы */
+  }
+
+  .pricing__left {
+    display: flex; /* Включаем Flexbox для блока */
+    flex-direction: column; /* Текст остаётся вертикальным */
+    justify-content: center; /* Центрирование по вертикали */
+    align-items: center; /* Центрирование по горизонтали (слева) */
+    height: 100%; /* Убедимся, что блок занимает всю высоту */
+    box-sizing: border-box; /* Учитываем отступы в расчёте размеров */
+    background-image: url("../images-prices/curtain_euro_cleaning.png");
+    object-fit: contain;
+  }
+
+  /* Кнопки рассчета стоимости и картинки  */
+
+  .pricing__header {
+    font-size: 32px;
+    color: #fff;
+    font-family: "Stengazeta";
+    font-weight: 400;
+  }
+
+  .pricing__calculate.button {
+    margin-top: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Располагаем текст поочереди по вертикали */
+    border-radius: 40px;
+  }
+
+  .button {
+    height: 40px;
+    padding: 10px;
+  }
+
+  .pricing__calculate span {
+    font-size: 20px;
+  }
+
+  .pricing__text {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 16px;
+  }
+
+  .pricing__calculate-subtext {
+    font-size: 10px;
+  }
+
+  .pricing__image {
+    display: block;
+    width: 100%;
+  }
+
+  .pricing__consultation {
+    margin-top: 20px;
+    color: #15d1d9;
+  }
+
+  /* Кнопки для контакта с фирмой по телеграмму, ватсапу, вк */
+
+  .pricing__buttons,
+  .contact__buttons {
+    flex-direction: column;
+    align-content: center;
+    gap: 0;
+  }
+
+  .contact__buttons {
+    width: 80%;
+  }
+
+  .pricing__button,
+  .contact__button {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center;
+    width: 80%;
+    height: 60px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 10px 20px;
+  }
+
+  .pricing__button img,
+  .contact__button img {
+    margin-left: auto; /* Отодвигаем изображение вправо */
+    height: 45px; /* Настраиваем высоту изображения */
+    width: 45px; /* Сохраняем пропорции */
+  }
+
+  .pricing__button-text,
+  .contact__button-text {
+    flex-grow: 1; /* Занимает всё доступное пространство, выравнивая текст */
+    text-align: center; /* Центрируем текст */
+  }
+
+  .pricing__button-icon,
+  .contact__button-icon {
+    display: block;
+  }
+
+  .step__number::before {
+    width: calc(24vw + 5px);
+  }
+
+  .item img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .item img {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cleaning__form {
+    border-color: #15d1d9; /* New border color for smaller screens */
+    border-radius: 10px;
+  }
+
+  .cleaning__text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  .cleaning__left {
+    width: 60%;
+  }
+
+  .cleaning__right {
+    width: 40%;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .prices__title {
+    display: none;
+  }
+
+  .item__title {
+    font-size: 32px;
+  }
+
+  .item img {
+    height: 130px;
+  }
+
+  .item p {
+    margin: 0 15px 20px;
+  }
+
+  .pricing__consultation {
+    width: 80%;
+    line-height: 16px;
+    margin: 20px auto auto;
+    font-size: 14px;
+  }
+
+  .pricing-info {
+    margin: 0 70px;
+    display: block;
+  }
+
+  .pricing-info__list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .pricing-info__item {
+    margin-bottom: 12px;
+    font-size: 14px;
+    text-align: left;
+    color: #15d1d9; /* Цвет текста и точек */
+  }
+
+  .pricing-info__link {
+    text-decoration: none;
+    color: #15d1d9;
+  }
+
+  .pricing-info__link strong {
+    font-weight: bold;
+  }
+
+  .pricing-info__item::marker {
+    color: #15d1d9; /* Цвет точек */
+  }
+
+  .pricing-info__guarantee {
+    border: 1px solid #15d1d9;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    line-height: 16px;
+  }
+
+  .pricing-info__guarantee-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #15d1d9;
+    margin: 0;
+  }
+
+  .pricing-info__guarantee-text strong {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .pricing__calculate.button {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contact {
+    position: relative; /* Убедитесь, что родительский элемент имеет относительное позиционирование */
+    height: auto;
+  }
+
+  .contact__buttons {
+    position: absolute;
+    top: 100%; /* Смещаем элемент вниз за пределы родительского элемента */
+    left: 50%;
+    transform: translateX(-50%); /* Центрируем элемент по горизонтали */
+    width: 100%; /* Устанавливаем ширину элемента */
+    margin: 0px;
+  }
+  .cleaning {
+    margin-top: 250px;
+  }
+
+  .cleaning__left {
+    display: none;
+  }
+  .cleaning__right {
+    width: 100%;
+  }
+
+  .pricing__calculate.button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .pricing {
+    width: 100%;
+  }
+  .pricing__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pricing__left {
+    width: 100%;
+    height: 510px;
+  }
+  .pricing__image {
+    display: none;
+  }
+
+  .pricing__buttons,
+  .contact__buttons {
+    margin: 10px;
+  }
+  .prices__title_phone {
+    display: inline-block;
+  }
+
+  .button {
+    font-size: 15px;
+    height: 40px;
+  }
+
+  .pricing__button-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pricing__calculate.button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Располагаем текст поочереди по вертикали */
+  }
+
+  .items {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px;
+  }
+
+  .item {
+    height: 410px;
+  }
+
+  .item img {
+    height: 160px;
+    object-fit: contain;
+  }
+
+  .steps__container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .step__number::before {
+    width: 0;
+  }
+
+  .pricing-info {
+    margin: auto 20px;
+  }
+
+  .contact__title {
+    width: 95%;
+  }
+
+  .carousel {
+    display: block;
+    position: relative;
+    width: 30%;
+    max-width: 1200px;
+    margin: 10px auto;
+    overflow: hidden;
+  }
+
+  .carousel__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .carousel__button.left {
+    left: 10px;
+  }
+
+  .carousel__button.right {
+    right: 10px;
+  }
+
+  .carousel__button img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .carousel {
+    width: 50%;
+  }
+
+  .carousel__button img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .items {
+    width: 90%;
+  }
+
+  .item {
+    height: 300px;
+  }
+
+  .item img {
+    width: 160px;
+  }
+
+  .item p {
+    font-size: 14px;
+    line-height: 16px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pricing__calculate {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .cleaning {
+    margin-top: 150px;
+  }
+
+  .pricing__calculate-subtext {
+    margin: 5px auto;
+  }
+
+  .pricing__consultation {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 10px;
+  }
+
+  .prices__title_phone {
+    font-size: 24px;
+    margin: auto 5px;
+    font-weight: 400;
+  }
+
+  .prices__clarification {
+    display: none;
+  }
+
+  .prices__clarification_phone {
+    font-size: 14px;
+    margin: auto 5px;
+  }
+
+  .contact__title {
+    font-size: 12px;
+  }
+
+  .steps__title {
+    font-size: 24px;
+  }
+
+  .pricing-info__guarantee {
+    padding: 0px;
+  }
+
+  .pricing-info__item,
+  .pricing-info__guarantee-text,
+  .pricing-info__guarantee-text strong {
+    font-size: 12px;
+  }
+
+  .item__title {
+    font-size: 32px;
+  }
+
+  .pricing__button,
+  .contact__button {
+    height: 30px;
+    padding: 5px 20px;
+  }
+
+  .pricing__button img,
+  .contact__button img {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,132 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  background: #fff;
+}
+.gallery__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Stengazeta";
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+.gallery__textbox {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.gallery__textbox-text {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Stengazeta";
+  color: var(--color-primary);
+}
+.gallery__photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.gallery__photos-photo {
+  width: 565px;
+  height: 425px;
+}
+.hide-gallery-desctop {
+  display: none;
+}
+.gallery__photos-photo_slider {
+  object-fit: cover;
+}
+.gallery__button,
+.service__buttons_1row-right,
+.service__buttons_1row-left,
+.service__buttons_2row-left,
+.service__buttons_2row-right,
+.service__buttons_3row-left,
+.service__buttons_3row-right {
+  transition: all 0.2s;
+}
+.gallery__button:active,
+.service__buttons_1row-right:active,
+.service__buttons_1row-left:active,
+.service__buttons_2row-left:active,
+.service__buttons_2row-right:active,
+.service__buttons_3row-left:active,
+.service__buttons_3row-right:active {
+  transform: translateY(2px);
+}
+@media (max-width: 1250px) {
+  .gallery__photos {
+    justify-content: space-around;
+  }
+  .gallery__photos-photo {
+    width: 500px;
+    height: auto;
+  }
+}
+@media (max-width: 1160px) {
+  .gallery__photos {
+    justify-content: space-around;
+  }
+  .gallery__photos-photo {
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .gallery__photos-photo {
+    width: 427px;
+    height: auto;
+  }
+}
+@media (max-width: 900px) {
+  .gallery {
+    display: flex;
+  }
+  .hide-gallery-mobile {
+    display: none;
+  }
+  .gallery__textbox {
+    display: none;
+  }
+  .gallery__photos {
+    margin-bottom: 30px;
+    gap: 1%;
+  }
+
+  .gallery__photos-photo {
+    max-width: 250px;
+    height: auto;
+  }
+  .gallery__buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .gallery {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 785px) {
+  .gallery__photos-photo {
+    max-width: 220px;
+  }
+}
+@media (max-width: 498px) {
+  .gallery__photos-photo {
+    max-width: 380px;
+  }
+  .gallery__photos {
+    padding: 0 25px;
+    margin-bottom: 10px;
+  }
+  .gallery {
+    margin-top: -120px;
+  }
+}
