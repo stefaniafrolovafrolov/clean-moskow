@@ -1,643 +1,898 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <title>Цены на химчистку</title>
-    <link href="./fonts/inter/stylesheet.css" rel="stylesheet">
-    <link href="./fonts/lato/stylesheet.css" rel="stylesheet">
-    <link href="./fonts/roboto/stylesheet.css" rel="stylesheet">
-    <link href="./fonts/stengazeta/stylesheet.css" rel="stylesheet">
-    <link href="./css-prices/index.css" rel="stylesheet">
-    <link href="./css/header.css" rel="stylesheet">
-    <link href="./css/footer.css" rel="stylesheet">
-    <link href="./normalize.css" type="text/css" rel="stylesheet">
-
+    <link href="./fonts/inter/stylesheet.css" rel="stylesheet" />
+    <link href="./fonts/lato/stylesheet.css" rel="stylesheet" />
+    <link href="./fonts/roboto/stylesheet.css" rel="stylesheet" />
+    <link href="./fonts/stengazeta/stylesheet.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css-prices/index.css" rel="stylesheet" />
+    <link href="./normalize.css" type="text/css" rel="stylesheet" />
     <title>Цены на химчистку</title>
-</head>
-<body>
-  <header class="header">
-  <div class="header__content">
-      <img
-          class="header__logo"
-          src="./images/logo.png"
-          alt="Логотип евро химчистки, EURO DRY CLEANING"
-      />
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <div class="header__content">
+          <img
+            class="header__logo"
+            src="./images/logo.png"
+            alt="Логотип евро химчистки, EURO DRY CLEANING"
+          />
 
-      <nav class="header__navigation">
-          <ul class="header__nav-lists">
-              <li class="header__nav-item"><a href="./index.html">Главная</a></li>
+          <nav class="header__navigation">
+            <ul class="header__nav-lists">
+              <li class="header__nav-item">
+                <a href="./index.html">Главная</a>
+              </li>
               <li class="header__nav-item"><a href="./prices.html">Цены</a></li>
-              <li class="header__nav-item"><a href="./photogallery.html">Фото</a></li>
+              <li class="header__nav-item">
+                <a href="./photogallery.html">Фото</a>
+              </li>
               <li class="header__nav-item"><a href="./blog.html">Блог</a></li>
-              <li class="header__nav-item"><a href="./comments.html">Отзывы</a></li>
-              <li class="header__nav-item"><a href="./contacts.html">Контакты</a></li>
-          </ul>
-      </nav>
+              <li class="header__nav-item">
+                <a href="./comments.html">Отзывы</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-      <a href="tel:+79100899001" class="header__button">
-          <span class="header__textTelephone">8 (910) 089-90-01</span>
-      </a>
-  </div>
+          <a href="tel:+79100899001" class="header__button">
+            <span class="header__textTelephone">8 (910) 089-90-01</span>
+          </a>
+        </div>
 
-    <p class="header__text">
-        Время работы: <br />
-        Пн-Вс 09:00-23:00 <br />
-        Работаем в Москве и МО
-    </p>  
-  </header>
+        <p class="header__text">
+          Время работы: <br />
+          Пн-Вс 09:00-23:00 <br />
+          Работаем в Москве и МО
+        </p>
+      </header>
 
-  <header class="header-mobile">
-    <div class="header-mobile__content">
-        <a class="header-mobile__link" href="./index.html">
+      <header class="header-mobile">
+        <div class="header-mobile__content">
+          <a class="header-mobile__link" href="./index.html">
             <img
-                class="header__logo"
-                src="./images/logo.png"
-                alt="Логотип евро химчистки, EURO DRY CLEANING"
+              class="header__logo"
+              src="./images/logo.png"
+              alt="Логотип евро химчистки, EURO DRY CLEANING"
             />
-        </a>
+          </a>
 
-        <div class="hamburger-menu">
+          <div class="hamburger-menu">
             <input
-                class="hamburger-menu__toggle"
-                id="hamburger-menu__toggle"
-                type="checkbox"
+              class="hamburger-menu__toggle"
+              id="hamburger-menu__toggle"
+              type="checkbox"
             />
             <div class="hamburger-menu__wrapper"></div>
             <label class="hamburger-menu__button" for="hamburger-menu__toggle">
-                <span></span>
+              <span></span>
             </label>
 
             <div
-                class="hamburger-menu__box hamburger-menu__box_padding hamburger-menu__box_padding_min"
+              class="hamburger-menu__box hamburger-menu__box_padding hamburger-menu__box_padding_min"
             >
-                <a class="header__link" href="./index.html">
-                    <img
-                        class="header__logo"
-                        src="./images/logo-white.svg"
-                        alt="Логотип евро химчистки, EURO DRY CLEANING"
-                    />
-                </a>
-                <nav class="header__navigation_burger">
-                    <ul class="hamburger-menu__container">
-                        <li>
-                            <a
-                                class="hamburger-menu__item hamburger-menu__item_padding"
-                                href="./index.html"
-                                >Главная</a
-                            >
-                        </li>
-                        <li>
-                            <a class="hamburger-menu__item" href="./prices.html"
-                                >Цены</a
-                            >
-                        </li>
-                        <li>
-                            <a class="hamburger-menu__item" href="./photogallery.html"
-                                >Фото</a
-                            >
-                        </li>
-                        <li>
-                            <a class="hamburger-menu__item" href="./blog.html">Блог</a>
-                        </li>
-                        <li>
-                            <a class="hamburger-menu__item" href="./comments.html"
-                                >Отзывы</a
-                            >
-                        </li>
-                        <li>
-                            <a class="hamburger-menu__item" href="./contacts.html"
-                                >Контакты</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
+              <a class="header__link" href="./index.html">
+                <img
+                  class="header__logo"
+                  src="./images/logo-white.svg"
+                  alt="Логотип евро химчистки, EURO DRY CLEANING"
+                />
+              </a>
+              <nav class="header__navigation_burger">
+                <ul class="hamburger-menu__container">
+                  <li>
+                    <a
+                      class="hamburger-menu__item hamburger-menu__item_padding"
+                      href="./index.html"
+                      >Главная</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./prices.html"
+                      >Цены</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./photogallery.html"
+                      >Фото</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./blog.html">Блог</a>
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./comments.html"
+                      >Отзывы</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./contacts.html"
+                      >Контакты</a
+                    >
+                  </li>
+                </ul>
+              </nav>
 
-                <div class="hamburger-menu__containerBoottom">
-                    <div class="hamburger-menu__openingHours">
-                        <h6 class="hamburger-menu__openingHours-title">
-                            Время работы: <br />
-                            Пн-Вс 09:00-23:00
-                        </h6>
+              <div class="hamburger-menu__containerBoottom">
+                <div class="hamburger-menu__openingHours">
+                  <h6 class="hamburger-menu__openingHours-title">
+                    Время работы: <br />
+                    Пн-Вс 09:00-23:00
+                  </h6>
 
-                        <p class="hamburger-menu__openingHours-text">
-                            Работаем в Москве и МО
-                        </p>
-                        <p class="hamburger-menu__openingHours-number">
-                            8 (910) 089-90-01
-                        </p>
-                    </div>
-                    <div class="hamburger-menu__containerBoottomTwo">
-                        <a
-                            class="hamburger-menu__social"
-                            href="https://telegram.me/+79168829426"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <img
-                                class="hamburger-menu__icon hamburger-menu__icon_margin"
-                                src="./icons/telegram.svg"
-                                alt="иконка Telegram"
-                            />
-                        </a>
-
-                        <a
-                            class="hamburger-menu__social"
-                            href="https://vk.com/lami_ko"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <img
-                                class="hamburger-menu__icon hamburger-menu__icon_margin"
-                                src="./icons/vkontakte.svg"
-                                alt="иконка Vkontakte"
-                            />
-                        </a>
-                        <a
-                            class="hamburger-menu__social"
-                            href="https://wa.me/+79168829426"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <img
-                                class="hamburger-menu__icon"
-                                src="./icons/whatsapp.svg"
-                                alt="иконка WhatsApp"
-                            />
-                        </a>
-                    </div>
+                  <p class="hamburger-menu__openingHours-text">
+                    Работаем в Москве и МО
+                  </p>
+                  <p class="hamburger-menu__openingHours-number">
+                    8 (910) 089-90-01
+                  </p>
                 </div>
-            </div>
-        </div>
-    </div>
-  </header>
+                <div class="hamburger-menu__containerBoottomTwo">
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://telegram.me/+79168829426"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon hamburger-menu__icon_margin"
+                      src="./icons/telegram.svg"
+                      alt="иконка Telegram"
+                    />
+                  </a>
 
-  <main class="container">
-    <img class="pricing__banner" src="images-blog/banner-snapedit.png" alt="Banner">
-    <section class="side-banners">
-      <div class="side-banners__left"></div>
-        <div class="side-banners__content">
-          <section class="pricing">
-            <div class="pricing__grid">
-              <div class="pricing__left">
-                <h1 class="pricing__header">Наши цены на химчистку</h1>
-                <p class="pricing__text">15% скидка всем новым клиентам!<br>
-                  Антибактериальная обработка в подарок, гарантия результата.</p>
-                <a href="#" class="pricing__calculate button">
-                  <span class="pricing__calculate-text">Расчитать стоимость</span>
-                  <p class="pricing__calculate-subtext">Антибактериальная обработка в подарок</p>
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://vk.com/lami_ko"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon hamburger-menu__icon_margin"
+                      src="./icons/vkontakte.svg"
+                      alt="иконка Vkontakte"
+                    />
+                  </a>
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://wa.me/+79168829426"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon"
+                      src="./icons/whatsapp.svg"
+                      alt="иконка WhatsApp"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <img
+          class="pricing__banner"
+          src="images-blog/banner-snapedit.png"
+          alt="Banner"
+        />
+        <section class="side-banners">
+          <div class="side-banners__left"></div>
+          <div class="side-banners__content">
+            <section class="pricing">
+              <div class="pricing__grid">
+                <div class="pricing__left">
+                  <h1 class="pricing__header">Наши цены на химчистку</h1>
+                  <p class="pricing__text">
+                    15% скидка всем новым клиентам!<br />
+                    Антибактериальная обработка в подарок, гарантия результата.
+                  </p>
+                  <a href="#" class="pricing__calculate button">
+                    <span class="pricing__calculate-text"
+                      >Расчитать стоимость</span
+                    >
+                    <p class="pricing__calculate-subtext">
+                      Антибактериальная обработка в подарок
+                    </p>
+                  </a>
+                </div>
+                <img
+                  class="pricing__image"
+                  src="images-prices/euro_dry_cleaning.png"
+                  alt="Euro dry cleaning image"
+                />
+              </div>
+              <p class="pricing__consultation">
+                Для получения консультации по чистке и точного расчета стоимости
+                заказа, вы можете прислать нам фотографии вашей мебели, матраса
+                или штор в WhatsApp или Telegram.
+              </p>
+              <div class="pricing__buttons">
+                <a href="#" class="pricing__button button">
+                  <span class="pricing__button-text">Написать в WhatsApp</span>
+                  <img
+                    class="pricing__button-icon"
+                    src="images-prices/whatsappIcon.png"
+                    alt="WhatsApp Icon"
+                  />
+                </a>
+                <a href="#" class="pricing__button button">
+                  <span class="pricing__button-text">Написать в Telegram</span>
+                  <img
+                    class="pricing__button-icon"
+                    src="images-prices/telegramIcon.png"
+                    alt="Telegram Icon"
+                  />
+                </a>
+                <a href="#" class="pricing__button button">
+                  <span class="pricing__button-text">Написать в VK</span>
+                  <img
+                    class="pricing__button-icon"
+                    src="images-prices/vkontakteIcon.png"
+                    alt="VK Icon"
+                  />
                 </a>
               </div>
-              <img class="pricing__image" src="images-prices/euro_dry_cleaning.png" alt="Euro dry cleaning image">
-            </div>
-            <p class="pricing__consultation">
-              Для получения консультации по чистке и точного расчета стоимости заказа,
-              вы можете прислать нам фотографии вашей мебели, матраса или штор в WhatsApp или Telegram.
-            </p>
-            <div class="pricing__buttons">
-              <a href="#" class="pricing__button button">
-                <span class="pricing__button-text">Написать в WhatsApp</span>
-                <img class="pricing__button-icon" src="images-prices/whatsappIcon.png" alt="WhatsApp Icon">
-              </a>
-              <a href="#" class="pricing__button button">
-                <span class="pricing__button-text">Написать в Telegram</span>
-                <img class="pricing__button-icon" src="images-prices/telegramIcon.png" alt="Telegram Icon">
-              </a>
-              <a href="#" class="pricing__button button">
-                <span class="pricing__button-text">Написать в VK</span>
-                <img class="pricing__button-icon" src="images-prices/vkontakteIcon.png" alt="VK Icon">
-              </a>
-            </div>
-          </section>
-          <!-- поправь если надо и по BEM если надо -->
-          <!-- Раздел цен на химчистку диванов и мягкой мебели -->
-          <section class="prices">
-            <h2 class="prices__title">Цены на химчистку диванов и мягкой мебели</h2>
-            <h2 class="prices__title_phone">Услуги и цены на химчистку</h2>
-            <p class="prices__clarification">Уточните материал вашей обивки у менеджера</p>
-            <p class="prices__clarification_phone">Уточните материал вашей обивки у менеджера, а также, если не нашли свою мебель</p>
-          </section>
+            </section>
+            <!-- поправь если надо и по BEM если надо -->
+            <!-- Раздел цен на химчистку диванов и мягкой мебели -->
+            <section class="prices">
+              <h2 class="prices__title">
+                Цены на химчистку диванов и мягкой мебели
+              </h2>
+              <h2 class="prices__title_phone">Услуги и цены на химчистку</h2>
+              <p class="prices__clarification">
+                Уточните материал вашей обивки у менеджера
+              </p>
+              <p class="prices__clarification_phone">
+                Уточните материал вашей обивки у менеджера, а также, если не
+                нашли свою мебель
+              </p>
+            </section>
 
-          <!-- Сетка с элементами -->
-          <section class="coaches items">
-            <!-- <h2 class="section__title">Диваны</h2> -->
-            <div class="coach__item item">
-              <h2 class="coach__title item__title">Диван</h2>
-              <img class="coach__image item__image" src="images-prices/sofa_up_to_140.png" alt="Диван">
-              <p class="item__description">Ширина с подлокотниками до 140 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="coach__item item">
-              <h2 class="coach__title item__title">Диван</h2>
-              <img class="coach__image item__image" src="images-prices/sofa_up_to_150.png" alt="Диван">
-              <p class="item__description">Ширина с подлокотниками от 141 см до 150 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="coach__item item">
-              <h2 class="coach__title item__title">Диван</h2>
-              <img class="coach__image item__image" src="images-prices/sofa_up_to_260.png" alt="Диван">
-              <p class="item__description">Ширина с подлокотниками от 201 см до 260 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="coach__item item">
-              <h2 class="coach__title item__title">Диван</h2>
-              <img class="coach__image item__image" src="images-prices/sofa_up_to_320.png" alt="Диван">
-              <p class="item__description">Ширина с подлокотниками от 261 до 320 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-
-            <div class="carousel__coaches carousel">
-              <button class="carousel__button left" aria-label="Previous">
-                <img src="images-prices/left-arrow.png" alt="Left Arrow">
-              </button>
-              <button class="carousel__button right" aria-label="Next">
-                <img src="images-prices/right-arrow.png" alt="Right Arrow">
-              </button>
-            </div>
-          </section>
-
-          <section class="corner-coaches items">
-            <div class="corner-coach__item item">
-              <h2 class="corner-coach__title item__title">Диван угловой</h2>
-              <img class="corner-coach__image item__image" src="images-prices/cornersofa_up_to_220.png" alt="Диван угловой">
-              <p class="item__description">Ширина с подлокотниками до 220 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="corner-coach__item item">
-              <h2 class="corner-coach__title item__title">Диван угловой</h2>
-              <img class="corner-coach__image item__image" src="images-prices/cornersofa_up_to_320.png" alt="Диван угловой">
-              <p class="item__description">Ширина с подлокотниками от 261 до 320 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="corner-coach__item item">
-              <h2 class="corner-coach__title item__title">Диван угловой</h2>
-              <img class="corner-coach__image item__image" src="images-prices/cornersofa_up_to_340.png" alt="Диван угловой">
-              <p class="item__description">Ширина с подлокотниками от 281 до 340 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="corner-coach__item item">
-              <h2 class="corner-coach__title item__title">Диван угловой</h2>
-              <img class="corner-coach__image item__image" src="images-prices/cornersofa_up_to_400.png" alt="Диван угловой">
-              <p class="item__description">Ширина с подлокотниками от 341 до 400 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-
-            <div class="carousel__corner-coaches carousel">
-              <button class="carousel__button left" aria-label="Previous">
-                <img src="images-prices/left-arrow.png" alt="Left Arrow">
-              </button>
-              <button class="carousel__button right" aria-label="Next">
-                <img src="images-prices/right-arrow.png" alt="Right Arrow">
-              </button>
-            </div>
-          </section>
-
-          <section class="armchairs items">
-            <div class="armchair__item item">
-              <h2 class="armchair__title item__title">Кресло</h2>
-              <img class="armchair__image item__image" src="images-prices/armchair_up_to_75.png" alt="Кресло">
-              <p class="item__description">Ширина с подлокотниками до 75 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="armchair__item item">
-              <h2 class="armchair__title item__title">Кресло</h2>
-              <img class="armchair__image item__image" src="images-prices/armchair_from_75.png" alt="Кресло">
-              <p class="item__description">Ширина с подлокотниками от 75 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="armchair__item item">
-              <h2 class="armchair__title item__title">Стул</h2>
-              <img class="armchair__image item__image" src="images-prices/chair_two_sides.png" alt="Стул">
-              <p class="item__description">С мягкой спинкой 2 стороны</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="armchair__item item">
-              <h2 class="armchair__title item__title">Стул</h2>
-              <img class="armchair__image item__image" src="images-prices/chair_one_side.png" alt="Стул">
-              <p class="item__description">С мягкой спинкой 1 сторона</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-
-            <div class="carousel__armchairs carousel">
-              <button class="carousel__button left" aria-label="Previous">
-                <img src="images-prices/left-arrow.png" alt="Left Arrow">
-              </button>
-              <button class="carousel__button right" aria-label="Next">
-                <img src="images-prices/right-arrow.png" alt="Right Arrow">
-              </button>
-            </div>
-          </section>
-
-          <section class="pillows items">
-            <div class="pillow__item item">
-              <h2 class="pillow__title item__title">Подушка</h2>
-              <img class="pillow__image item__image" src="images-prices/small_pillow.png" alt="Подушка">
-              <p class="item__description">Ширина до 70 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="pillow__item item">
-              <h2 class="pillow__title item__title">Подушка</h2>
-              <img class="pillow__image item__image" src="images-prices/large_pillow.png" alt="Подушка">
-              <p class="item__description">Ширина от 70 см до 100 см</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-
-            <div class="carousel__pillows carousel">
-              <button class="carousel__button left" aria-label="Previous">
-                <img src="images-prices/left-arrow.png" alt="Left Arrow">
-              </button>
-              <button class="carousel__button right" aria-label="Next">
-                <img src="images-prices/right-arrow.png" alt="Right Arrow">
-              </button>
-            </div>
-          </section>
-
-          <!-- Раздел цен на химчистку матрасов -->
-          <h2 class="prices__title">Цены на химчистку матрасов</h2>
-
-          <section class="mattresses items">
-            <div class="mattress__item item">
-              <h2 class="mattress__title item__title">Матрас</h2>
-              <img class="mattress__image item__image" src="images-prices/small_mattress.png" alt="Матрас">
-              <p class="item__description">Ширина 60-75 см одна сторона</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="mattress__item item">
-              <h2 class="mattress__title item__title">Матрас</h2>
-              <img class="mattress__image item__image" src="images-prices/large_mattress.png" alt="Матрас">
-              <p class="item__description">Ширина 100-200 см одна сторона</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-
-            <div class="carousel__mattresses carousel">
-              <button class="carousel__button left" aria-label="Previous">
-                <img src="images-prices/left-arrow.png" alt="Left Arrow">
-              </button>
-              <button class="carousel__button right" aria-label="Next">
-                <img src="images-prices/right-arrow.png" alt="Right Arrow">
-              </button>
-            </div>
-          </section>
-
-          <!-- Раздел на химчистку автомобилей -->
-          <h2 class="prices__title">Цены на химчистку автомобилей</h2>
-
-          <section class="cars items">
-            <div class="car__item item"> 
-              <h2 class="car__title item__title">Авто</h2>
-              <img class="car__image item__image" src="images-prices/car_door.png" alt="Авто">
-              <p class="item__description">Дверных обшивок 4 шт</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="car__item item"> 
-              <h2 class="car__title item__title">Авто</h2>
-              <img class="car__image item__image" src="images-prices/car_plastic_cleaning.png" alt="Авто">
-              <p class="item__description">Химчистка пластиковых поверхностей (панель, консоль, стойки, пороги)</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="car__item item"> 
-              <h2 class="car__title item__title">Авто</h2>
-              <img class="car__image item__image" src="images-prices/vacum_cleaner.png" alt="Авто">
-              <p class="item__description">Химчистка салона автомобиля (пол, потолок, сиденья, дверные карты, пластик)</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-            <div class="car__item item"> 
-              <h2 class="car__title item__title">Авто</h2>
-              <img class="car__image item__image" src="images-prices/restorative_agent.png" alt="Авто">
-              <p class="item__description">Обработка пластика восстанавливающим средством</p>
-              <p class="item__price">Цена от XX рублей</p>
-            </div>
-
-            <div class="carousel__cars carousel">
-              <button class="carousel__button left" aria-label="Previous">
-                <img src="images-prices/left-arrow.png" alt="Left Arrow">
-              </button>
-              <button class="carousel__button right" aria-label="Next">
-                <img src="images-prices/right-arrow.png" alt="Right Arrow">
-              </button>
-            </div>
-          </section>
-
-          <!-- Раздел цен на химчистку штор -->
-          <h2 class="prices__title">Цены на химчистку штор</h2>
-
-          <section class="curtains items">
-              <div class="curtain__item item"> 
-            <h2 class="curtain__title item__title">Тюль</h2>
-            <img class="curtain__image item__image" src="images-prices/tulle.png" alt="Тюль">
-            <p class="item__description">Натуральные / синтетика</p>
-            <p class="item__price">Цена от XX рублей</p>
+            <!-- Сетка с элементами -->
+            <section class="coaches items">
+              <!-- <h2 class="section__title">Диваны</h2> -->
+              <div class="coach__item item">
+                <h2 class="coach__title item__title">Диван</h2>
+                <img
+                  class="coach__image item__image"
+                  src="images-prices/sofa_up_to_140.png"
+                  alt="Диван"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками до 140 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
               </div>
-              <div class="curtain__item item"> 
-            <h2 class="curtain__title item__title">Шторы</h2>
-            <img class="curtain__image item__image" src="images-prices/curtain.png" alt="Шторы">
-            <p class="item__description">Натуральные / синтетика / бархат</p>
-            <p class="item__price">Цена от XX рублей</p>
+              <div class="coach__item item">
+                <h2 class="coach__title item__title">Диван</h2>
+                <img
+                  class="coach__image item__image"
+                  src="images-prices/sofa_up_to_150.png"
+                  alt="Диван"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками от 141 см до 150 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="coach__item item">
+                <h2 class="coach__title item__title">Диван</h2>
+                <img
+                  class="coach__image item__image"
+                  src="images-prices/sofa_up_to_260.png"
+                  alt="Диван"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками от 201 см до 260 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="coach__item item">
+                <h2 class="coach__title item__title">Диван</h2>
+                <img
+                  class="coach__image item__image"
+                  src="images-prices/sofa_up_to_320.png"
+                  alt="Диван"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками от 261 до 320 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+
+              <div class="carousel__coaches carousel">
+                <button class="carousel__button left" aria-label="Previous">
+                  <img src="images-prices/left-arrow.png" alt="Left Arrow" />
+                </button>
+                <button class="carousel__button right" aria-label="Next">
+                  <img src="images-prices/right-arrow.png" alt="Right Arrow" />
+                </button>
+              </div>
+            </section>
+
+            <section class="corner-coaches items">
+              <div class="corner-coach__item item">
+                <h2 class="corner-coach__title item__title">Диван угловой</h2>
+                <img
+                  class="corner-coach__image item__image"
+                  src="images-prices/cornersofa_up_to_220.png"
+                  alt="Диван угловой"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками до 220 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="corner-coach__item item">
+                <h2 class="corner-coach__title item__title">Диван угловой</h2>
+                <img
+                  class="corner-coach__image item__image"
+                  src="images-prices/cornersofa_up_to_320.png"
+                  alt="Диван угловой"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками от 261 до 320 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="corner-coach__item item">
+                <h2 class="corner-coach__title item__title">Диван угловой</h2>
+                <img
+                  class="corner-coach__image item__image"
+                  src="images-prices/cornersofa_up_to_340.png"
+                  alt="Диван угловой"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками от 281 до 340 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="corner-coach__item item">
+                <h2 class="corner-coach__title item__title">Диван угловой</h2>
+                <img
+                  class="corner-coach__image item__image"
+                  src="images-prices/cornersofa_up_to_400.png"
+                  alt="Диван угловой"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками от 341 до 400 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+
+              <div class="carousel__corner-coaches carousel">
+                <button class="carousel__button left" aria-label="Previous">
+                  <img src="images-prices/left-arrow.png" alt="Left Arrow" />
+                </button>
+                <button class="carousel__button right" aria-label="Next">
+                  <img src="images-prices/right-arrow.png" alt="Right Arrow" />
+                </button>
+              </div>
+            </section>
+
+            <section class="armchairs items">
+              <div class="armchair__item item">
+                <h2 class="armchair__title item__title">Кресло</h2>
+                <img
+                  class="armchair__image item__image"
+                  src="images-prices/armchair_up_to_75.png"
+                  alt="Кресло"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками до 75 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="armchair__item item">
+                <h2 class="armchair__title item__title">Кресло</h2>
+                <img
+                  class="armchair__image item__image"
+                  src="images-prices/armchair_from_75.png"
+                  alt="Кресло"
+                />
+                <p class="item__description">
+                  Ширина с подлокотниками от 75 см
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="armchair__item item">
+                <h2 class="armchair__title item__title">Стул</h2>
+                <img
+                  class="armchair__image item__image"
+                  src="images-prices/chair_two_sides.png"
+                  alt="Стул"
+                />
+                <p class="item__description">С мягкой спинкой 2 стороны</p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="armchair__item item">
+                <h2 class="armchair__title item__title">Стул</h2>
+                <img
+                  class="armchair__image item__image"
+                  src="images-prices/chair_one_side.png"
+                  alt="Стул"
+                />
+                <p class="item__description">С мягкой спинкой 1 сторона</p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+
+              <div class="carousel__armchairs carousel">
+                <button class="carousel__button left" aria-label="Previous">
+                  <img src="images-prices/left-arrow.png" alt="Left Arrow" />
+                </button>
+                <button class="carousel__button right" aria-label="Next">
+                  <img src="images-prices/right-arrow.png" alt="Right Arrow" />
+                </button>
+              </div>
+            </section>
+
+            <section class="pillows items">
+              <div class="pillow__item item">
+                <h2 class="pillow__title item__title">Подушка</h2>
+                <img
+                  class="pillow__image item__image"
+                  src="images-prices/small_pillow.png"
+                  alt="Подушка"
+                />
+                <p class="item__description">Ширина до 70 см</p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="pillow__item item">
+                <h2 class="pillow__title item__title">Подушка</h2>
+                <img
+                  class="pillow__image item__image"
+                  src="images-prices/large_pillow.png"
+                  alt="Подушка"
+                />
+                <p class="item__description">Ширина от 70 см до 100 см</p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+
+              <div class="carousel__pillows carousel">
+                <button class="carousel__button left" aria-label="Previous">
+                  <img src="images-prices/left-arrow.png" alt="Left Arrow" />
+                </button>
+                <button class="carousel__button right" aria-label="Next">
+                  <img src="images-prices/right-arrow.png" alt="Right Arrow" />
+                </button>
+              </div>
+            </section>
+
+            <!-- Раздел цен на химчистку матрасов -->
+            <h2 class="prices__title">Цены на химчистку матрасов</h2>
+
+            <section class="mattresses items">
+              <div class="mattress__item item">
+                <h2 class="mattress__title item__title">Матрас</h2>
+                <img
+                  class="mattress__image item__image"
+                  src="images-prices/small_mattress.png"
+                  alt="Матрас"
+                />
+                <p class="item__description">Ширина 60-75 см одна сторона</p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="mattress__item item">
+                <h2 class="mattress__title item__title">Матрас</h2>
+                <img
+                  class="mattress__image item__image"
+                  src="images-prices/large_mattress.png"
+                  alt="Матрас"
+                />
+                <p class="item__description">Ширина 100-200 см одна сторона</p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+
+              <div class="carousel__mattresses carousel">
+                <button class="carousel__button left" aria-label="Previous">
+                  <img src="images-prices/left-arrow.png" alt="Left Arrow" />
+                </button>
+                <button class="carousel__button right" aria-label="Next">
+                  <img src="images-prices/right-arrow.png" alt="Right Arrow" />
+                </button>
+              </div>
+            </section>
+
+            <!-- Раздел на химчистку автомобилей -->
+            <h2 class="prices__title">Цены на химчистку автомобилей</h2>
+
+            <section class="cars items">
+              <div class="car__item item">
+                <h2 class="car__title item__title">Авто</h2>
+                <img
+                  class="car__image item__image"
+                  src="images-prices/car_door.png"
+                  alt="Авто"
+                />
+                <p class="item__description">Дверных обшивок 4 шт</p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="car__item item">
+                <h2 class="car__title item__title">Авто</h2>
+                <img
+                  class="car__image item__image"
+                  src="images-prices/car_plastic_cleaning.png"
+                  alt="Авто"
+                />
+                <p class="item__description">
+                  Химчистка пластиковых поверхностей (панель, консоль, стойки,
+                  пороги)
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="car__item item">
+                <h2 class="car__title item__title">Авто</h2>
+                <img
+                  class="car__image item__image"
+                  src="images-prices/vacum_cleaner.png"
+                  alt="Авто"
+                />
+                <p class="item__description">
+                  Химчистка салона автомобиля (пол, потолок, сиденья, дверные
+                  карты, пластик)
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="car__item item">
+                <h2 class="car__title item__title">Авто</h2>
+                <img
+                  class="car__image item__image"
+                  src="images-prices/restorative_agent.png"
+                  alt="Авто"
+                />
+                <p class="item__description">
+                  Обработка пластика восстанавливающим средством
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+
+              <div class="carousel__cars carousel">
+                <button class="carousel__button left" aria-label="Previous">
+                  <img src="images-prices/left-arrow.png" alt="Left Arrow" />
+                </button>
+                <button class="carousel__button right" aria-label="Next">
+                  <img src="images-prices/right-arrow.png" alt="Right Arrow" />
+                </button>
+              </div>
+            </section>
+
+            <!-- Раздел цен на химчистку штор -->
+            <h2 class="prices__title">Цены на химчистку штор</h2>
+
+            <section class="curtains items">
+              <div class="curtain__item item">
+                <h2 class="curtain__title item__title">Тюль</h2>
+                <img
+                  class="curtain__image item__image"
+                  src="images-prices/tulle.png"
+                  alt="Тюль"
+                />
+                <p class="item__description">Натуральные / синтетика</p>
+                <p class="item__price">Цена от XX рублей</p>
+              </div>
+              <div class="curtain__item item">
+                <h2 class="curtain__title item__title">Шторы</h2>
+                <img
+                  class="curtain__image item__image"
+                  src="images-prices/curtain.png"
+                  alt="Шторы"
+                />
+                <p class="item__description">
+                  Натуральные / синтетика / бархат
+                </p>
+                <p class="item__price">Цена от XX рублей</p>
               </div>
 
               <div class="carousel__curtains carousel">
                 <button class="carousel__button left" aria-label="Previous">
-            <img src="images-prices/left-arrow.png" alt="Left Arrow">
+                  <img src="images-prices/left-arrow.png" alt="Left Arrow" />
                 </button>
                 <button class="carousel__button right" aria-label="Next">
-            <img src="images-prices/right-arrow.png" alt="Right Arrow">
+                  <img src="images-prices/right-arrow.png" alt="Right Arrow" />
                 </button>
-              </div>    
-          </section> 
+              </div>
+            </section>
 
-          <h2 class="prices__title">Цены на химчистку ковров</h2>
+            <h2 class="prices__title">Цены на химчистку ковров</h2>
 
-          <section class="carpets items">
-            <div class="carpet__item item"> 
-              <h2 class="carpet__title item__title">Ковер</h2>
-              <img class="carpet__image item__image" src="images-prices/pile_carpet.png" alt="Ковер">
-              <p class="carpet__description item__description">Ворсовый</p>
-              <p class="carpet__price item__price">Цена от 450 рублей</p>
-            </div>
-            <div class="carpet__item item"> 
-              <h2 class="carpet__title item__title">Ковер</h2>
-              <img class="carpet__image item__image" src="images-prices/flat_woven_carpet.png" alt="Ковер">
-              <p class="carpet__description item__description">Безворсовый</p>
-              <p class="carpet__price item__price">Цена от 300 рублей</p>
-            </div>
+            <section class="carpets items">
+              <div class="carpet__item item">
+                <h2 class="carpet__title item__title">Ковер</h2>
+                <img
+                  class="carpet__image item__image"
+                  src="images-prices/pile_carpet.png"
+                  alt="Ковер"
+                />
+                <p class="carpet__description item__description">Ворсовый</p>
+                <p class="carpet__price item__price">Цена от 450 рублей</p>
+              </div>
+              <div class="carpet__item item">
+                <h2 class="carpet__title item__title">Ковер</h2>
+                <img
+                  class="carpet__image item__image"
+                  src="images-prices/flat_woven_carpet.png"
+                  alt="Ковер"
+                />
+                <p class="carpet__description item__description">Безворсовый</p>
+                <p class="carpet__price item__price">Цена от 300 рублей</p>
+              </div>
 
-            <div class="carousel__carpets carousel">
-              <button class="carousel__button left" aria-label="Previous">
-                <img src="images-prices/left-arrow.png" alt="Left Arrow">
-              </button>
-              <button class="carousel__button right" aria-label="Next">
-                <img src="images-prices/right-arrow.png" alt="Right Arrow">
-              </button>
-            </div>
-          </section>
+              <div class="carousel__carpets carousel">
+                <button class="carousel__button left" aria-label="Previous">
+                  <img src="images-prices/left-arrow.png" alt="Left Arrow" />
+                </button>
+                <button class="carousel__button right" aria-label="Next">
+                  <img src="images-prices/right-arrow.png" alt="Right Arrow" />
+                </button>
+              </div>
+            </section>
 
-          <section class="pricing-info">
-            <ul class="pricing-info__list">
-              <li class="pricing-info__item"><a href="#" class="pricing-info__link">Минимальный заказ - 3.000 руб</a></li>
-              <li class="pricing-info__item"><a href="#" class="pricing-info__link">Нейтрализация запаха - 500 руб одна сторона</a></li>
-              <li class="pricing-info__item"><a href="#" class="pricing-info__link">Удаление шерсти домашних животных с обивки +30% к стоимости</a></li>
-              <li class="pricing-info__item"><a href="#" class="pricing-info__link">+ 20% к стоимости при сложных загрязнениях</a></li>
-              <li class="pricing-info__item"><a href="#" class="pricing-info__link">Выезд специалистов в пределах МКАД и до 10 км за МКАД - <strong>БЕСПЛАТНО</strong></a></li>
-              <li class="pricing-info__item"><a href="#" class="pricing-info__link">Выезд за 10 км от МКАД - 50 руб за первый километр начиная с первого километра</a></li>
-              <li class="pricing-info__item"><a href="#" class="pricing-info__link">Дорога оплачивается в один конец</a></li>
-            </ul>
-            <div class="pricing-info__guarantee">
-              <p class="pricing-info__guarantee-text">
-                Наша уникальная гарантия<br>
-                <strong>"Если не устроит результат вернём вам деньги!"</strong>
-              </p>
-            </div>
-          </section>
-          
-          <section class="steps">
-              <h2 class="steps__title">Как рассчитать точную стоимость и сделать заказ?</h2>
+            <section class="pricing-info">
+              <ul class="pricing-info__list">
+                <li class="pricing-info__item">
+                  <a href="#" class="pricing-info__link"
+                    >Минимальный заказ - 3.000 руб</a
+                  >
+                </li>
+                <li class="pricing-info__item">
+                  <a href="#" class="pricing-info__link"
+                    >Нейтрализация запаха - 500 руб одна сторона</a
+                  >
+                </li>
+                <li class="pricing-info__item">
+                  <a href="#" class="pricing-info__link"
+                    >Удаление шерсти домашних животных с обивки +30% к
+                    стоимости</a
+                  >
+                </li>
+                <li class="pricing-info__item">
+                  <a href="#" class="pricing-info__link"
+                    >+ 20% к стоимости при сложных загрязнениях</a
+                  >
+                </li>
+                <li class="pricing-info__item">
+                  <a href="#" class="pricing-info__link"
+                    >Выезд специалистов в пределах МКАД и до 10 км за МКАД -
+                    <strong>БЕСПЛАТНО</strong></a
+                  >
+                </li>
+                <li class="pricing-info__item">
+                  <a href="#" class="pricing-info__link"
+                    >Выезд за 10 км от МКАД - 50 руб за первый километр начиная
+                    с первого километра</a
+                  >
+                </li>
+                <li class="pricing-info__item">
+                  <a href="#" class="pricing-info__link"
+                    >Дорога оплачивается в один конец</a
+                  >
+                </li>
+              </ul>
+              <div class="pricing-info__guarantee">
+                <p class="pricing-info__guarantee-text">
+                  Наша уникальная гарантия<br />
+                  <strong
+                    >"Если не устроит результат вернём вам деньги!"</strong
+                  >
+                </p>
+              </div>
+            </section>
+
+            <section class="steps">
+              <h2 class="steps__title">
+                Как рассчитать точную стоимость и сделать заказ?
+              </h2>
               <section class="steps__container">
-                  <div class="step">
-                      <div class="step__number">1</div>
-                      <h3 class="step__title">Отправьте фото</h3>
-                      <span class="step__description">Отправить фото на WhatsApp по номеру 8 (910) 089-90-01</span>
-                  </div>
-                  <div class="step">
-                      <div class="step__number">2</div>
-                      <h3 class="step__title">Точный расчет</h3>
-                      <span class="step__description">Произведём оценку и скажем стоимость выезда сотрудника</span>
-                  </div>
-                  <div class="step">
-                      <div class="step__number">3</div>
-                      <h3 class="step__title">Сделать заказ</h3>
-                      <span class="step__description">Уточните день, время и адрес для выезда сотрудника</span>
-                  </div>
-                  <div class="step">
-                      <div class="step__number last">4</div>
-                      <h3 class="step__title">Принимайте работу</h3>
-                      <span class="step__description">После получения услуги проверьте качество и оставьте свой отзыв</span>
-                  </div>
-                </section>
-          </section>
-          
-          <div class="contact">
+                <div class="step">
+                  <div class="step__number">1</div>
+                  <h3 class="step__title">Отправьте фото</h3>
+                  <span class="step__description"
+                    >Отправить фото на WhatsApp по номеру 8 (910)
+                    089-90-01</span
+                  >
+                </div>
+                <div class="step">
+                  <div class="step__number">2</div>
+                  <h3 class="step__title">Точный расчет</h3>
+                  <span class="step__description"
+                    >Произведём оценку и скажем стоимость выезда
+                    сотрудника</span
+                  >
+                </div>
+                <div class="step">
+                  <div class="step__number">3</div>
+                  <h3 class="step__title">Сделать заказ</h3>
+                  <span class="step__description"
+                    >Уточните день, время и адрес для выезда сотрудника</span
+                  >
+                </div>
+                <div class="step">
+                  <div class="step__number last">4</div>
+                  <h3 class="step__title">Принимайте работу</h3>
+                  <span class="step__description"
+                    >После получения услуги проверьте качество и оставьте свой
+                    отзыв</span
+                  >
+                </div>
+              </section>
+            </section>
+
+            <div class="contact">
               <div class="contact__title">
-                  Для получения консультации по чистке и точного расчёта стоимости заказа, 
-                  вы можете прислать нам фотографии вашей мебели, матраса или штор в WhatsApp, Telegram или ВКонтакте.
+                Для получения консультации по чистке и точного расчёта стоимости
+                заказа, вы можете прислать нам фотографии вашей мебели, матраса
+                или штор в WhatsApp, Telegram или ВКонтакте.
               </div>
               <div class="contact__buttons">
                 <a href="#" class="contact__button button">
                   <span class="contact__button-text">Написать в WhatsApp</span>
-                  <img class="contact__button-icon" src="images-prices/whatsappIcon.png" alt="WhatsApp Icon">
+                  <img
+                    class="contact__button-icon"
+                    src="images-prices/whatsappIcon.png"
+                    alt="WhatsApp Icon"
+                  />
                 </a>
                 <a href="#" class="contact__button button">
                   <span class="contact__button-text">Написать в Telegram</span>
-                  <img class="contact__button-icon" src="images-prices/telegramIcon.png" alt="Telegram Icon">
+                  <img
+                    class="contact__button-icon"
+                    src="images-prices/telegramIcon.png"
+                    alt="Telegram Icon"
+                  />
                 </a>
                 <a href="#" class="contact__button button">
                   <span class="contact__button-text">Написать в VK</span>
-                  <img class="contact__button-icon" src="images-prices/vkontakteIcon.png" alt="VK Icon">
+                  <img
+                    class="contact__button-icon"
+                    src="images-prices/vkontakteIcon.png"
+                    alt="VK Icon"
+                  />
                 </a>
               </div>
-          </div> 
-          <div class="cleaning">
+            </div>
+            <div class="cleaning">
               <div class="cleaning__left">
-                  <img src="images-prices/cleaning_illustration.png" alt="Cleaning Illustration" class="cleaning__image">
+                <img
+                  src="images-prices/cleaning_illustration.png"
+                  alt="Cleaning Illustration"
+                  class="cleaning__image"
+                />
               </div>
               <div class="cleaning__right">
-                  <h3 class="cleaning__text">ПРИЙДЕМ К ВАМ НА ПОМОЩЬ В ЛЮБОЙ СИТУАЦИИ!</h3>
-                  <form class="cleaning__form">
-                      <h4 class="cleaning__form-title">Оставить заявку</h4>
-                      <label for="name" class="cleaning__form-label">Имя</label>
-                      <input id="name" type="text" class="cleaning__form-input" placeholder="Иван" required>
-                      <label for="phone_number" class="cleaning__form-label">Номер телефона</label>
-                      <input id="phone_number" type="tel" class="cleaning__form-input" placeholder="+7 999 999 99-99" required>
-                      <button type="submit" class="cleaning__form-button">Отправить</button>
-                  </form>
+                <h3 class="cleaning__text">
+                  ПРИЙДЕМ К ВАМ НА ПОМОЩЬ В ЛЮБОЙ СИТУАЦИИ!
+                </h3>
+                <form class="cleaning__form">
+                  <h4 class="cleaning__form-title">Оставить заявку</h4>
+                  <label for="name" class="cleaning__form-label">Имя</label>
+                  <input
+                    id="name"
+                    type="text"
+                    class="cleaning__form-input"
+                    placeholder="Иван"
+                    required
+                  />
+                  <label for="phone_number" class="cleaning__form-label"
+                    >Номер телефона</label
+                  >
+                  <input
+                    id="phone_number"
+                    type="tel"
+                    class="cleaning__form-input"
+                    placeholder="+7 999 999 99-99"
+                    required
+                  />
+                  <button type="submit" class="cleaning__form-button">
+                    Отправить
+                  </button>
+                </form>
               </div>
+            </div>
           </div>
-        </div>
-      <div class="side-banners__right"></div>
-    </section>   
-  </main>
+          <div class="side-banners__right"></div>
+        </section>
+      </main>
 
-    <footer class="footer">
-      <div class="footer__content">
+      <footer class="footer">
+        <div class="footer__content">
           <div class="footer__block-lists">
-              <h6 class="footer__title">Для дома</h6>
-              <ul class="footer__lists">
-                  <li class="footer__lists-item">Химчистка диванов</li>
-                  <li class="footer__lists-item">Химчистка мягкой мебели</li>
-                  <li class="footer__lists-item">Химчистка кресел</li>
-                  <li class="footer__lists-item">Химчистка стульев</li>
-                  <li class="footer__lists-item">Химчистка ковров</li>
-                  <li class="footer__lists-item">Химчистка ковролина</li>
-                  <li class="footer__lists-item">Химчистка матрасов</li>
-                  <li class="footer__lists-item">Химчистка кровати</li>
-                  <li class="footer__lists-item">Химчистка штор</li>
-                  <li class="footer__lists-item">Срочная химчистка</li>
-                  <li class="footer__lists-item">Химчистка бархатных штор</li>
-                  <li class="footer__lists-item">Химчистка рулонных штор</li>
-                  <li class="footer__lists-item">Химчистка римских штор</li>
-              </ul>
+            <h6 class="footer__title">Для дома</h6>
+            <ul class="footer__lists">
+              <li class="footer__lists-item">Химчистка диванов</li>
+              <li class="footer__lists-item">Химчистка мягкой мебели</li>
+              <li class="footer__lists-item">Химчистка кресел</li>
+              <li class="footer__lists-item">Химчистка стульев</li>
+              <li class="footer__lists-item">Химчистка ковров</li>
+              <li class="footer__lists-item">Химчистка ковролина</li>
+              <li class="footer__lists-item">Химчистка матрасов</li>
+              <li class="footer__lists-item">Химчистка кровати</li>
+              <li class="footer__lists-item">Химчистка штор</li>
+              <li class="footer__lists-item">Срочная химчистка</li>
+              <li class="footer__lists-item">Химчистка бархатных штор</li>
+              <li class="footer__lists-item">Химчистка рулонных штор</li>
+              <li class="footer__lists-item">Химчистка римских штор</li>
+            </ul>
           </div>
 
           <div class="footer__information">
-              <h6 class="footer__title">Информация</h6>
-              <ul class="footer__lists footer__lists_center">
-                  <li class="footer__lists-item">
-                      <a href="./index.html" class="footer__lists-link">Главная</a>
-                  </li>
-                  <li class="footer__lists-item">
-                      <a href="./prices.html" class="footer__lists-link">Цены</a>
-                  </li>
-                  <li class="footer__lists-item">
-                      <a href="./photogallery.html" class="footer__lists-link">Фото</a>
-                  </li>
-                  <li class="footer__lists-item">
-                      <a href="./blog.html" class="footer__lists-link">Блог</a>
-                  </li>
-                  <li class="footer__lists-item">
-                      <a href="./comments.html" class="footer__lists-link">Отзывы</a>
-                  </li>
-                  <li class="footer__lists-item">
-                      <a href="./contacts.html" class="footer__lists-link">Контакты</a>
-                  </li>
-              </ul>
+            <h6 class="footer__title">Информация</h6>
+            <ul class="footer__lists footer__lists_center">
+              <li class="footer__lists-item">
+                <a href="./index.html" class="footer__lists-link">Главная</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./prices.html" class="footer__lists-link">Цены</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./photogallery.html" class="footer__lists-link"
+                  >Фото</a
+                >
+              </li>
+              <li class="footer__lists-item">
+                <a href="./blog.html" class="footer__lists-link">Блог</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./comments.html" class="footer__lists-link">Отзывы</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./contacts.html" class="footer__lists-link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
           </div>
 
           <div class="footer__openingHours">
-              <h6 class="footer__title">
-                  Время работы: <br />
-                  Пн-Вс 09:00-23:00
-              </h6>
+            <h6 class="footer__title">
+              Время работы: <br />
+              Пн-Вс 09:00-23:00
+            </h6>
 
-              <p class="footer__text">Работаем в Москве и МО</p>
+            <p class="footer__text">Работаем в Москве и МО</p>
           </div>
 
           <div class="footer__contacts">
-              <h6 class="footer__title display-none750px">Наши контакты</h6>
+            <h6 class="footer__title display-none750px">Наши контакты</h6>
 
-              <a href="+79100899001" class="footer__text">8 (910) 089-90-01</a>
+            <a href="+79100899001" class="footer__text">8 (910) 089-90-01</a>
 
-              <div class="footer__socials">
-                  <img
-                      class="footer__icon"
-                      src="./images/telegramIcon.png"
-                      alt="иконка телеграм"
-                  />
-                  <img
-                      class="footer__icon"
-                      src="./images/vkontakteIcon.png"
-                      alt="иконка вконтакте"
-                  />
-                  <img
-                      class="footer__icon"
-                      src="./images/whatsapIcon.png"
-                      alt="иконка ватсап"
-                  />
-              </div>
+            <div class="footer__socials">
+              <img
+                class="footer__icon"
+                src="./images/telegramIcon.png"
+                alt="иконка телеграм"
+              />
+              <img
+                class="footer__icon"
+                src="./images/vkontakteIcon.png"
+                alt="иконка вконтакте"
+              />
+              <img
+                class="footer__icon"
+                src="./images/whatsapIcon.png"
+                alt="иконка ватсап"
+              />
+            </div>
           </div>
-      </div>
+        </div>
 
-      <p class="footer__paragraph">Euro Dry Cleaning Выездная химчистка мебели.</p>
-    </footer>
+        <p class="footer__paragraph">
+          Euro Dry Cleaning Выездная химчистка мебели.
+        </p>
+      </footer>
+    </div>
     <script src="./scripts-prices.js" defer></script>
-</body>
+  </body>
 </html>
