@@ -8,6 +8,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .footer__content {
@@ -176,7 +177,6 @@
 @media (max-width: 500px) {
   .footer__content {
     padding: 20px;
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 колонки: первая будет занимать 1 часть, а вторая 2 части */
     gap: 10px; /* Уменьшаем отступы */

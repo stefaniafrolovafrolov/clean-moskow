@@ -932,9 +932,14 @@ form p  {
     .contact-us__container-top {
        height: 400px;
     }
+
+    .contact-us__discount {
+        height: 189px;
+    }
     .contact-us__discount img{
        width: 100%;
        object-fit: cover;
+       height: 100%;
     }
     .contact-us__container-bottom {
        width: 100%;

@@ -64,9 +64,47 @@ h2 {
   color: #2f3e53;
 }
 
+.pricing__grid {
+  display: none;
+}
+
+.pricing__banner {
+  width: 100%;
+}
+
+.side-banners {
+  display: flex;
+  width: 100%;
+}
+
+.side-banners__left {
+  background-image: url("../images/side-bg-left.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 380px;
+  height: auto;
+}
+
+.side-banners__right {
+  background-image: url("../images/side-bg-right.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 380px;
+  height: auto;
+}
+
+.side-banners__content {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
 .pricing__image {
   display: none;
 }
+
 
 .pricing__consultation {
   /* Group 3 */
@@ -82,9 +120,8 @@ h2 {
 .pricing__buttons {
   display: flex;
   justify-content: center;
-  gap: 130px;
+  gap: 10px;
   flex-wrap: wrap;
-  margin: 30px;
 }
 
 .button {
@@ -142,7 +179,6 @@ h2 {
 }
 
 .items {
-  width: 95%;
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
   gap: 5px;
@@ -167,7 +203,7 @@ h2 {
 
 .item img {
   display: block;
-  height: 300px;
+  height: 175px;
   object-fit: cover;
   margin: auto;
   margin-bottom: 20px;
@@ -231,7 +267,7 @@ h2 {
   top: 50%; /* Центр блока по вертикали */
   left: 60%;
   right: 0;
-  width: 600%;
+  width: 445%;
   height: 2px; /* Толщина линии */
   background-color: #15d1d9; /* Цвет линии */
   transform: translateY(-50%); /* Уточняем центрирование */
@@ -263,7 +299,7 @@ h2 {
   background-image: url("../images-prices/contact_coachImage.png");
   max-width: 1160px;
   height: 400px;
-  margin: auto;
+  margin: 50px auto;
   display: flex; /* Используем Flexbox */
   justify-content: center; /* Горизонтальное центрирование */
   align-items: center; /* Вертикальное центрирование */
@@ -289,7 +325,7 @@ h2 {
 .contact__buttons {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -382,25 +418,6 @@ h2 {
 
   .container {
     width: 100%; /* Делаем ширину контейнера максимально адаптивной */
-  }
-
-  .pricing__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
-    gap: 0px; /* Зазор между колонками, можно изменить по необходимости */
-    width: 100%; /* Гарантия, что сетка занимает всю ширину контейнера */
-    box-sizing: border-box; /* Учитываем отступы */
-  }
-
-  .pricing__left {
-    display: flex; /* Включаем Flexbox для блока */
-    flex-direction: column; /* Текст остаётся вертикальным */
-    justify-content: center; /* Центрирование по вертикали */
-    align-items: center; /* Центрирование по горизонтали (слева) */
-    height: 100%; /* Убедимся, что блок занимает всю высоту */
-    box-sizing: border-box; /* Учитываем отступы в расчёте размеров */
-    background-image: url("../images-prices/curtain_euro_cleaning.png");
-    object-fit: contain;
   }
 
   /* Кнопки рассчета стоимости и картинки  */
@@ -497,21 +514,87 @@ h2 {
   }
 
   .step__number::before {
-    width: calc(24vw + 5px);
+    width: 400%;
   }
 
-  .item img {
-    height: 200px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
   .item img {
     height: 160px;
   }
 }
 
+@media (max-width: 1250px) {
+
+  .side-banners__content {
+    width: 1160px;
+    display: block;
+    padding-bottom: 100px;
+  }
+  .side-banners__right,
+  .side-banners__left {
+    height: auto;
+  }
+}
+
+@media (max-width: 1160px) {
+  .step__number::before {
+    width: 550%;
+  }
+
+  .side-banners__content {
+    height: auto;
+  }
+  .side-banners__right,
+  .side-banners__left {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .side-banners__content {
+    padding-bottom: 10px;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .item img {
+    height: 160px;
+  }
+
+  .side-banners__content {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .step__number::before {
+    width: 400%;
+  }
+}
+
 @media screen and (max-width: 800px) {
+
+  .pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
+    gap: 0px; /* Зазор между колонками, можно изменить по необходимости */
+    width: 100%; /* Гарантия, что сетка занимает всю ширину контейнера */
+    box-sizing: border-box; /* Учитываем отступы */
+  }
+
+  .pricing__left {
+    display: flex; /* Включаем Flexbox для блока */
+    flex-direction: column; /* Текст остаётся вертикальным */
+    justify-content: center; /* Центрирование по вертикали */
+    align-items: center; /* Центрирование по горизонтали (слева) */
+    height: 100%; /* Убедимся, что блок занимает всю высоту */
+    box-sizing: border-box; /* Учитываем отступы в расчёте размеров */
+    background-image: url("../images-prices/curtain_euro_cleaning.png");
+    object-fit: contain;
+  }
+
+  .pricing__banner {
+    display: none;
+  }
+
   .cleaning__form {
     border-color: #15d1d9; /* New border color for smaller screens */
     border-radius: 10px;
@@ -628,7 +711,7 @@ h2 {
     top: 100%; /* Смещаем элемент вниз за пределы родительского элемента */
     left: 50%;
     transform: translateX(-50%); /* Центрируем элемент по горизонтали */
-    width: 100%; /* Устанавливаем ширину элемента */
+    width: 95%; /* Устанавливаем ширину элемента */
     margin: 0px;
   }
   .cleaning {
@@ -748,6 +831,14 @@ h2 {
   .carousel__button img {
     width: 45px;
     height: 45px;
+  }
+
+  .side-banners__left {
+    display: none;
+  }
+
+  .side-banners__right {
+    display: none;
   }
 }
 
