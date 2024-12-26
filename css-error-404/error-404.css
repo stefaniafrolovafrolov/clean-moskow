@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", Arial, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  --color-primary: rgba(21, 209, 217, 1);
+  --color-black: rgba(0, 0, 0, 1);
+}
+
+.page__error {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--color-primary);
+}
+
+.error__content {
+  width: calc(1000 / 1920 * 100%);
+}
+
+.error__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 130px;
+  text-transform: uppercase;
+}
+
+.error__subtitle {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 50px;
+  padding: 20px 0 90px 0;
+  letter-spacing: 0.01em;
+  font-style: italic;
+}
+
+.error__button {
+  border-radius: 5px;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+  animation-duration: 0.04s;
+  border: 1px solid var(--color-black);
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  width: 390px;
+  height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .error__content {
+    width: 300px;
+  }
+
+  .error__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .error__subtitle {
+    font-size: 17px;
+    line-height: 17px;
+    padding: 10px 0 30px 0;
+    margin: 0;
+  }
+
+  .error__button {
+    width: 280px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .error__content {
+    width: 750px;
+  }
+
+  .error__title {
+    font-size: 90px;
+    line-height: 100px;
+  }
+
+  .error__subtitle {
+    font-size: 35px;
+    line-height: 38px;
+    padding: 15px 0 60px 0;
+    margin: 0;
+  }
+
+  .error__button {
+    width: 350px;
+    height: 35px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1759px) {
+  .error__content {
+    width: 1000px;
+  }
+
+  .error__title {
+    font-size: 100px;
+    line-height: 110px;
+  }
+
+  .error__subtitle {
+    font-size: 38px;
+    line-height: 40px;
+    padding: 18px 0 70px 0;
+    margin: 0;
+  }
+
+  .error__button {
+    width: 390px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

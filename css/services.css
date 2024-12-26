@@ -159,6 +159,7 @@
 .services__instructions-text {
   font-size: 14px;
   color: var(--color-secondary);
+ /* max-width: 207px;*/
 }
 .hidden-on-desctop-services {
   display: none;

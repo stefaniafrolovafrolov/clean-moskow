@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="./css/index.css">
     <link href="./css-blog/index.css" rel="stylesheet" />
     <link href="./fonts/Actay/stylesheet.css" rel="stylesheet" />
     <link href="./fonts/Roboto/stylesheet.css" rel="stylesheet" />
@@ -68,7 +69,7 @@
                     id="hamburger-menu__toggle"
                     type="checkbox"
                 />
-                <div class="hamburger-menu__wrapper"></div>
+                <div class="hamburger-menu__wrapper hamburger-menu__wrapper_blog_margin"></div>
                 <label class="hamburger-menu__button" for="hamburger-menu__toggle">
                     <span></span>
                 </label>
@@ -180,19 +181,24 @@
     </header>
 
       <main class="content">
+       
         <section class="banner__questions">
           <div class="banner__questions-wrap">
-            <h1 class="banner__questions-title">Наши цены на химчистку самые приятные</h1>
+            <h1 class="banner__questions-title"><span class="banner__questions-span-title">Наши цены на химчистку</span> самые приятные</h1>
             <p class="banner__questions-subtitle">15% скидка всем новым клиентам !
-              Антибактериальная обработка в подарок
+              <span class="banner__questions-span">Антибактериальная обработка в подарок</span>
             </p>
           </div>
         </section>
+       
         <div class="container">
+          
+         
           <section class="bg-right"></section>
           <section class="bg-left"></section>
+
           <section class="advantages">
-            <article>
+            <article class="article">
               <div class="advantages__container">
                 <div class="advantages__wpapper  advantages__mb advantages__order1">
                   <img src="./images-blog/advantages-1.png" class="advantages__images-blog advantages__none" alt="advantages-1" />
@@ -378,9 +384,211 @@
               </div>
             </article>
           </section>
+
+
           <section class="cost">
             <div class="cost__container">
-              <h4 class="cost__title">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <h2 class="services__title">
+                Как рассчитать точную стоимость и сделать заказ?
+              </h2>
+              <div class="services__instructions">
+                <div class="services__line-box hidden-on-mobile">
+                  <div class="services__circle">1</div>
+                  <div class="services_line"></div>
+                  <div class="services__circle">2</div>
+                  <div class="services_line"></div>
+                  <div class="services__circle">3</div>
+                  <div class="services_line"></div>
+                  <div class="services__circle">4</div>
+                </div>
+                <div class="services__card-box">
+                  <div class="services__instructions-card">
+                    <div class="services__circle hidden-on-desctop-services">
+                      1
+                    </div>
+                    <p class="services__instructions-title">Отправьте фото</p>
+                    <p class="services__instructions-text">
+                      Отправить фото на WhatsApp по номеру 8 (910) 089-90-01
+                    </p>
+                  </div>
+                  <div class="services__instructions-card">
+                    <div class="services__circle hidden-on-desctop-services">
+                      2
+                    </div>
+                    <p class="services__instructions-title">Точный рассчет</p>
+                    <p class="services__instructions-text">
+                      Произведём оценку и скажем стоимость выезда сотрудника
+                    </p>
+                  </div>
+                  <div class="services__instructions-card">
+                    <div class="services__circle hidden-on-desctop-services">
+                      3
+                    </div>
+                    <p class="services__instructions-title">Сделать заказ</p>
+                    <p
+                      class="services__instructions-text services__instructions-text_width"
+                    >
+                      Уточните день, время и адрес для выезда сотрудника
+                    </p>
+                  </div>
+                  <div class="services__instructions-card">
+                    <div class="services__circle hidden-on-desctop-services">
+                      4
+                    </div>
+                    <p class="services__instructions-title">
+                      Принимайте работу
+                    </p>
+                    <p class="services__instructions-text">
+                      После получения услуги проверьте качество и оставьте свой
+                      отзыв
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="socials socials_banner">
+              <p class="socials-text">
+                Для получения консультации по чистке и точного расчёта стоимости
+                заказа, вы можете прислать нам фотографии вашей мебели, матраса
+                или штор в WhatsApp, Telegram или ВКонтакте.
+              </p>
+              <div class="socials__buttonbox hide-on-mobile-socials-banner">
+                <a href="" class="socials__buttonbox-button">
+                  <p class="socials__buttonbox-button--text">
+                    <b>Написать</b> в  WhatsApp
+                  </p>
+                  <img
+                    src="./icons/whatsapp.svg"
+                    alt="icon"
+                    class="socials__buttonbox-button--img"
+                  />
+                </a>
+                <a href="" class="socials__buttonbox-button">
+                  <p class="socials__buttonbox-button--text">
+                    <b>Написать</b> в  Telegram
+                  </p>
+                  <img
+                    src="./icons/telegram.svg"
+                    alt="icon"
+                    class="socials__buttonbox-button--img"
+                  />
+                </a>
+                <a href="" class="socials__buttonbox-button">
+                  <p class="socials__buttonbox-button--text">
+                    <b>Написать</b> в  VK
+                  </p>
+                  <img
+                    src="./icons/vkontakte.svg"
+                    alt="icon"
+                    class="socials__buttonbox-button--img"
+                  />
+                </a>
+              </div>
+            </section>
+            <section class="socials hide-on-desctop-socials-banner">
+              <h2 class="socials__title">мы в других соцсетях</h2>
+              <div class="socials__buttonbox">
+                <a href="" class="socials__buttonbox-button">
+                  <p class="socials__buttonbox-button--text">
+                    <b>Написать</b> в  WhatsApp
+                  </p>
+                  <img
+                    src="./icons/whatsapp.svg"
+                    alt="icon"
+                    class="socials__buttonbox-button--img"
+                  />
+                </a>
+                <a href="" class="socials__buttonbox-button">
+                  <p class="socials__buttonbox-button--text">
+                    <b>Написать</b> в  Telegram
+                  </p>
+                  <img
+                    src="./icons/telegram.svg"
+                    alt="icon"
+                    class="socials__buttonbox-button--img"
+                  />
+                </a>
+                <a href="" class="socials__buttonbox-button">
+                  <p class="socials__buttonbox-button--text">
+                    <b>Написать</b> в  VK
+                  </p>
+                  <img
+                    src="./icons/vkontakte.svg"
+                    alt="icon"
+                    class="socials__buttonbox-button--img"
+                  />
+                </a>
+              </div>
+            </section>
+            <section class="form form_margin-bottom">
+              <div class="form__leftside">
+                <p class="form__title">EURO DRY ClEANING</p>
+                <p class="form__title form__title_secondary">
+                  Спасет вашу мебель
+                </p>
+                <img
+                  src="./images/man-cat1060.svg"
+                  alt="img-for-form"
+                  class="form__img"
+                />
+              </div>
+              <div class="form__rightside">
+                <p class="form__form-title">
+                  Придем к вам на помощь в любой ситуации!
+                </p>
+                <form action="#" method="post" class="form__form">
+                  <p class="form__form-text">Оставить заявку</p>
+
+                  <label for="name" class="form__label">Имя</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Имя"
+                    class="form__input"
+                    required
+                  />
+
+                  <label for="phone" class="form__label">Номер Телефона</label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="Телефон"
+                    class="form__input"
+                    required
+                  />
+
+                  <button type="submit" class="form__button">Отправить</button>
+                </form>
+              </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <!--  <h4 class="cost__title">
                 Как рассчитать точную стоимость и сделать заказ
               </h4>
               <hr class="cost__line" />
@@ -446,6 +654,8 @@
             </div>
           </section>
         </div>
+
+
         <section class="registration">
           <div class="registration__container">
             <div class="registration__content">
@@ -491,89 +701,125 @@
 
             </div>
           </div>
-        </section>
+        </section>-->
+
+
+
+
+
       </main>
       <footer class="footer">
         <div class="footer__content">
-            <div class="footer__block-lists">
-                <h6 class="footer__title">Для дома</h6>
-                <ul class="footer__lists">
-                    <li class="footer__lists-item">Химчистка диванов</li>
-                    <li class="footer__lists-item">Химчистка мягкой мебели</li>
-                    <li class="footer__lists-item">Химчистка кресел</li>
-                    <li class="footer__lists-item">Химчистка стульев</li>
-                    <li class="footer__lists-item">Химчистка ковров</li>
-                    <li class="footer__lists-item">Химчистка ковролина</li>
-                    <li class="footer__lists-item">Химчистка матрасов</li>
-                    <li class="footer__lists-item">Химчистка кровати</li>
-                    <li class="footer__lists-item">Химчистка штор</li>
-                    <li class="footer__lists-item">Срочная химчистка</li>
-                    <li class="footer__lists-item">Химчистка бархатных штор</li>
-                    <li class="footer__lists-item">Химчистка рулонных штор</li>
-                    <li class="footer__lists-item">Химчистка римских штор</li>
-                </ul>
+          <div class="footer__block-lists">
+            <h6 class="footer__title">Для дома</h6>
+            <ul class="footer__lists">
+              <li class="footer__lists-item">Химчистка диванов</li>
+              <li class="footer__lists-item">Химчистка мягкой мебели</li>
+              <li class="footer__lists-item">Химчистка кресел</li>
+              <li class="footer__lists-item">Химчистка стульев</li>
+              <li class="footer__lists-item">Химчистка ковров</li>
+              <li class="footer__lists-item">Химчистка ковролина</li>
+              <li class="footer__lists-item">Химчистка матрасов</li>
+              <li class="footer__lists-item">Химчистка кровати</li>
+              <li class="footer__lists-item">Химчистка штор</li>
+              <li class="footer__lists-item">Срочная химчистка</li>
+              <li class="footer__lists-item">Химчистка бархатных штор</li>
+              <li class="footer__lists-item">Химчистка рулонных штор</li>
+              <li class="footer__lists-item">Химчистка римских штор</li>
+            </ul>
+          </div>
+
+          <div class="footer__information">
+            <h6 class="footer__title">Информация</h6>
+            <ul class="footer__lists footer__lists_center">
+              <li class="footer__lists-item">
+                <a href="./index.html" class="footer__lists-link">Главная</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./prices.html" class="footer__lists-link">Цены</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./photogallery.html" class="footer__lists-link"
+                  >Фото</a
+                >
+              </li>
+              <li class="footer__lists-item">
+                <a href="./blog.html" class="footer__lists-link">Блог</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./comments.html" class="footer__lists-link">Отзывы</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./contacts.html" class="footer__lists-link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__openingHours">
+            <h6 class="footer__title">
+              Время работы: <br />
+              <span class="footer__title_span">Пн-Вс 09:00-23:00</span>
+            </h6>
+
+            <p class="footer__text">Работаем в Москве и МО</p>
+          </div>
+
+          <div class="footer__contacts">
+            <h6 class="footer__title display-none750px">Наши контакты</h6>
+
+            <a href="+79100899001" class="footer__text footer__text_phone"
+              >8 (910) 089-90-01</a
+            >
+
+            <div class="footer__socials">
+              <a
+                class="footer__link"
+                href="https://telegram.me/+79100899001"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/telegramIcon.png"
+                  alt="иконка телеграм"
+                />
+              </a>
+
+              <a
+                class="footer__link"
+                href="https://vk.com/eurodrycleaningservice"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/vkontakteIcon.png"
+                  alt="иконка вконтакте"
+                />
+              </a>
+
+              <a
+                class="footer__link"
+                href="https://wa.me/+79100899001"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/whatsapIcon.png"
+                  alt="иконка ватсап"
+                />
+              </a>
             </div>
-
-            <div class="footer__information">
-                <h6 class="footer__title">Информация</h6>
-                <ul class="footer__lists footer__lists_center">
-                    <li class="footer__lists-item">
-                        <a href="#" class="footer__lists-link">Главная</a>
-                    </li>
-                    <li class="footer__lists-item">
-                        <a href="/prices" class="footer__lists-link">Цены</a>
-                    </li>
-                    <li class="footer__lists-item">
-                        <a href="/photos" class="footer__lists-link">Фото</a>
-                    </li>
-                    <li class="footer__lists-item">
-                        <a href="/blog" class="footer__lists-link">Блог</a>
-                    </li>
-                    <li class="footer__lists-item">
-                        <a href="/reviews" class="footer__lists-link">Отзывы</a>
-                    </li>
-                    <li class="footer__lists-item">
-                        <a href="/contacts" class="footer__lists-link">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__openingHours">
-                <h6 class="footer__title">
-                    Время работы: <br />
-                    Пн-Вс 09:00-23:00
-                </h6>
-
-                <p class="footer__text">Работаем в Москве и МО</p>
-            </div>
-
-            <div class="footer__contacts">
-                <h6 class="footer__title display-none750px">Наши контакты</h6>
-
-                <a href="+79100899001" class="footer__text">8 (910) 089-90-01</a>
-
-                <div class="footer__socials">
-                    <img
-                        class="footer__icon"
-                        src="./images-blog/telegramIcon.png"
-                        alt="иконка телеграм"
-                    />
-                    <img
-                        class="footer__icon"
-                        src="./images-blog/vkontakteIcon.png"
-                        alt="иконка вконтакте"
-                    />
-                    <img
-                        class="footer__icon"
-                        src="./images-blog/whatsapIcon.png"
-                        alt="иконка ватсап"
-                    />
-                </div>
-            </div>
+          </div>
         </div>
 
-        <p class="footer__paragraph">Euro Dry Cleaning Выездная химчистка мебели.</p>
-    </footer>
+        <p class="footer__paragraph">
+          Euro Dry Cleaning Выездная химчистка мебели.
+        </p>
+      </footer>
     </div>
   </body>
 

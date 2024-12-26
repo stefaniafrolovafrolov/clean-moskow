@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./error-404.css" rel="stylesheet" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link href="./fonts/inter/stylesheet.css" rel="stylesheet" />
+    <link href="./fonts/roboto/stylesheet.css" rel="stylesheet" />
+    <link href="./css-error-404/error-404.css" rel="stylesheet" />
     <title>error-404</title>
   </head>
 
   <body class="page">
-         
-    <!-- Секция error -->
-
-      <section class="error page__error">
-        <div class="error__content">
-          <h1 class="error__title">404 error</h1>
-            <p class="error__subtitle">К сожалению, страница не найдена.</p>
-              <button class="error__button">Вернуться на главную</button>
-        </div>
-      </section>
+    <section class="error page__error">
+      <div class="error__content">
+        <h1 class="error__title">404 error</h1>
+        <p class="error__subtitle">К сожалению, страница не найдена.</p>
+        <a class="error__redirect" href="./index.html">
+          <button class="error__button">Вернуться на главную</button>
+        </a>
+      </div>
+    </section>
   </body>
 </html>

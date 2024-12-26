@@ -6,9 +6,11 @@
   display: flex;
   justify-content: left;
 }
+
 .banner__content {
   max-width: 600px;
 }
+
 .banner__title::before {
   font-family: "Roboto", sans-serif;
   content: "Не устроит результат? Вернём вам деньги!";
@@ -150,7 +152,7 @@
     height: 60px;
     max-width: 280px;
     padding: 15px 15px;
-}
+  }
 
   .banner__title::before {
     margin-bottom: 10px;
@@ -165,10 +167,8 @@
   }
 
   .banner__button-subtext {
-   
     font-size: 10px;
-   
-}
+  }
   .banner__button {
     height: 85px;
     width: 98%;

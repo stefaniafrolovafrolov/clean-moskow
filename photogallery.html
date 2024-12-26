@@ -1,355 +1,532 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link href="./fonts/inter/stylesheet.css" rel="stylesheet" />
     <link href="./fonts/lato/stylesheet.css" rel="stylesheet" />
     <link href="./fonts/roboto/stylesheet.css" rel="stylesheet" />
     <link href="./fonts/stengazeta/stylesheet.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css-photogallery/styles.css"> 
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css-photogallery/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link href="./normalize.css" type="text/css" rel="stylesheet" />
     <title>Фотогалерея</title>
-</head>
-<body>
-
-   <header class="header">
-      <div class="header__content">
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <div class="header__content">
           <img
-              class="header__logo"
-              src="./images/logo.png"
-              alt="Логотип евро химчистки, EURO DRY CLEANING"
+            class="header__logo"
+            src="./images/logo.png"
+            alt="Логотип евро химчистки, EURO DRY CLEANING"
           />
 
           <nav class="header__navigation">
-              <ul class="header__nav-lists">
-                  <li class="header__nav-item">Главная</li>
-                  <li class="header__nav-item">Цены</li>
-                  <li class="header__nav-item">Фото</li>
-                  <li class="header__nav-item">Блог</li>
-                  <li class="header__nav-item">Отзывы</li>
-                  <li class="header__nav-item">Контакты</li>
-              </ul>
+            <ul class="header__nav-lists">
+              <li class="header__nav-item">Главная</li>
+              <li class="header__nav-item">Цены</li>
+              <li class="header__nav-item">Фото</li>
+              <li class="header__nav-item">Блог</li>
+              <li class="header__nav-item">Отзывы</li>
+              <li class="header__nav-item">Контакты</li>
+            </ul>
           </nav>
 
           <a href="tel:+79100899001" class="header__button">
-              <span class="header__textTelephone">8 (910) 089-90-01</span>
+            <span class="header__textTelephone">8 (910) 089-90-01</span>
           </a>
           <!--<div class="burger-menu">
               <div class="burger-line"></div>
               <div class="burger-line burger-line_short"></div>
               <div class="burger-line"></div>
           </div>-->
-      </div>
+        </div>
 
-      <p class="header__text">
+        <p class="header__text">
           Время работы: <br />
           Пн-Вс 09:00-23:00 <br />
           Работаем в Москве и МО
-      </p>
-  </header>
+        </p>
+      </header>
 
-  <header class="header-mobile">
-      <div class="header-mobile__content">
+      <header class="header-mobile">
+        <div class="header-mobile__content">
           <a class="header-mobile__link" href="./index.html">
-              <img
-                  class="header__logo"
-                  src="./images/logo.png"
-                  alt="Логотип евро химчистки, EURO DRY CLEANING"
-              />
+            <img
+              class="header__logo"
+              src="./images/logo.png"
+              alt="Логотип евро химчистки, EURO DRY CLEANING"
+            />
           </a>
 
           <div class="hamburger-menu">
-              <input
-                  class="hamburger-menu__toggle"
-                  id="hamburger-menu__toggle"
-                  type="checkbox"
-              />
-              <div class="hamburger-menu__wrapper"></div>
-              <label class="hamburger-menu__button" for="hamburger-menu__toggle">
-                  <span></span>
-              </label>
+            <input
+              class="hamburger-menu__toggle"
+              id="hamburger-menu__toggle"
+              type="checkbox"
+            />
+            <div class="hamburger-menu__wrapper"></div>
+            <label class="hamburger-menu__button" for="hamburger-menu__toggle">
+              <span></span>
+            </label>
 
-              <div
-                  class="hamburger-menu__box hamburger-menu__box_padding hamburger-menu__box_padding_min"
-              >
-                  <a class="header__link" href="./index.html">
-                      <img
-                          class="header__logo"
-                          src="./images/logo-white.svg"
-                          alt="Логотип евро химчистки, EURO DRY CLEANING"
-                      />
+            <div
+              class="hamburger-menu__box hamburger-menu__box_padding hamburger-menu__box_padding_min"
+            >
+              <a class="header__link" href="./index.html">
+                <img
+                  class="header__logo"
+                  src="./images/logo-white.svg"
+                  alt="Логотип евро химчистки, EURO DRY CLEANING"
+                />
+              </a>
+              <nav class="header__navigation_burger">
+                <ul class="hamburger-menu__container">
+                  <li>
+                    <a
+                      class="hamburger-menu__item hamburger-menu__item_padding"
+                      href="./index.html"
+                      >Главная</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./aboutMe.html"
+                      >Цены</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./prices.html"
+                      >Фото</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./questions.html"
+                      >Блог</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./contacts.html"
+                      >Отзывы</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./contacts.html"
+                      >Контакты</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="hamburger-menu__containerBoottom">
+                <div class="hamburger-menu__openingHours">
+                  <h6 class="hamburger-menu__openingHours-title">
+                    Время работы: <br />
+                    Пн-Вс 09:00-23:00
+                  </h6>
+
+                  <p class="hamburger-menu__openingHours-text">
+                    Работаем в Москве и МО
+                  </p>
+                  <p class="hamburger-menu__openingHours-number">
+                    8 (910) 089-90-01
+                  </p>
+                </div>
+                <div class="hamburger-menu__containerBoottomTwo">
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://telegram.me/+79168829426"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon hamburger-menu__icon_margin"
+                      src="./icons/telegram.svg"
+                      alt="иконка Telegram"
+                    />
                   </a>
-                  <nav class="header__navigation_burger">
-                      <ul class="hamburger-menu__container">
-                          <li>
-                              <a
-                                  class="hamburger-menu__item hamburger-menu__item_padding"
-                                  href="./index.html"
-                                  >Главная</a
-                              >
-                          </li>
-                          <li>
-                              <a class="hamburger-menu__item" href="./aboutMe.html"
-                                  >Цены</a
-                              >
-                          </li>
-                          <li>
-                              <a class="hamburger-menu__item" href="./prices.html"
-                                  >Фото</a
-                              >
-                          </li>
-                          <li>
-                              <a class="hamburger-menu__item" href="./questions.html"
-                                  >Блог</a
-                              >
-                          </li>
-                          <li>
-                              <a class="hamburger-menu__item" href="./contacts.html"
-                                  >Отзывы</a
-                              >
-                          </li>
-                          <li>
-                              <a class="hamburger-menu__item" href="./contacts.html"
-                                  >Контакты</a
-                              >
-                          </li>
-                      </ul>
-                  </nav>
 
-                  <div class="hamburger-menu__containerBoottom">
-                      <div class="hamburger-menu__openingHours">
-                          <h6 class="hamburger-menu__openingHours-title">
-                              Время работы: <br />
-                              Пн-Вс 09:00-23:00
-                          </h6>
-
-                          <p class="hamburger-menu__openingHours-text">
-                              Работаем в Москве и МО
-                          </p>
-                          <p class="hamburger-menu__openingHours-number">
-                              8 (910) 089-90-01
-                          </p>
-                      </div>
-                      <div class="hamburger-menu__containerBoottomTwo">
-                          <a
-                              class="hamburger-menu__social"
-                              href="https://telegram.me/+79168829426"
-                              target="_blank"
-                              rel="noreferrer"
-                          >
-                              <img
-                                  class="hamburger-menu__icon hamburger-menu__icon_margin"
-                                  src="./icons/telegram.svg"
-                                  alt="иконка Telegram"
-                              />
-                          </a>
-
-                          <a
-                              class="hamburger-menu__social"
-                              href="https://vk.com/lami_ko"
-                              target="_blank"
-                              rel="noreferrer"
-                          >
-                              <img
-                                  class="hamburger-menu__icon hamburger-menu__icon_margin"
-                                  src="./icons/vkontakte.svg"
-                                  alt="иконка Vkontakte"
-                              />
-                          </a>
-                          <a
-                              class="hamburger-menu__social"
-                              href="https://wa.me/+79168829426"
-                              target="_blank"
-                              rel="noreferrer"
-                          >
-                              <img
-                                  class="hamburger-menu__icon"
-                                  src="./icons/whatsapp.svg"
-                                  alt="иконка WhatsApp"
-                              />
-                          </a>
-                      </div>
-                  </div>
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://vk.com/lami_ko"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon hamburger-menu__icon_margin"
+                      src="./icons/vkontakte.svg"
+                      alt="иконка Vkontakte"
+                    />
+                  </a>
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://wa.me/+79168829426"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon"
+                      src="./icons/whatsapp.svg"
+                      alt="иконка WhatsApp"
+                    />
+                  </a>
+                </div>
               </div>
+            </div>
           </div>
-      </div>
-  </header>
+        </div>
+      </header>
 
-
-
-
-    <main class="content">
-         <div class="main">
-            <h1 class="main__title">Фото до/после</h1>
-         </div>
-         <section class="description">
+      <main class="content">
+        <div class="main">
+          <h1 class="main__title">Фото до/после</h1>
+        </div>
+        <section class="description">
+          <p>
+            Для получения консультации по чистке и точного расчёта стоимости
+            заказа, вы можете прислать нам фотографии вашей мебели, матраса или
+            штор в WhatsApp или Telegram
+          </p>
+        </section>
+        <section class="social-contacts">
+          <div class="social-contacts__item">
             <p>
-               Для получения консультации по чистке и точного расчёта стоимости заказа,
-               вы можете прислать нам фотографии вашей мебели, матраса или штор в WhatsApp или Telegram
+              Написать в
+              <span class="social-contacts__item-text">WhatsApp</span>
             </p>
-         </section>
-         <section class="social-contacts">
-            <div class="social-contacts__item">
-               <p>Написать в <span class="social-contacts__item-text">WhatsApp</span></p>
-               <img src="./images-photogallery/whatsapp.png" alt="icon">
-            </div>
-            <div class="social-contacts__item">
-               <p>Написать в <span class="social-contacts__item-text">Telegram</span></p>
-               <img src="./images-photogallery/telegram.png" alt="icon">
-            </div>
-            <div class="social-contacts__item">
-               <p>Написать в <span class="social-contacts__item-text">VKontakte</span></p>
-               <img src="./images-photogallery/vkontakte.png" alt="icon">
-            </div>
-         </section>
-         <section class="w320-images">
-            <div class="w320-images__item visible">
-               <img src="./images-photogallery/w320_photo1-12.png" alt="">
-            </div>
-            <div class="w320-images__item">
-               <img src="./images-photogallery/w320_photo13-24.png" alt="">
-            </div>
-            <div class="w320-images__item">
-               <img src="./images-photogallery/w320_photo25-28.png" alt="">
-            </div>
-            <div class="w320-images__item">
-               <img src="./images-photogallery/w320_photo29-36.png" alt="">
-            </div>
-            <button class="w320-images__btn">
-               <span>Развернуть</span>
-               <img src="./images-photogallery/down.png" alt="">
-            </button>
-         </section>
-         <section class="images">
-            <div class="images__item">
-            <img src="./images-photogallery/w1024_block1.png" alt="">
-            </div>
-            <div class="images__item">
-               <img src="./images-photogallery/w1024_block2.png" alt="">
-            </div>
-            <div class="images__item">
-               <img src="./images-photogallery/w1024_block3.png" alt="">
-            </div>
-            <div class="images__item">
-               <img src="./images-photogallery/w1024_block4.png" alt="">
-            </div>
-            <div class="images__item">
-               <img src="./images-photogallery/w1024_block5.png" alt="">
-            </div>
-            <div class="images__item">
-               <img src="./images-photogallery/w1024_block6.png" alt="">
-            </div>
-            <div class="images__item">
-               <img src="./images-photogallery/w1024_block7.png" alt="">
-            </div>
-         </section>
-         <section class="photo">
-            <div class="photo__container">
-               <img src="./images-photogallery/sofa-before-1.png" alt="">
-               <img src="./images-photogallery/sofa-after-1.png" alt="">
-               <img src="./images-photogallery/sofa-before-2.png" alt="">
-               <img src="./images-photogallery/sofa-after-2.png" alt="">
-               <img src="./images-photogallery/sofa-before-3.png" alt="">
-               <img src="./images-photogallery/sofa-after-3.png" alt="">
-               <img src="./images-photogallery/sofa-before-4.png" alt="">
-               <img src="./images-photogallery/sofa-after-4.png" alt="">
-               <img src="./images-photogallery/sofa-before-5.png" alt="">
-               <img src="./images-photogallery/sofa-after-5.png" alt="">
-               <img src="./images-photogallery/sofa-before-6.png" alt="">
-               <img src="./images-photogallery/sofa-after-6.png" alt="">
-               <img src="./images-photogallery/chair-before-2.png" alt="">
-               <img src="./images-photogallery/chair-after-2.png" alt="">
-               <img src="./images-photogallery/bed-before.png" alt="">
-               <img src="./images-photogallery/bed-after.png" alt="">
-               <img src="./images-photogallery/carpet-before-2.png" alt="">
-               <img src="./images-photogallery/carpet-after-2.png" alt="">       
-               <img src="./images-photogallery/chair-before-1.png" alt="">
-               <img src="./images-photogallery/chair-after-1.png" alt="">
-            </div>
+            <img src="./images-photogallery/whatsapp.png" alt="icon" />
+          </div>
+          <div class="social-contacts__item">
+            <p>
+              Написать в
+              <span class="social-contacts__item-text">Telegram</span>
+            </p>
+            <img src="./images-photogallery/telegram.png" alt="icon" />
+          </div>
+          <div class="social-contacts__item">
+            <p>
+              Написать в
+              <span class="social-contacts__item-text">VKontakte</span>
+            </p>
+            <img src="./images-photogallery/vkontakte.png" alt="icon" />
+          </div>
+        </section>
+        <section class="w320-images">
+          <div class="w320-images__item visible">
+            <img
+              src="./images-photogallery/w320_photo1-12.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <div class="w320-images__item">
+            <img
+              src="./images-photogallery/w320_photo13-24.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <div class="w320-images__item">
+            <img
+              src="./images-photogallery/w320_photo25-28.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <div class="w320-images__item">
+            <img
+              src="./images-photogallery/w320_photo29-36.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <button class="w320-images__btn">
+            <span>Развернуть</span>
+            <img
+              src="./images-photogallery/down.png"
+              alt="на картинке изображение моих работы"
+            />
+          </button>
+        </section>
+        <section class="images">
+          <div class="images__item">
+            <img
+              src="./images-photogallery/w1024_block1.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <div class="images__item">
+            <img
+              src="./images-photogallery/w1024_block2.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <div class="images__item">
+            <img
+              src="./images-photogallery/w1024_block3.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <div class="images__item">
+            <img
+              src="./images-photogallery/w1024_block4.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <div class="images__item">
+            <img
+              src="./images-photogallery/w1024_block5.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <div class="images__item">
+            <img
+              src="./images-photogallery/w1024_block6.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+          <div class="images__item">
+            <img
+              src="./images-photogallery/w1024_block7.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+        </section>
+        <section class="photo">
+          <div class="photo__container">
+            <img
+              src="./images-photogallery/sofa-before-1.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-1.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-2.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-2.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-3.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-3.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-4.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-4.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-5.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-5.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-6.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-6.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/chair-before-2.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/chair-after-2.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/bed-before.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/bed-after.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/carpet-before-2.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/carpet-after-2.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/chair-before-1.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/chair-after-1.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
 
-            <div class="photo__container">
-               <img src="./images-photogallery/sofa-before-7.png" alt="">
-               <img src="./images-photogallery/sofa-after-7.png" alt="">
-               <img src="./images-photogallery/sofa-before-8.png" alt="">
-               <img src="./images-photogallery/sofa-after-8.png" alt="">
-               <img src="./images-photogallery/sofa-before-9.png" alt="">
-               <img src="./images-photogallery/sofa-after-9.png" alt="">
-               <img src="./images-photogallery/sofa-before-10.png" alt="">
-               <img src="./images-photogallery/sofa-after-10.png" alt="">
-               <img src="./images-photogallery/sofa-before-11.png" alt="">
-               <img src="./images-photogallery/sofa-after-11.png" alt="">
-               <img src="./images-photogallery/carpet-before.png" alt="">
-               <img src="./images-photogallery/carpet-after.png" alt="">
-               <img src="./images-photogallery/chair-before-3.png" alt="">
-               <img src="./images-photogallery/chair-after-3.png" alt="">
-               <img src="./images-photogallery/sofa-before-13.png" alt="">
-               <img src="./images-photogallery/sofa-after-13.png" alt="">
-               <img src="./images-photogallery/sofa-before-14.png" alt="">
-               <img src="./images-photogallery/sofa-after-14.png" alt="">
-               <img src="./images-photogallery/sofa-before-12.png" alt="">
-               <img src="./images-photogallery/sofa-after-12.png" alt="">
-            </div>             
-         </section> 
-       
-         <section class="contact-us">
-            <img src="./images-photogallery/bg1.png" class="contact-us__img" alt="">
-            <div class="contact-us__container">
-               <div class="contact-us__container-top">
-                  <div class="contact-us__container-top-div">
-                     <p class="contact-us__container-top-p">
-                        Свяжитесь с нами для консультации и точного расчёта стоимости чистки! 
-                        Просто отправьте фотографии вашей мебели, матраса или штор в WhatsApp 
-                        или Telegram, и мы ответим на ваши вопросы
-                     </p>
-                  </div>
-                  <div class="contact-us__container-social">
-                     <div class="container-social-item">
-                        <p>Написать в <span class="text">WhatsApp</span></p>
-                        <img src="./images-photogallery/whatsapp.png" alt="icon">
-                     </div>
-                     <div class="container-social-item">
-                     <p>Написать в <span class="text">Telegram</span></p>
-                     <img src="./images-photogallery/telegram.png" alt="icon">
-                     </div>
-                     <div class="container-social-item">
-                     <p>Написать в <span class="text">VKontakte</span></p>
-                     <img src="./images-photogallery/vkontakte.png" alt="icon">
-                     </div>
-                  </div>
-               </div>
-               <div class="contact-us__discount">
-                  <img src="./images-photogallery/img_discount-block.png" alt="">
-               </div>
-               <div class="contact-us__container-bottom">
-                  <div class="contact-us__container-bottom-img">
-                     <img src="./images-photogallery/contact_us-img.png" alt="">
-                  </div>
-                  <div class="form">
-                     <div class="form__content">
-                        <p class="form__content-p">Придем к вам на помощь в любой ситуации !</p>
-                        <form>
-                           <p>Оставить заявку</p>
-                           <div class="form-container">
-                              <label for="name">Имя</label>
-                              <input type="text" id="name" placeholder="Иван">
+          <div class="photo__container">
+            <img
+              src="./images-photogallery/sofa-before-7.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-7.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-8.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-8.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-9.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-9.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-10.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-10.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-11.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-11.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/carpet-before.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/carpet-after.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/chair-before-3.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/chair-after-3.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-13.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-13.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-14.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-14.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-before-12.png"
+              alt="на картинке изображение моих работы"
+            />
+            <img
+              src="./images-photogallery/sofa-after-12.png"
+              alt="на картинке изображение моих работы"
+            />
+          </div>
+        </section>
 
-                              <label for="phone">Телефон</label>
-                              <input type="phone" id="phone" placeholder="+7 999 999 99 99">
-                           </div>
-                           <button class="btn">Готово</button>
-                        </form>                      
-                     </div>
-                  </div>
-               </div>
+        <section class="contact-us">
+          <img
+            src="./images-photogallery/bg1.png"
+            class="contact-us__img"
+            alt="картинки со спреями для химчистки мебели"
+          />
+          <div class="contact-us__container">
+            <div class="contact-us__container-top">
+              <div class="contact-us__container-top-div">
+                <p class="contact-us__container-top-p">
+                  Свяжитесь с нами для консультации и точного расчёта стоимости
+                  чистки! Просто отправьте фотографии вашей мебели, матраса или
+                  штор в WhatsApp или Telegram, и мы ответим на ваши вопросы
+                </p>
+              </div>
+              <div class="contact-us__container-social">
+                <div class="container-social-item">
+                  <p>Написать в <span class="text">WhatsApp</span></p>
+                  <img src="./images-photogallery/whatsapp.png" alt="icon" />
+                </div>
+                <div class="container-social-item">
+                  <p>Написать в <span class="text">Telegram</span></p>
+                  <img src="./images-photogallery/telegram.png" alt="icon" />
+                </div>
+                <div class="container-social-item">
+                  <p>Написать в <span class="text">VKontakte</span></p>
+                  <img src="./images-photogallery/vkontakte.png" alt="icon" />
+                </div>
+              </div>
             </div>
-            <img src="./images-photogallery/bg2.png" class="contact-us__img" alt="">
-         </section>
-    </main>
+            <div class="contact-us__discount">
+              <img src="./images-photogallery/img_discount-block.png" alt="банер со скидкой 15% нашим клиентам" />
+            </div>
+            <div class="contact-us__container-bottom">
+              <div class="contact-us__container-bottom-img">
+                <img src="./images-photogallery/contact_us-img.png" alt="картинка мастер спасет вашу мебель" />
+              </div>
+              <div class="form">
+                <div class="form__content">
+                  <p class="form__content-p">
+                    Придем к вам на помощь в любой ситуации !
+                  </p>
+                  <form>
+                    <p>Оставить заявку</p>
+                    <div class="form-container">
+                      <label for="name">Имя</label>
+                      <input type="text" id="name" placeholder="Иван" />
 
-    <footer class="footer">
+                      <label for="phone">Телефон</label>
+                      <input
+                        type="phone"
+                        id="phone"
+                        placeholder="+7 999 999 99 99"
+                      />
+                    </div>
+                    <button class="btn">Готово</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./images-photogallery/bg2.png"
+            class="contact-us__img"
+            alt="картинки со спреями для химчистки мебели"
+          />
+        </section>
+      </main>
+
+      <footer class="footer">
         <div class="footer__content">
           <div class="footer__block-lists">
             <h6 class="footer__title">Для дома</h6>
@@ -461,7 +638,7 @@
           Euro Dry Cleaning Выездная химчистка мебели.
         </p>
       </footer>
-
-    <script src="./photogallery-scripts/index.js"></script> 
-</body>
-</html> 
+    </div>
+    <script src="./photogallery-scripts/index.js"></script>
+  </body>
+</html>
