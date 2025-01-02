@@ -11,7 +11,7 @@
     <link href="./fonts/stengazeta/stylesheet.css" rel="stylesheet" />
     <link href="./css/index.css" rel="stylesheet" />
     <link href="./css-prices/index.css" rel="stylesheet" />
-    <link href="./normalize.css" type="text/css" rel="stylesheet" />
+    <link href="./css/normalize.css" type="text/css" rel="stylesheet" />
     <title>Цены на химчистку</title>
   </head>
   <body class="page">
@@ -181,11 +181,20 @@
       </header>
 
       <main class="container">
-        <img
-          class="pricing__banner"
-          src="images-blog/banner-snapedit.png"
-          alt="Banner"
-        />
+        <div class="promo-banner__container">
+          <div class="promo-banner__text">
+            <h1 class="promo-banner__header">Наши цены на химчистку</h1>
+            <p class="promo-banner__description">
+              15% скидка всем новым клиентам!<br />
+              Антибактериальная обработка в подарок, гарантия результата.
+            </p>
+          </div>
+          <img
+            class="promo-banner__image"
+            src="./images-prices/banner.png"
+            alt="Banner"
+          />
+        </div>
         <section class="side-banners">
           <div class="side-banners__left"></div>
           <div class="side-banners__content">
@@ -208,7 +217,7 @@
                 </div>
                 <img
                   class="pricing__image"
-                  src="images-prices/euro_dry_cleaning.png"
+                  src="./images-prices/euro_dry_cleaning.png"
                   alt="Euro dry cleaning image"
                 />
               </div>
@@ -217,12 +226,12 @@
                 заказа, вы можете прислать нам фотографии вашей мебели, матраса
                 или штор в WhatsApp или Telegram.
               </p>
-              <div class="pricing__buttons">
+              <div class="pricing__buttons buttons">
                 <a href="#" class="pricing__button button">
                   <span class="pricing__button-text">Написать в WhatsApp</span>
                   <img
                     class="pricing__button-icon"
-                    src="images-prices/whatsappIcon.png"
+                    src="./images-prices/whatsappIcon.png"
                     alt="WhatsApp Icon"
                   />
                 </a>
@@ -230,7 +239,7 @@
                   <span class="pricing__button-text">Написать в Telegram</span>
                   <img
                     class="pricing__button-icon"
-                    src="images-prices/telegramIcon.png"
+                    src="./images-prices/telegramIcon.png"
                     alt="Telegram Icon"
                   />
                 </a>
@@ -238,7 +247,7 @@
                   <span class="pricing__button-text">Написать в VK</span>
                   <img
                     class="pricing__button-icon"
-                    src="images-prices/vkontakteIcon.png"
+                    src="./images-prices/vkontakteIcon.png"
                     alt="VK Icon"
                   />
                 </a>
@@ -252,9 +261,6 @@
               </h2>
               <h2 class="prices__title_phone">Услуги и цены на химчистку</h2>
               <p class="prices__clarification">
-                Уточните материал вашей обивки у менеджера
-              </p>
-              <p class="prices__clarification_phone">
                 Уточните материал вашей обивки у менеджера, а также, если не
                 нашли свою мебель
               </p>
@@ -735,12 +741,12 @@
                 заказа, вы можете прислать нам фотографии вашей мебели, матраса
                 или штор в WhatsApp, Telegram или ВКонтакте.
               </div>
-              <div class="contact__buttons">
+              <div class="contact__buttons buttons">
                 <a href="#" class="contact__button button">
                   <span class="contact__button-text">Написать в WhatsApp</span>
                   <img
                     class="contact__button-icon"
-                    src="images-prices/whatsappIcon.png"
+                    src="./images-prices/whatsappIcon.png"
                     alt="WhatsApp Icon"
                   />
                 </a>
@@ -748,7 +754,7 @@
                   <span class="contact__button-text">Написать в Telegram</span>
                   <img
                     class="contact__button-icon"
-                    src="images-prices/telegramIcon.png"
+                    src="./images-prices/telegramIcon.png"
                     alt="Telegram Icon"
                   />
                 </a>
@@ -756,13 +762,18 @@
                   <span class="contact__button-text">Написать в VK</span>
                   <img
                     class="contact__button-icon"
-                    src="images-prices/vkontakteIcon.png"
+                    src="./images-prices/vkontakteIcon.png"
                     alt="VK Icon"
                   />
                 </a>
               </div>
             </div>
-            <div class="cleaning">
+
+
+
+
+
+           <div class="cleaning">
               <div class="cleaning__left">
                 <img
                   src="images-prices/cleaning_illustration.png"
@@ -800,6 +811,14 @@
                 </form>
               </div>
             </div>
+
+
+
+
+
+
+
+
           </div>
           <div class="side-banners__right"></div>
         </section>
@@ -871,17 +890,17 @@
             <div class="footer__socials">
               <img
                 class="footer__icon"
-                src="./images/telegramIcon.png"
+                src="./images-prices/telegramIcon.png"
                 alt="иконка телеграм"
               />
               <img
                 class="footer__icon"
-                src="./images/vkontakteIcon.png"
+                src="./images-prices/vkontakteIcon.png"
                 alt="иконка вконтакте"
               />
               <img
                 class="footer__icon"
-                src="./images/whatsapIcon.png"
+                src="./images-prices/whatsappIcon.png"
                 alt="иконка ватсап"
               />
             </div>
@@ -893,6 +912,6 @@
         </p>
       </footer>
     </div>
-    <script src="./scripts-prices.js" defer></script>
+    <script src="./scripts/prices-scripts.js"></script>
   </body>
 </html>

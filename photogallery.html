@@ -10,7 +10,7 @@
     <link href="./fonts/stengazeta/stylesheet.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css-photogallery/styles.css" />
     <link rel="stylesheet" href="./css/index.css" />
-    <link href="./normalize.css" type="text/css" rel="stylesheet" />
+    <link href="./css/normalize.css" type="text/css" rel="stylesheet" />
     <title>Фотогалерея</title>
   </head>
   <body class="page">
@@ -178,15 +178,15 @@
         </div>
       </header>
 
-      <main class="content">
+      <main class="content" style="border:  solid 8px red;">
         <div class="main">
           <h1 class="main__title">Фото до/после</h1>
         </div>
         <section class="description">
           <p>
             Для получения консультации по чистке и точного расчёта стоимости
-            заказа, вы можете прислать нам фотографии вашей мебели, матраса или
-            штор в WhatsApp или Telegram
+            заказа, вы можете прислать нам фотографии вашей мебели, матраса 
+            <span class="description__p">или штор в WhatsApp или Telegram</span>
           </p>
         </section>
         <section class="social-contacts">
@@ -488,18 +488,30 @@
               </div>
             </div>
             <div class="contact-us__discount">
-              <img src="./images-photogallery/img_discount-block.png" alt="банер со скидкой 15% нашим клиентам" />
+              <div class="contact-us__prices">
+                 <p class="contact-us__prices-text">
+                  Наши цены на химчистку самые приятные
+                 </p>
+              </div>
+              <div class="contact-us__prices-discount">
+                 <p>15% скидка всем новым клиентам !</p> 
+                 <p>Антибактериальная обработка в подарок</p>
+              </div>
             </div>
+
             <div class="contact-us__container-bottom">
               <div class="contact-us__container-bottom-img">
-                <img src="./images-photogallery/contact_us-img.png" alt="картинка мастер спасет вашу мебель" />
+                <img
+                  src="./images-photogallery/contact_us-img.png"
+                  alt="картинка мастер спасет вашу мебель"
+                />
               </div>
               <div class="form">
                 <div class="form__content">
                   <p class="form__content-p">
                     Придем к вам на помощь в любой ситуации !
                   </p>
-                  <form>
+                  <form class="form-photogallery">
                     <p>Оставить заявку</p>
                     <div class="form-container">
                       <label for="name">Имя</label>
@@ -639,6 +651,6 @@
         </p>
       </footer>
     </div>
-    <script src="./photogallery-scripts/index.js"></script>
+    <script src="./scripts/photogallery-scripts.js"></script>
   </body>
 </html>

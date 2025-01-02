@@ -1,11 +1,585 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <h1>Страница Отзывы тут будет(пока тут пусто!)</h1>
-</body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link href="./fonts/inter/stylesheet.css" rel="stylesheet" />
+    <link href="./fonts/lato/stylesheet.css" rel="stylesheet" />
+    <link href="./fonts/roboto/stylesheet.css" rel="stylesheet" />
+    <link href="./fonts/stengazeta/stylesheet.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css-comments/comments.css">
+    <link href="./css/normalize.css" type="text/css" rel="stylesheet" />
+        <title>Секция отзывы</title>
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <div class="header__content">
+          <img
+            class="header__logo"
+            src="./images/logo.png"
+            alt="Логотип евро химчистки, EURO DRY CLEANING"
+          />
+
+          <nav class="header__navigation">
+            <ul class="header__nav-lists">
+              <li class="header__nav-item">
+                <a href="./index.html">Главная</a>
+              </li>
+              <li class="header__nav-item"><a href="./prices.html">Цены</a></li>
+              <li class="header__nav-item">
+                <a href="./photogallery.html">Фото</a>
+              </li>
+              <li class="header__nav-item"><a href="./blog.html">Блог</a></li>
+              <li class="header__nav-item">
+                <a href="./comments.html">Отзывы</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="tel:+79100899001" class="header__button">
+            <span class="header__textTelephone">8 (910) 089-90-01</span>
+          </a>
+        </div>
+
+        <p class="header__text">
+          Время работы: <br />
+          Пн-Вс 09:00-23:00 <br />
+          Работаем в Москве и МО
+        </p>
+      </header>
+
+      <header class="header-mobile">
+        <div class="header-mobile__content">
+          <a class="header-mobile__link" href="./index.html">
+            <img
+              class="header__logo"
+              src="./images/logo.png"
+              alt="Логотип евро химчистки, EURO DRY CLEANING"
+            />
+          </a>
+
+          <div class="hamburger-menu">
+            <input
+              class="hamburger-menu__toggle"
+              id="hamburger-menu__toggle"
+              type="checkbox"
+            />
+            <div class="hamburger-menu__wrapper"></div>
+            <label class="hamburger-menu__button" for="hamburger-menu__toggle">
+              <span></span>
+            </label>
+
+            <div
+              class="hamburger-menu__box hamburger-menu__box_padding hamburger-menu__box_padding_min"
+            >
+              <a class="header__link" href="./index.html">
+                <img
+                  class="header__logo"
+                  src="./images/logo-white.svg"
+                  alt="Логотип евро химчистки, EURO DRY CLEANING"
+                />
+              </a>
+              <nav class="header__navigation_burger">
+                <ul class="hamburger-menu__container">
+                  <li>
+                    <a
+                      class="hamburger-menu__item hamburger-menu__item_padding"
+                      href="./index.html"
+                      >Главная</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./prices.html"
+                      >Цены</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./photogallery.html"
+                      >Фото</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./blog.html">Блог</a>
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./comments.html"
+                      >Отзывы</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./contacts.html"
+                      >Контакты</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="hamburger-menu__containerBoottom">
+                <div class="hamburger-menu__openingHours">
+                  <h6 class="hamburger-menu__openingHours-title">
+                    Время работы: <br />
+                    Пн-Вс 09:00-23:00
+                  </h6>
+
+                  <p class="hamburger-menu__openingHours-text">
+                    Работаем в Москве и МО
+                  </p>
+                  <p class="hamburger-menu__openingHours-number">
+                    8 (910) 089-90-01
+                  </p>
+                </div>
+                <div class="hamburger-menu__containerBoottomTwo">
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://telegram.me/+79100899001"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon hamburger-menu__icon_margin"
+                      src="./icons/telegram.svg"
+                      alt="иконка Telegram"
+                    />
+                  </a>
+
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://vk.com/eurodrycleaningservice"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon hamburger-menu__icon_margin"
+                      src="./icons/vkontakte.svg"
+                      alt="иконка Vkontakte"
+                    />
+                  </a>
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://wa.me/+79100899001"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon"
+                      src="./icons/whatsapp.svg"
+                      alt="иконка WhatsApp"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="comments page__comments">
+          <img
+            src="./images/fon-img.jpg"
+            class="comments__img"
+            alt="фоновая картинка"
+          />
+          <div class="comments__content">
+            <h1 class="comments__title">Отзывы наших клиентов</h1>
+            <p class="comments__subtitle">
+              Предлагаем ознакомиться с оценками, которые поставили наши
+              клиенты, и отзывами о работе Euro Dry Cleaning с Авито.
+            </p>
+            <ul class="comments__list">
+              <li class="comments__item">
+                <img
+                  src="./images/avatar.svg"
+                  class="comments__avatar"
+                  alt="аватар"
+                />
+                <div class="comments__item-box">
+                  <div class="comments__item-block">
+                    <div class="comments__item-wrapper">
+                      <p class="comments__item-name">Татьяна</p>
+                      <p class="comments__item-date">02.11.2024</p>
+                    </div>
+                    <img
+                      src="./images/stars-icon.svg"
+                      class="comments__item-stars"
+                      alt="рейтинг"
+                    />
+                  </div>
+                  <!-- <div class="comments__item-wrapper1"> -->
+                  <div class="comments__item-texts hidden">
+                    <p class="comments__item-text">
+                      А ещё действия представителей оппозиции неоднозначны и
+                      будут рассмотрены исключительно в разрезе маркетинговых и
+                      финансовых предпосылок. Равным образом, консультация с
+                      широким активом напрямую зависит от приоретизации разума
+                      над эмоциями. А ещё действия представителей оппозиции
+                      неоднозначны и будут рассмотрены исключительно в разрезе
+                      маркетинговых и финансовых предпосылок. Равным образом,
+                      консультация с широким активом напрямую зависит от
+                      приоретизации разума над эмоциями. А ещё действия
+                      представителей оппозиции неоднозначны и будут рассмотрены
+                      исключительно в разрезе маркетинговых и финансовых
+                      предпосылок. Равным образом, консультация с широким
+                      активом напрямую зависит от приоретизации разума над
+                      эмоциями.
+                      А ещё действия представителей оппозиции
+                      неоднозначны и будут рассмотрены исключительно в разрезе
+                      маркетинговых и финансовых предпосылок. Равным образом,
+                      консультация с широким активом напрямую зависит от
+                      приоретизации разума над эмоциями. А ещё действия
+                      представителей оппозиции неоднозначны и будут рассмотрены
+                      исключительно в разрезе маркетинговых и финансовых
+                      предпосылок. Равным образом, консультация с широким
+                      активом напрямую зависит от приоретизации разума над
+                      эмоциями. Отзывы!
+                    </p>
+                    </p>
+                  </div>
+                  <button class="comments__item-button" id="toggle">
+                    <span class="comments__item-button-text" id="button-text"
+                      >Развернуть</span
+                    >
+                    <img
+                      src="./images/arrow.svg"
+                      id="arrow"
+                      class="comments__item-arrow"
+                      alt="стрелка"
+                    />
+                  </button>
+                  <!--   </div> -->
+                </div>
+              </li>
+              <li class="comments__item">
+                <img
+                  src="./images/avatar.svg"
+                  class="comments__avatar"
+                  alt="аватар"
+                />
+                <div class="comments__item-box">
+                  <div class="comments__item-block">
+                    <div class="comments__item-wrapper">
+                      <p class="comments__item-name">Татьяна</p>
+                      <p class="comments__item-date">02.11.2024</p>
+                    </div>
+                    <img
+                      src="./images/stars-icon.svg"
+                      class="comments__item-stars"
+                      alt="рейтинг"
+                    />
+                  </div>
+                  <div class="comments__item-wrapper1">
+                    <p class="comments__item-text">
+                      А ещё действия представителей оппозиции неоднозначны и
+                      будут рассмотрены исключительно в разрезе маркетинговых и
+                      финансовых предпосылок. Равным образом, консультация с
+                      широким активом напрямую зависит от приоретизации разума
+                      над эмоциями.
+                    </p>
+                    <div class="comments__item-texts hidden">
+                      <p class="comments__item-text">
+                        А ещё действия представителей оппозиции неоднозначны и
+                        будут рассмотрены исключительно в разрезе маркетинговых
+                        и финансовых предпосылок. Равным образом, консультация с
+                        широким активом напрямую зависит от приоретизации разума
+                        над эмоциями. А ещё действия представителей оппозиции
+                        неоднозначны и будут рассмотрены исключительно в разрезе
+                        маркетинговых и финансовых предпосылок. Равным образом,
+                        консультация с широким активом напрямую зависит от
+                        приоретизации разума над эмоциями.
+                      </p>
+                    </div>
+                    <button class="comments__item-button" id="toggle">
+                      Развернуть
+                      <img
+                        src="./images/arrow.svg"
+                        id="arrow"
+                        class="comments__item-arrow"
+                        alt="стрелка"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="comments__item">
+                <img
+                  src="./images/avatar.svg"
+                  class="comments__avatar"
+                  alt="аватар"
+                />
+                <div class="comments__item-box">
+                  <div class="comments__item-block">
+                    <div class="comments__item-wrapper">
+                      <p class="comments__item-name">Татьяна</p>
+                      <p class="comments__item-date">02.11.2024</p>
+                    </div>
+                    <img
+                      src="./images/stars-icon.svg"
+                      class="comments__item-stars"
+                      alt="рейтинг"
+                    />
+                  </div>
+                  <div class="comments__item-wrapper1">
+                    <p class="comments__item-text">
+                      А ещё действия представителей оппозиции неоднозначны и
+                      будут рассмотрены исключительно в разрезе маркетинговых и
+                      финансовых предпосылок. Равным образом, консультация с
+                      широким активом напрямую зависит от приоретизации разума
+                      над эмоциями.
+                    </p>
+                    <div class="comments__item-texts hidden">
+                      <p class="comments__item-text">
+                        А ещё действия представителей оппозиции неоднозначны и
+                        будут рассмотрены исключительно в разрезе маркетинговых
+                        и финансовых предпосылок. Равным образом, консультация с
+                        широким активом напрямую зависит от приоретизации разума
+                        над эмоциями. А ещё действия представителей оппозиции
+                        неоднозначны и будут рассмотрены исключительно в разрезе
+                        маркетинговых и финансовых предпосылок. Равным образом,
+                        консультация с широким активом напрямую зависит от
+                        приоретизации разума над эмоциями.
+                      </p>
+                    </div>
+                    <button class="comments__item-button" id="toggle">
+                      <span class="comments__item-button-text" id="button-text"
+                        >Развернуть</span
+                      >
+                      <img
+                        src="./images/arrow.svg"
+                        id="arrow"
+                        class="comments__item-arrow"
+                        alt="стрелка"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </li>
+              <li class="comments__item">
+                <img
+                  src="./images/avatar.svg"
+                  class="comments__avatar"
+                  alt="аватар"
+                />
+                <div class="comments__item-box">
+                  <div class="comments__item-block">
+                    <div class="comments__item-wrapper">
+                      <p class="comments__item-name">Татьяна</p>
+                      <p class="comments__item-date">02.11.2024</p>
+                    </div>
+                    <img
+                      src="./images/stars-icon.svg"
+                      class="comments__item-stars"
+                      alt="рейтинг"
+                    />
+                  </div>
+                  <div class="comments__item-wrapper1">
+                    <p class="comments__item-text">
+                      Равным образом, консультация с широким активом напрямую
+                      зависит от приоретизации разума над эмоциями. А ещё
+                      действия представителей оппозиции неоднозначны и будут
+                      рассмотрены исключительно в разрезе маркетинговых и
+                      финансовых предпосылок.
+                    </p>
+                    <button class="comments__item-button">
+                      Развернуть
+                      <img
+                        src="./images/arrow.svg"
+                        class="comments__item-arrow"
+                        alt="стрелка"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="comments__button">Посмотреть ещё отзывы</button>
+            <div class="comments__box">
+              <form class="comments__form">
+                <div class="comments__form-container">
+                  <h2 class="comments__form-title">Добавить комментарий</h2>
+                  <p class="comments__form-subtitle">Ваш номер телефона</p>
+                  <p class="comments__form-subtitle">не будет опубликован</p>
+
+                  <label>
+                    <!-- class="comments__form-span">Ваше имя -->
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="comments__form-input comments__form-input_ctrl_name"
+                      placeholder="Напишите Ваше имя"
+                      required
+                    />
+                  </label>
+
+                  <label>
+                    <!-- class="comments__form-span">Номер телефона -->
+                    <input
+                      type="text"
+                      id="tel"
+                      name="tel"
+                      class="comments__form-input comments__form-input_ctrl_tel"
+                      placeholder="+7 999 999 99-99"
+                      required
+                    />
+                  </label>
+
+                  <img
+                    src="./images/stars-form-comments.svg"
+                    class="comments__form-stars"
+                    alt="рейтинг"
+                  />
+
+                  <label>
+                    <!-- class="comments__form-span">Ваш комментарий -->
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="comments__form-input comments__form-input_ctrl_message"
+                      placeholder="Напишите Ваш комментарий"
+                      required
+                    >
+                    </textarea>
+                  </label>
+                  <button class="comments__form-button">Опубликовать</button>
+                </div>
+              </form>
+              <img
+                src="./images/img-cleaning-comments.svg"
+                class="comments__form-img"
+                alt="рисунок к форме отзывов"
+              />
+            </div>
+          </div>
+          <img
+            src="./images/fon-img.jpg"
+            class="comments__img"
+            alt="фоновая картинка"
+          />
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <div class="footer__block-lists">
+            <h6 class="footer__title">Для дома</h6>
+            <ul class="footer__lists">
+              <li class="footer__lists-item">Химчистка диванов</li>
+              <li class="footer__lists-item">Химчистка мягкой мебели</li>
+              <li class="footer__lists-item">Химчистка кресел</li>
+              <li class="footer__lists-item">Химчистка стульев</li>
+              <li class="footer__lists-item">Химчистка ковров</li>
+              <li class="footer__lists-item">Химчистка ковролина</li>
+              <li class="footer__lists-item">Химчистка матрасов</li>
+              <li class="footer__lists-item">Химчистка кровати</li>
+              <li class="footer__lists-item">Химчистка штор</li>
+              <li class="footer__lists-item">Срочная химчистка</li>
+              <li class="footer__lists-item">Химчистка бархатных штор</li>
+              <li class="footer__lists-item">Химчистка рулонных штор</li>
+              <li class="footer__lists-item">Химчистка римских штор</li>
+            </ul>
+          </div>
+
+          <div class="footer__information">
+            <h6 class="footer__title">Информация</h6>
+            <ul class="footer__lists footer__lists_center">
+              <li class="footer__lists-item">
+                <a href="./index.html" class="footer__lists-link">Главная</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./prices.html" class="footer__lists-link">Цены</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./photogallery.html" class="footer__lists-link"
+                  >Фото</a
+                >
+              </li>
+              <li class="footer__lists-item">
+                <a href="./blog.html" class="footer__lists-link">Блог</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./comments.html" class="footer__lists-link">Отзывы</a>
+              </li>
+              <li class="footer__lists-item">
+                <a href="./contacts.html" class="footer__lists-link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__openingHours">
+            <h6 class="footer__title">
+              Время работы: <br />
+              <span class="footer__title_span">Пн-Вс 09:00-23:00</span>
+            </h6>
+
+            <p class="footer__text">Работаем в Москве и МО</p>
+          </div>
+
+          <div class="footer__contacts">
+            <h6 class="footer__title display-none750px">Наши контакты</h6>
+
+            <a href="+79100899001" class="footer__text footer__text_phone"
+              >8 (910) 089-90-01</a
+            >
+
+            <div class="footer__socials">
+              <a
+                class="footer__link"
+                href="https://telegram.me/+79100899001"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/telegramIcon.png"
+                  alt="иконка телеграм"
+                />
+              </a>
+
+              <a
+                class="footer__link"
+                href="https://vk.com/eurodrycleaningservice"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/vkontakteIcon.png"
+                  alt="иконка вконтакте"
+                />
+              </a>
+
+              <a
+                class="footer__link"
+                href="https://wa.me/+79100899001"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  class="footer__icon"
+                  src="./images/whatsapIcon.png"
+                  alt="иконка ватсап"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <p class="footer__paragraph">
+          Euro Dry Cleaning Выездная химчистка мебели.
+        </p>
+      </footer>
+    </div>
+
+    <script src="./scripts/comments-scripts.js">
+     
+    </script>
+  </body>
 </html>
