@@ -17,12 +17,13 @@
     <div class="page__content">
       <header class="header">
         <div class="header__content">
-          <img
-            class="header__logo"
-            src="./images/logo.png"
-            alt="Логотип евро химчистки, EURO DRY CLEANING"
-          />
-
+          <a href="./index.html">
+            <img
+              class="header__logo"
+              src="./images/logo.png"
+              alt="Логотип евро химчистки, EURO DRY CLEANING"
+            />
+          </a>
           <nav class="header__navigation">
             <ul class="header__nav-lists">
               <li class="header__nav-item">
@@ -204,7 +205,10 @@
               </div>
               <ul class="contacts__list">
                 <li class="contacts__links">
-                  <a href="#" class="contacts__link" target="_blank"
+                  <a
+                    href="https://wa.me/+79100899001"
+                    class="contacts__link"
+                    target="_blank"
                     >Написать в WhatsApp
                     <img
                       src="./images/whatsapIcon.svg"
@@ -214,7 +218,10 @@
                   </a>
                 </li>
                 <li class="contacts__links">
-                  <a href="#" class="contacts__link" target="_blank"
+                  <a
+                    href="https://telegram.me/+79100899001"
+                    class="contacts__link"
+                    target="_blank"
                     >Написать в Telegram
                     <img
                       src="./images/telegramIcon.svg"
@@ -224,7 +231,10 @@
                   </a>
                 </li>
                 <li class="contacts__links">
-                  <a href="#" class="contacts__link" target="_blank"
+                  <a
+                    href="https://vk.com/eurodrycleaningservice"
+                    class="contacts__link"
+                    target="_blank"
                     >Написать в VK
                     <img
                       src="./images/vkontakteIcon.svg"
@@ -235,64 +245,48 @@
                 </li>
               </ul>
 
+              <div style="border: 6px red solid; display: flex">
+                <img
+                  src="./images/img-cleaning.svg"
+                  class="contacts__img-cleaning"
+                  alt="рисунок"
+                />
+                <div class="contacts__feedback">
+                  <div class="contacts__feedback-box">
+                    <h3 class="contacts__feedback-title">
+                      Прийдем к вам на помощь в любой ситуации!
+                    </h3>
+                    <form class="contacts__form">
+                      <div class="contacts__form-box">
+                        <h4 class="contacts__form-title">Оставить заявку</h4>
 
+                        <label class="contacts__form-label">Ваше имя</label>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          class="contacts__form-input contacts__form-input_ctrl_name"
+                          placeholder="Напишите Ваше имя"
+                          required
+                        />
 
-      <div style="border: 6px red solid; display: flex;">        
-              <img
-                src="./images/img-cleaning.svg"
-                class="contacts__img-cleaning"
-                alt="рисунок"
-              />
-              <div class="contacts__feedback">
-                <div class="contacts__feedback-box">
-                  <h3 class="contacts__feedback-title">
-                    Прийдем к вам на помощь в любой ситуации!
-                  </h3>
-                  <form class="contacts__form">
-                    <div class="contacts__form-box">
-                      <h4 class="contacts__form-title">Оставить заявку</h4>
-
-                      <label class="contacts__form-label">Ваше имя</label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        class="contacts__form-input contacts__form-input_ctrl_name"
-                        placeholder="Напишите Ваше имя"
-                        required
-                      />
-
-                      <label class="contacts__form-label">Номер телефона</label>
-                      <input
-                        type="text"
-                        id="tel"
-                        name="tel"
-                        class="contacts__form-input contacts__form-input_ctrl_tel"
-                        placeholder="+7 999 999 99-99"
-                        required
-                      />
-                      <button class="contacts__form-button">Отправить</button>
-                    </div>
-                  </form>
+                        <label class="contacts__form-label"
+                          >Номер телефона</label
+                        >
+                        <input
+                          type="text"
+                          id="tel"
+                          name="tel"
+                          class="contacts__form-input contacts__form-input_ctrl_tel"
+                          placeholder="+7 999 999 99-99"
+                          required
+                        />
+                        <button class="contacts__form-button">Отправить</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
           </div>
           <img

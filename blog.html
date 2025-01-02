@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css" />
     <link href="./css-blog/index.css" rel="stylesheet" />
     <link href="./fonts/Actay/stylesheet.css" rel="stylesheet" />
     <link href="./fonts/Roboto/stylesheet.css" rel="stylesheet" />
@@ -19,27 +18,36 @@
     <div class="page__content">
       <header class="header">
         <div class="header__content">
+          <a href="./index.html">
             <img
-                class="header__logo"
-                src="./images-blog/logo.png"
-                alt="Логотип евро химчистки, EURO DRY CLEANING"
+              class="header__logo"
+              src="./images-blog/logo.png"
+              alt="Логотип евро химчистки, EURO DRY CLEANING"
             />
+          </a>
+          <nav class="header__navigation">
+            <ul class="header__nav-lists">
+              <li class="header__nav-item">
+                <a href="./index.html">Главная</a>
+              </li>
+              <li class="header__nav-item"><a href="./prices.html">Цены</a></li>
+              <li class="header__nav-item">
+                <a href="./photogallery.html">Фото</a>
+              </li>
+              <li class="header__nav-item"><a href="./blog.html">Блог</a></li>
+              <li class="header__nav-item">
+                <a href="./comments.html">Отзывы</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </nav>
 
-            <nav class="header__navigation">
-                <ul class="header__nav-lists">
-                    <li class="header__nav-item">Главная</li>
-                    <li class="header__nav-item">Цены</li>
-                    <li class="header__nav-item">Фото</li>
-                    <li class="header__nav-item">Блог</li>
-                    <li class="header__nav-item">Отзывы</li>
-                    <li class="header__nav-item">Контакты</li>
-                </ul>
-            </nav>
-
-            <a href="tel:+79100899001" class="header__button">
-                <span class="header__textTelephone">8 (910) 089-90-01</span>
-            </a>
-            <!--<div class="burger-menu">
+          <a href="tel:+79100899001" class="header__button">
+            <span class="header__textTelephone">8 (910) 089-90-01</span>
+          </a>
+          <!--<div class="burger-menu">
                 <div class="burger-line"></div>
                 <div class="burger-line burger-line_short"></div>
                 <div class="burger-line"></div>
@@ -47,206 +55,237 @@
         </div>
 
         <p class="header__text">
-            Время работы: <br />
-            Пн-Вс 09:00-23:00 <br />
-            Работаем в Москве и МО
+          Время работы: <br />
+          Пн-Вс 09:00-23:00 <br />
+          Работаем в Москве и МО
         </p>
-    </header>
+      </header>
 
-    <header class="header-mobile">
+      <header class="header-mobile">
         <div class="header-mobile__content">
-            <a class="header-mobile__link" href="./index.html">
+          <a class="header-mobile__link" href="./index.html">
+            <img
+              class="header__logo"
+              src="./images-blog/logo.png"
+              alt="Логотип евро химчистки, EURO DRY CLEANING"
+            />
+          </a>
+
+          <div class="hamburger-menu">
+            <input
+              class="hamburger-menu__toggle"
+              id="hamburger-menu__toggle"
+              type="checkbox"
+            />
+            <div
+              class="hamburger-menu__wrapper hamburger-menu__wrapper_blog_margin"
+            ></div>
+            <label class="hamburger-menu__button" for="hamburger-menu__toggle">
+              <span></span>
+            </label>
+
+            <div
+              class="hamburger-menu__box hamburger-menu__box_padding hamburger-menu__box_padding_min"
+            >
+              <a class="header__link" href="./index.html">
                 <img
-                    class="header__logo"
-                    src="./images-blog/logo.png"
-                    alt="Логотип евро химчистки, EURO DRY CLEANING"
+                  class="header__logo"
+                  src="./images-blog/logo-white.svg"
+                  alt="Логотип евро химчистки, EURO DRY CLEANING"
                 />
-            </a>
+              </a>
+              <nav class="header__navigation_burger">
+                <ul class="hamburger-menu__container">
+                  <li>
+                    <a
+                      class="hamburger-menu__item hamburger-menu__item_padding"
+                      href="./index.html"
+                      >Главная</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./prices.html"
+                      >Цены</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./photogallery.html"
+                      >Фото</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./blog.html">Блог</a>
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./comments.html"
+                      >Отзывы</a
+                    >
+                  </li>
+                  <li>
+                    <a class="hamburger-menu__item" href="./contacts.html"
+                      >Контакты</a
+                    >
+                  </li>
+                </ul>
+              </nav>
 
-            <div class="hamburger-menu">
-                <input
-                    class="hamburger-menu__toggle"
-                    id="hamburger-menu__toggle"
-                    type="checkbox"
-                />
-                <div class="hamburger-menu__wrapper hamburger-menu__wrapper_blog_margin"></div>
-                <label class="hamburger-menu__button" for="hamburger-menu__toggle">
-                    <span></span>
-                </label>
+              <div class="hamburger-menu__containerBoottom">
+                <div class="hamburger-menu__openingHours">
+                  <h6 class="hamburger-menu__openingHours-title">
+                    Время работы: <br />
+                    Пн-Вс 09:00-23:00
+                  </h6>
 
-                <div
-                    class="hamburger-menu__box hamburger-menu__box_padding hamburger-menu__box_padding_min"
-                >
-                    <a class="header__link" href="./index.html">
-                        <img
-                            class="header__logo"
-                            src="./images-blog/logo-white.svg"
-                            alt="Логотип евро химчистки, EURO DRY CLEANING"
-                        />
-                    </a>
-                    <nav class="header__navigation_burger">
-                        <ul class="hamburger-menu__container">
-                            <li>
-                                <a
-                                    class="hamburger-menu__item hamburger-menu__item_padding"
-                                    href="./index.html"
-                                    >Главная</a
-                                >
-                            </li>
-                            <li>
-                                <a class="hamburger-menu__item" href="./aboutMe.html"
-                                    >Цены</a
-                                >
-                            </li>
-                            <li>
-                                <a class="hamburger-menu__item" href="./prices.html"
-                                    >Фото</a
-                                >
-                            </li>
-                            <li>
-                                <a class="hamburger-menu__item" href="./questions.html"
-                                    >Блог</a
-                                >
-                            </li>
-                            <li>
-                                <a class="hamburger-menu__item" href="./contacts.html"
-                                    >Отзывы</a
-                                >
-                            </li>
-                            <li>
-                                <a class="hamburger-menu__item" href="./contacts.html"
-                                    >Контакты</a
-                                >
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div class="hamburger-menu__containerBoottom">
-                        <div class="hamburger-menu__openingHours">
-                            <h6 class="hamburger-menu__openingHours-title">
-                                Время работы: <br />
-                                Пн-Вс 09:00-23:00
-                            </h6>
-
-                            <p class="hamburger-menu__openingHours-text">
-                                Работаем в Москве и МО
-                            </p>
-                            <p class="hamburger-menu__openingHours-number">
-                                8 (910) 089-90-01
-                            </p>
-                        </div>
-                        <div class="hamburger-menu__containerBoottomTwo">
-                            <a
-                                class="hamburger-menu__social"
-                                href="https://telegram.me/+79168829426"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img
-                                    class="hamburger-menu__icon hamburger-menu__icon_margin"
-                                    src="./icons/telegram.svg"
-                                    alt="иконка Telegram"
-                                />
-                            </a>
-
-                            <a
-                                class="hamburger-menu__social"
-                                href="https://vk.com/lami_ko"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img
-                                    class="hamburger-menu__icon hamburger-menu__icon_margin"
-                                    src="./icons/vkontakte.svg"
-                                    alt="иконка Vkontakte"
-                                />
-                            </a>
-                            <a
-                                class="hamburger-menu__social"
-                                href="https://wa.me/+79168829426"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <img
-                                    class="hamburger-menu__icon"
-                                    src="./icons/whatsapp.svg"
-                                    alt="иконка WhatsApp"
-                                />
-                            </a>
-                        </div>
-                    </div>
+                  <p class="hamburger-menu__openingHours-text">
+                    Работаем в Москве и МО
+                  </p>
+                  <p class="hamburger-menu__openingHours-number">
+                    8 (910) 089-90-01
+                  </p>
                 </div>
+                <div class="hamburger-menu__containerBoottomTwo">
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://telegram.me/+79100899001"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon hamburger-menu__icon_margin"
+                      src="./icons/telegram.svg"
+                      alt="иконка Telegram"
+                    />
+                  </a>
+
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://vk.com/eurodrycleaningservice"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon hamburger-menu__icon_margin"
+                      src="./icons/vkontakte.svg"
+                      alt="иконка Vkontakte"
+                    />
+                  </a>
+                  <a
+                    class="hamburger-menu__social"
+                    href="https://wa.me/+79100899001"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      class="hamburger-menu__icon"
+                      src="./icons/whatsapp.svg"
+                      alt="иконка WhatsApp"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-    </header>
+      </header>
 
       <main class="content">
-       
         <section class="banner__questions">
           <div class="banner__questions-wrap">
-            <h1 class="banner__questions-title"><span class="banner__questions-span-title">Наши цены на химчистку</span> самые приятные</h1>
-            <p class="banner__questions-subtitle">15% скидка всем новым клиентам !
-              <span class="banner__questions-span">Антибактериальная обработка в подарок</span>
+            <h1 class="banner__questions-title">
+              <span class="banner__questions-span-title"
+                >Наши цены на химчистку</span
+              >
+              самые приятные
+            </h1>
+            <p class="banner__questions-subtitle">
+              15% скидка всем новым клиентам !
+              <span class="banner__questions-span"
+                >Антибактериальная обработка в подарок</span
+              >
             </p>
           </div>
         </section>
-       
+
         <div class="container">
-          
-         
           <section class="bg-right"></section>
           <section class="bg-left"></section>
 
           <section class="advantages">
             <article class="article">
               <div class="advantages__container">
-                <div class="advantages__wpapper  advantages__mb advantages__order1">
-                  <img src="./images-blog/advantages-1.png" class="advantages__images-blog advantages__none" alt="advantages-1" />
-                  <img src="./images-blog/mobile-advantages1.png" class="advantages__images-blog advantages__flex"
-                    alt="advantages-1" />
-                  <h2 class="advantages__title">
-                    Опыт
-                  </h2>
+                <div
+                  class="advantages__wpapper advantages__mb advantages__order1"
+                >
+                  <img
+                    src="./images-blog/advantages-1.png"
+                    class="advantages__images-blog advantages__none"
+                    alt="advantages-1"
+                  />
+                  <img
+                    src="./images-blog/mobile-advantages1.png"
+                    class="advantages__images-blog advantages__flex"
+                    alt="advantages-1"
+                  />
+                  <h2 class="advantages__title">Опыт</h2>
                   <p class="advantages__text">
-                    Большой опыт работы (более 5 лет) =
-                    (тысячи чистой мебели)
+                    Большой опыт работы (более 5 лет) = (тысячи чистой мебели)
                   </p>
                 </div>
-                <div class="advantages__wpapper advantages__mb advantages__order4">
-                  <img src="./images-blog/advantages-2.png" class="advantages__images-blog advantages__none" alt="advantages-2" />
-                  <img src="./images-blog/mobile-advantages2.png" class="advantages__images-blog advantages__flex"
-                    alt="advantages-2">
-                  <h2 class="advantages__title advantages__font advantages__height">
+                <div
+                  class="advantages__wpapper advantages__mb advantages__order4"
+                >
+                  <img
+                    src="./images-blog/advantages-2.png"
+                    class="advantages__images-blog advantages__none"
+                    alt="advantages-2"
+                  />
+                  <img
+                    src="./images-blog/mobile-advantages2.png"
+                    class="advantages__images-blog advantages__flex"
+                    alt="advantages-2"
+                  />
+                  <h2
+                    class="advantages__title advantages__font advantages__height"
+                  >
                     Гарантия качества и чистоты
                   </h2>
                   <p class="advantages__text">
-                    Мы гарантируем качественное,
-                    профессиональное выполнение работ
-                    по Химчистке мебели
+                    Мы гарантируем качественное, профессиональное выполнение
+                    работ по Химчистке мебели
                   </p>
                 </div>
                 <div class="advantages__wpapper advantages__order3">
-                  <img src="./images-blog/advantages-3.png" class="advantages__images-blog advantages__none" alt="advantages-3" />
-                  <img src="./images-blog/mobile-advantages3.png" class="advantages__images-blog advantages__flex"
-                    alt="advantages-3">
+                  <img
+                    src="./images-blog/advantages-3.png"
+                    class="advantages__images-blog advantages__none"
+                    alt="advantages-3"
+                  />
+                  <img
+                    src="./images-blog/mobile-advantages3.png"
+                    class="advantages__images-blog advantages__flex"
+                    alt="advantages-3"
+                  />
                   <h2 class="advantages__title advantages__height">
                     Спец. средства
                   </h2>
                   <p class="advantages__text">
-                    Специализированная ЭКО-химия без
-                    запаха + дезинфектанты
+                    Специализированная ЭКО-химия без запаха + дезинфектанты
                   </p>
                 </div>
                 <div class="advantages__wpapper advantages__order2">
-                  <img src="./images-blog/advantages-4.png" class="advantages__images-blog advantages__none" alt="advantages-4" />
-                  <img src="./images-blog/mobile-advantages4.png" class="advantages__images-blog advantages__flex"
-                    alt="advantages-4">
-                  <h2 class="advantages__title">
-                    Цены
-                  </h2>
+                  <img
+                    src="./images-blog/advantages-4.png"
+                    class="advantages__images-blog advantages__none"
+                    alt="advantages-4"
+                  />
+                  <img
+                    src="./images-blog/mobile-advantages4.png"
+                    class="advantages__images-blog advantages__flex"
+                    alt="advantages-4"
+                  />
+                  <h2 class="advantages__title">Цены</h2>
                   <p class="advantages__text">
-                    Честные и доступные цены
-                    доступные каждому
+                    Честные и доступные цены доступные каждому
                   </p>
                 </div>
               </div>
@@ -254,128 +293,139 @@
           </section>
           <section class="blog">
             <article>
-              <h3 class="blog__name">
-                Блог: Полезные советы
-              </h3>
+              <h3 class="blog__name">Блог: Полезные советы</h3>
               <div class="blog__container">
                 <div class="blog__wrapper">
                   <h4 class="blog__title">
                     Пролил вино на мягкую мебель вопрос что делать?
                   </h4>
                   <p class="blog__subtitle">
-                    Можно попробовать исправить положение своими силами для этого вам понадобится горячая вода и
-                    чистый марлевые тряпки тряпки, горячей водой желательно кипятком пролить место загрязнения ни в
-                    коем случае не тереть щётками губками и тому подобное далее всё это влагу собрать марлями
-                    желательно использовать только белую ткань. Если загрязнение не выводится своими силами обратитесь
-                    в нашу компанию и мы поможем бережно вывести любые загрязнения с вашей мебели и придать ей свежий
-                    вид!
+                    Можно попробовать исправить положение своими силами для
+                    этого вам понадобится горячая вода и чистый марлевые тряпки
+                    тряпки, горячей водой желательно кипятком пролить место
+                    загрязнения ни в коем случае не тереть щётками губками и
+                    тому подобное далее всё это влагу собрать марлями желательно
+                    использовать только белую ткань. Если загрязнение не
+                    выводится своими силами обратитесь в нашу компанию и мы
+                    поможем бережно вывести любые загрязнения с вашей мебели и
+                    придать ей свежий вид!
                   </p>
                 </div>
                 <div class="blog__wrapper">
-                  <h4 class="blog__title">
-                    Как убрать слайм с мебели?
-                  </h4>
+                  <h4 class="blog__title">Как убрать слайм с мебели?</h4>
                   <p class="blog__subtitle blog__fontsize">
-                    Нам понадобится скребок и горячая вода, нужно пролить место загрязнения кипятком и с помощью
-                    скребка собрать всё такую последовательность действий выполнять до полной очистки
+                    Нам понадобится скребок и горячая вода, нужно пролить место
+                    загрязнения кипятком и с помощью скребка собрать всё такую
+                    последовательность действий выполнять до полной очистки
                   </p>
                 </div>
                 <div class="blog__wrapper">
-                  <h4 class="blog__title">
-                    Пятна крови на мебели как убрать?
-                  </h4>
+                  <h4 class="blog__title">Пятна крови на мебели как убрать?</h4>
                   <p class="blog__subtitle blog__fontsize">
-                    С выведением крови довольно-таки сложно очень важно незамедлительно приступить к чистке, всё
-                    зависит от материала, использовать прохладную воду смачивая место загрязнения и с помощью сухой
-                    чистой тряпки методом нажатия ни в коем случае не тереть попытаться вытянуть кровь из ткани, если
-                    пятна крови им от одного дня и больше можно попробовать использовать перекись водорода, но лучше
+                    С выведением крови довольно-таки сложно очень важно
+                    незамедлительно приступить к чистке, всё зависит от
+                    материала, использовать прохладную воду смачивая место
+                    загрязнения и с помощью сухой чистой тряпки методом нажатия
+                    ни в коем случае не тереть попытаться вытянуть кровь из
+                    ткани, если пятна крови им от одного дня и больше можно
+                    попробовать использовать перекись водорода, но лучше
                     вызывать специалиста незамедлительно
                   </p>
                 </div>
                 <div class="blog__wrapper">
-                  <h4 class="blog__title">
-                    Зачем нужна химчистка?
-                  </h4>
+                  <h4 class="blog__title">Зачем нужна химчистка?</h4>
                   <p class="blog__subtitle blog__fontsize">
-                    Химчистка – это процесс профессиональной очистки текстильных изделий с использованием специальных
-                    химических растворителей и оборудования. Она предназначена для удаления сложных загрязнений,
-                    которые невозможно устранить при обычной стирке дома.
+                    Химчистка – это процесс профессиональной очистки текстильных
+                    изделий с использованием специальных химических
+                    растворителей и оборудования. Она предназначена для удаления
+                    сложных загрязнений, которые невозможно устранить при
+                    обычной стирке дома.
                   </p>
                 </div>
                 <div class="blog__wrapper">
-                  <h4 class="blog__title">
-                    Плюсы вызвать химчистку на дом?
-                  </h4>
+                  <h4 class="blog__title">Плюсы вызвать химчистку на дом?</h4>
                   <ol class="blog__list" type="1">
                     <li class="blog__items">
-                      Удаление стойких пятен: Химические средства могут эффективно справляться с пятнами от вина,
-                      жира, крови, косметики и других веществ, которые трудно вывести обычными моющими средствами.
+                      Удаление стойких пятен: Химические средства могут
+                      эффективно справляться с пятнами от вина, жира, крови,
+                      косметики и других веществ, которые трудно вывести
+                      обычными моющими средствами.
                     </li>
                     <li class="blog__items">
-                      Сохранение качества ткани: Некоторые материалы, такие как шелк, шерсть, кашемир и другие
-                      деликатные
-                      ткани, требуют бережного ухода. Обычная ручная стирка может повредить их структуру или цвет. В
-                      химчистке используются специальные технологии, позволяющие сохранить качество этих материалов.
+                      Сохранение качества ткани: Некоторые материалы, такие как
+                      шелк, шерсть, кашемир и другие деликатные ткани, требуют
+                      бережного ухода. Обычная ручная стирка может повредить их
+                      структуру или цвет. В химчистке используются специальные
+                      технологии, позволяющие сохранить качество этих
+                      материалов.
                     </li>
                     <li class="blog__items">
-                      Чистка мебели с особыми требованиями к уходу: Многая мебель имеет ярлык с пометкой "только сухая
-                      чистка" (dry clean only). Это означает, что их нельзя стирать в воде, так как ткань может
-                      деформироваться, сесть или потерять свой внешний вид.
+                      Чистка мебели с особыми требованиями к уходу: Многая
+                      мебель имеет ярлык с пометкой "только сухая чистка" (dry
+                      clean only). Это означает, что их нельзя стирать в воде,
+                      так как ткань может деформироваться, сесть или потерять
+                      свой внешний вид.
                     </li>
                     <li class="blog__items">
-                      Глубокая очистка и дезинфекция: Профессиональная химчистка не только удаляет загрязнения, но и
-                      помогает избавиться от бактерий, пылевых клещей и аллергенов, что особенно важно для людей с
-                      аллергией или чувствительной кожей.
+                      Глубокая очистка и дезинфекция: Профессиональная химчистка
+                      не только удаляет загрязнения, но и помогает избавиться от
+                      бактерий, пылевых клещей и аллергенов, что особенно важно
+                      для людей с аллергией или чувствительной кожей.
                     </li>
                     <li class="blog__items">
-                      Восстановление внешнего вида мебели: Со временем мебель может терять свою первоначальный цвет,
-                      запах
-                      или текстуру. Химчистка позволяет вернуть мебели свежий и аккуратный вид, а также продлить срок
-                      их
-                      службы.
+                      Восстановление внешнего вида мебели: Со временем мебель
+                      может терять свою первоначальный цвет, запах или текстуру.
+                      Химчистка позволяет вернуть мебели свежий и аккуратный
+                      вид, а также продлить срок их службы.
                     </li>
                   </ol>
                 </div>
                 <div class="blog__wrapper">
-                  <h4 class="blog__title">
-                    Как заказать химчистку мебели?
-                  </h4>
+                  <h4 class="blog__title">Как заказать химчистку мебели?</h4>
                   <ol class="blog__list" type="1">
                     <li class="blog__items">
-                      Посетите наш сайт компании, чтобы ознакомиться с услугами, ценами и отзывами клиентов.
+                      Посетите наш сайт компании, чтобы ознакомиться с услугами,
+                      ценами и отзывами клиентов.
                     </li>
                     <li class="blog__items">
-                      На нашемх сайте есть возможность оставить заявку онлайн или связаться напрямую через мессенджеры
-                      или социальные сети.
+                      На нашемх сайте есть возможность оставить заявку онлайн
+                      или связаться напрямую через мессенджеры или социальные
+                      сети.
                     </li>
                     <li class="blog__items">
-                      Позвоните нам в химчистку мебели компанию и уточните детали заказа.
+                      Позвоните нам в химчистку мебели компанию и уточните
+                      детали заказа.
                     </li>
                     <li class="blog__items">
-                      Обсудите тип мебели, которую нужно почистить, объем работы и сроки выполнения.
+                      Обсудите тип мебели, которую нужно почистить, объем работы
+                      и сроки выполнения.
                     </li>
-                    <li class="blog__items">Уточните стоимость услуг и условия оплаты.</li>
+                    <li class="blog__items">
+                      Уточните стоимость услуг и условия оплаты.
+                    </li>
                   </ol>
                   <p class="blog__fontmb">Что нужно учесть перед заказом:</p>
                   <ol class="blog__list-two" type="1">
                     <li class="blog__items">
                       Тип мебели: диваны, кресла, стулья, ковры и т.д.
                     </li>
-                    <li class="blog__items">
-                      Приложить фотографии мебели
-                    </li>
+                    <li class="blog__items">Приложить фотографии мебели</li>
                     <li class="blog__items">
                       Материал обивки: кожа, текстиль, замша и др.
                     </li>
                     <li class="blog__items">
                       Наличие сильных загрязнений или специфических пятен.
                     </li>
-                    <li class="blog__items">Время, когда вам удобно провести уборку.</li>
-                    <li class="blog__items">Стоимость услуг и возможные дополнительные расходы.</li>
-                    <li class="blog__items">После того как вы выбрали компанию или специалиста,
-                      согласуйте
-                      все детали
-                      и назначьте время визита.</li>
+                    <li class="blog__items">
+                      Время, когда вам удобно провести уборку.
+                    </li>
+                    <li class="blog__items">
+                      Стоимость услуг и возможные дополнительные расходы.
+                    </li>
+                    <li class="blog__items">
+                      После того как вы выбрали компанию или специалиста,
+                      согласуйте все детали и назначьте время визита.
+                    </li>
                   </ol>
                   <div class="blog__link">
                     <a href="#" class="blog__btn">Читать еще</a>
@@ -385,24 +435,8 @@
             </article>
           </section>
 
-
           <section class="cost">
             <div class="cost__container">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               <h2 class="services__title">
                 Как рассчитать точную стоимость и сделать заказ?
               </h2>
@@ -460,253 +494,145 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <section class="socials socials_banner">
-              <p class="socials-text">
-                Для получения консультации по чистке и точного расчёта стоимости
-                заказа, вы можете прислать нам фотографии вашей мебели, матраса
-                или штор в WhatsApp, Telegram или ВКонтакте.
-              </p>
-              <div class="socials__buttonbox hide-on-mobile-socials-banner">
-                <a href="" class="socials__buttonbox-button">
-                  <p class="socials__buttonbox-button--text">
-                    <b>Написать</b> в  WhatsApp
-                  </p>
-                  <img
-                    src="./icons/whatsapp.svg"
-                    alt="icon"
-                    class="socials__buttonbox-button--img"
-                  />
-                </a>
-                <a href="" class="socials__buttonbox-button">
-                  <p class="socials__buttonbox-button--text">
-                    <b>Написать</b> в  Telegram
-                  </p>
-                  <img
-                    src="./icons/telegram.svg"
-                    alt="icon"
-                    class="socials__buttonbox-button--img"
-                  />
-                </a>
-                <a href="" class="socials__buttonbox-button">
-                  <p class="socials__buttonbox-button--text">
-                    <b>Написать</b> в  VK
-                  </p>
-                  <img
-                    src="./icons/vkontakte.svg"
-                    alt="icon"
-                    class="socials__buttonbox-button--img"
-                  />
-                </a>
-              </div>
-            </section>
-            <section class="socials hide-on-desctop-socials-banner">
-              <h2 class="socials__title">мы в других соцсетях</h2>
-              <div class="socials__buttonbox">
-                <a href="" class="socials__buttonbox-button">
-                  <p class="socials__buttonbox-button--text">
-                    <b>Написать</b> в  WhatsApp
-                  </p>
-                  <img
-                    src="./icons/whatsapp.svg"
-                    alt="icon"
-                    class="socials__buttonbox-button--img"
-                  />
-                </a>
-                <a href="" class="socials__buttonbox-button">
-                  <p class="socials__buttonbox-button--text">
-                    <b>Написать</b> в  Telegram
-                  </p>
-                  <img
-                    src="./icons/telegram.svg"
-                    alt="icon"
-                    class="socials__buttonbox-button--img"
-                  />
-                </a>
-                <a href="" class="socials__buttonbox-button">
-                  <p class="socials__buttonbox-button--text">
-                    <b>Написать</b> в  VK
-                  </p>
-                  <img
-                    src="./icons/vkontakte.svg"
-                    alt="icon"
-                    class="socials__buttonbox-button--img"
-                  />
-                </a>
-              </div>
-            </section>
-            <section class="form form_margin-bottom">
-              <div class="form__leftside">
-                <p class="form__title">EURO DRY ClEANING</p>
-                <p class="form__title form__title_secondary">
-                  Спасет вашу мебель
+            </div>
+          </section>
+
+          <section class="socials socials_banner">
+            <p class="socials-text">
+              Для получения консультации по чистке и точного расчёта стоимости
+              заказа, вы можете прислать нам фотографии вашей мебели, матраса
+              или штор в WhatsApp, Telegram или ВКонтакте.
+            </p>
+            <div class="socials__buttonbox hide-on-mobile-socials-banner">
+              <a
+                href="https://wa.me/+79100899001"
+                class="socials__buttonbox-button"
+              >
+                <p class="socials__buttonbox-button--text">
+                  <b>Написать</b> в  WhatsApp
                 </p>
                 <img
-                  src="./images/man-cat1060.svg"
-                  alt="img-for-form"
-                  class="form__img"
+                  src="./icons/whatsapp.svg"
+                  alt="icon"
+                  class="socials__buttonbox-button--img"
                 />
-              </div>
-              <div class="form__rightside">
-                <p class="form__form-title">
-                  Придем к вам на помощь в любой ситуации!
+              </a>
+              <a
+                href="https://telegram.me/+79100899001"
+                class="socials__buttonbox-button"
+              >
+                <p class="socials__buttonbox-button--text">
+                  <b>Написать</b> в  Telegram
                 </p>
-                <form action="#" method="post" class="form__form">
-                  <p class="form__form-text">Оставить заявку</p>
-
-                  <label for="name" class="form__label">Имя</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Имя"
-                    class="form__input"
-                    required
-                  />
-
-                  <label for="phone" class="form__label">Номер Телефона</label>
-                  <input
-                    type="text"
-                    id="phone"
-                    name="phone"
-                    placeholder="Телефон"
-                    class="form__input"
-                    required
-                  />
-
-                  <button type="submit" class="form__button">Отправить</button>
-                </form>
-              </div>
-            </section>
-
-
-
-
-
-
-
-
-
-
-            <!--  <h4 class="cost__title">
-                Как рассчитать точную стоимость и сделать заказ
-              </h4>
-              <hr class="cost__line" />
-              <div class="cost__wrap">
-                <div class="cost__wpapper">
-                  <div class="cost__image">
-                    <img src="images-blog/cost1-image.png" class="cost__none" alt="number1" />
-                  </div>
-                  <h5 class="cost__name">Отправьте фото</h5>
-                  <p class="cost__text">Отправить фото на WhatsApp по номеру <a href="#" class="cost__phone">8 (910)
-                      089-90-01</a></p>
-                </div>
-                <div class="cost__wpapper">
-                  <div class="cost__image">
-                    <img src="images-blog/cost2-image.png" class="cost__none" alt="number2" />
-                  </div>
-                  <h5 class="cost__name">Точный рассчет</h5>
-                  <p class="cost__text">Произведём оценку и скажем стоимость выезда сотрудника</p>
-                </div>
-                <div class="cost__wpapper">
-                  <div class="cost__image">
-                    <img src="images-blog/cost3-image.png" class="cost__none" alt="number3" />
-                  </div>
-                  <h5 class="cost__name">Сделать заказ</h5>
-                  <p class="cost__text">Уточните день, время и адрес для выезда сотрудника </p>
-                </div>
-                <div class="cost__wpapper">
-                  <div class="cost__image">
-                    <img src="images-blog/cost4-image.png" class="cost__none" alt="number4" />
-                  </div>
-                  <h5 class="cost__name cost__font">Принимайте работу</h5>
-                  <p class="cost__text">После получения услуги проверьте качество и оставьте свой отзыв</p>
-                </div>
-              </div>
+                <img
+                  src="./icons/telegram.svg"
+                  alt="icon"
+                  class="socials__buttonbox-button--img"
+                />
+              </a>
+              <a
+                href="https://vk.com/eurodrycleaningservice"
+                class="socials__buttonbox-button"
+              >
+                <p class="socials__buttonbox-button--text">
+                  <b>Написать</b> в  VK
+                </p>
+                <img
+                  src="./icons/vkontakte.svg"
+                  alt="icon"
+                  class="socials__buttonbox-button--img"
+                />
+              </a>
             </div>
           </section>
-        </div>
-        <div class="container__fluid">
-          <section class="social">
-            <div class="social__container">
-              <p class="social__text">Для получения консультации по чистке и точного расчёта стоимости заказа,
-                вы можете прислать
-                нам фотографии вашей мебели, матраса или штор в WhatsApp, Telegram или ВКонтакте.</p>
-              <div class="social__wrap">
-                <div class="social__wrapper social__order3">
-                  <span><a href="#" class="social__link"><span class="social__bold">Написать</span> в
-                       WhatsApp</a></span>
-                  <span><a href="#" class="social__whatsapp"><img src="images-blog/whatsapp.png"
-                        alt="whatsappIcon"></a></span>
-                </div>
-                <div class="social__wrapper social__order2">
-                  <span><a href="#" class="social__link"><span class="social__bold">Написать</span> в
-                       Telegram</a></span>
-                  <span><a href="#" class="social__telegramm"><img src="images-blog/telegramm.png"
-                        alt="telegramm"></a></span>
-                </div>
-                <div class="social__wrapper social__order1">
-                  <span><a href="#" class="social__link"><span class="social__bold">Написать</span> в
-                       VK</a></span>
-                  <span><a href="#" class="social__vk"><img src="images-blog/vkontakte.png" alt="vk"></a></span>
-                </div>
-              </div>
+          <section class="socials hide-on-desctop-socials-banner">
+            <h2 class="socials__title">мы в других соцсетях</h2>
+            <div class="socials__buttonbox">
+              <a
+                href="https://wa.me/+79100899001"
+                class="socials__buttonbox-button"
+              >
+                <p class="socials__buttonbox-button--text">
+                  <b>Написать</b> в  WhatsApp
+                </p>
+                <img
+                  src="./icons/whatsapp.svg"
+                  alt="icon"
+                  class="socials__buttonbox-button--img"
+                />
+              </a>
+              <a
+                href="https://telegram.me/+79100899001"
+                class="socials__buttonbox-button"
+              >
+                <p class="socials__buttonbox-button--text">
+                  <b>Написать</b> в  Telegram
+                </p>
+                <img
+                  src="./icons/telegram.svg"
+                  alt="icon"
+                  class="socials__buttonbox-button--img"
+                />
+              </a>
+              <a
+                href="https://vk.com/eurodrycleaningservice"
+                class="socials__buttonbox-button"
+              >
+                <p class="socials__buttonbox-button--text">
+                  <b>Написать</b> в  VK
+                </p>
+                <img
+                  src="./icons/vkontakte.svg"
+                  alt="icon"
+                  class="socials__buttonbox-button--img"
+                />
+              </a>
             </div>
           </section>
-        </div>
-
-
-        <section class="registration">
-          <div class="registration__container">
-            <div class="registration__content">
-              <h5 class="registration__name">
-                EURO DRY ClEANING
-              </h5>
-              <p class="registration__text">Спасет вашу мебель</p>
-              <img src="./images-blog/forma-images-blog.png" class="registration__images-blog" alt="forma" />
+          <section class="form form_margin-bottom">
+            <div class="form__leftside">
+              <p class="form__title">EURO DRY ClEANING</p>
+              <p class="form__title form__title_secondary">
+                Спасет вашу мебель
+              </p>
+              <img
+                src="./images/man-cat1060.svg"
+                alt="img-for-form"
+                class="form__img"
+              />
             </div>
-            <div class="registration__wrap-form">
-              <h5 class="registration__formRegisterName">
-                Прийдем к вам на помощь в любой ситуации !
-              </h5>
-              <form class="registration__formRegister registration__formRegister_margin" name="contactForm"
-                id="contactForm">
-                <div class="registration__formRegisterContainer">
-                  <h6 class="registration__formRegisterTitle">
-                    Оставить заявку
-                  </h6>
-                  <label class="registration__label" for="Имя">
-                    <span class="registration__label-text">Имя</span>
-                    <input id="nameInput" name="text" minlength="2" maxlength="30"
-                      class="registration__input registration__formRegisterInputName" type="text"
-                      pattern="^[A-Za-zА-Яа-яЁё]{2,}$" placeholder="Иван" required />
-                    <span class="nameInput-errors errors"></span>
-                  </label>
+            <div class="form__rightside">
+              <p class="form__form-title">
+                Придем к вам на помощь в любой ситуации!
+              </p>
+              <form action="#" method="post" class="form__form">
+                <p class="form__form-text">Оставить заявку</p>
 
-                  <label class="registration__label" for="Номер телефона">
-                    <span class="registration__label-text">Номер телефона</span>
-                    <input id="phoneInput" name="phone"
-                      class="registration__input registration__formRegisterInputTelephone" type="tel" minlength="11"
-                      maxlength="30" pattern="^(\+7\d{10}|8\d{10})$" placeholder="+7 999 999 99-99" required />
+                <label for="name" class="form__label">Имя</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Имя"
+                  class="form__input"
+                  required
+                />
 
-                    <span class="phoneInput-errors errors"></span>
-                  </label>
+                <label for="phone" class="form__label">Номер Телефона</label>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="Телефон"
+                  class="form__input"
+                  required
+                />
 
-                  <button id="submitButton"
-                    class="registration__formRegisterButton registration__formRegisterButton_disabled" type="submit">
-                    Отправить
-                  </button>
-                </div>
+                <button type="submit" class="form__button">Отправить</button>
               </form>
-
             </div>
-          </div>
-        </section>-->
-
-
-
-
-
+          </section>
+        </div>
       </main>
       <footer class="footer">
         <div class="footer__content">
@@ -822,5 +748,4 @@
       </footer>
     </div>
   </body>
-
 </html>
