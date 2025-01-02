@@ -834,9 +834,9 @@
               </div>
               <div class="cleaning__right">
                 <h3 class="cleaning__text">
-                  ПРИЙДЕМ К ВАМ НА ПОМОЩЬ В ЛЮБОЙ СИТУАЦИИ!
+                  Придём к вам на помощь в любой ситуации!
                 </h3>
-                <form class="cleaning__form">
+               <!--<form class="cleaning__form" >
                   <h4 class="cleaning__form-title">Оставить заявку</h4>
                   <label for="name" class="cleaning__form-label">Имя</label>
                   <input
@@ -859,7 +859,63 @@
                   <button type="submit" class="cleaning__form-button">
                     Отправить
                   </button>
+                </form>--> 
+
+                
+                <form class="form__form" id="contactForm">
+                  <p class="form__form-text">Оставить заявку</p>
+
+                  <label for="name" class="cleaning__form-label">Имя</label>
+                  <input
+                    id="nameInput"
+                    name="text"
+                    minlength="2"
+                    maxlength="30"
+                    type="text"
+                    placeholder="Имя"
+                    class="registration__input"
+                    required
+                  />
+
+                  <span class="nameInput-errors errors"></span>
+
+                  <label for="phone" class="cleaning__form-label">Номер Телефона</label>
+                  <input
+                    type="tel"
+                    minlength="11"
+                    maxlength="30"
+                    pattern="^(\+7\d{10}|8\d{10})$"
+                    placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
+                    id="phoneInput"
+                    name="phone"
+                    class="registration__input"
+                   required 
+                  />
+
+                  <span class="phoneInput-errors errors"></span>
+
+                  <span
+                    class="procedures__message-error"
+                    id="server-error-message"
+                  ></span>
+
+                  <div class="success-message">
+                    Сообщение успешно отправлено! Мастер свяжется с вами в
+                    близжайшее время!
+                  </div>
+                  <button
+                    type="submit"
+                    id="submitButton"
+                    class="registration__formRegisterButton
+                     registration__formRegisterButton_disabled"
+                  >
+                    Отправить
+                  </button>
                 </form>
+
+
+
+
               </div>
             </div>
           </div>
@@ -956,5 +1012,7 @@
       </footer>
     </div>
     <script src="./scripts/prices-scripts.js"></script>
+    <script src="./scripts/telegramApiBot.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

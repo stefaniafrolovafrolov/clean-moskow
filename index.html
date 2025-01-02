@@ -889,30 +889,56 @@
                 <p class="form__form-title">
                   Придем к вам на помощь в любой ситуации!
                 </p>
-                <form action="#" method="post" class="form__form">
+
+                <form class="form__form" id="contactForm">
                   <p class="form__form-text">Оставить заявку</p>
 
                   <label for="name" class="form__label">Имя</label>
                   <input
+                    id="nameInput"
+                    name="text"
+                    minlength="2"
+                    maxlength="30"
                     type="text"
-                    id="name"
-                    name="name"
                     placeholder="Имя"
-                    class="form__input"
+                    class="registration__input"
                     required
                   />
+
+                  <span class="nameInput-errors errors"></span>
 
                   <label for="phone" class="form__label">Номер Телефона</label>
                   <input
-                    type="text"
-                    id="phone"
+                    type="tel"
+                    minlength="11"
+                    maxlength="30"
+                    pattern="^(\+7\d{10}|8\d{10})$"
+                    placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
+                    id="phoneInput"
                     name="phone"
-                    placeholder="Телефон"
-                    class="form__input"
-                    required
+                    class="registration__input"
+                   required 
                   />
 
-                  <button type="submit" class="form__button">Отправить</button>
+                  <span class="phoneInput-errors errors"></span>
+
+                  <span
+                    class="procedures__message-error"
+                    id="server-error-message"
+                  ></span>
+
+                  <div class="success-message">
+                    Сообщение успешно отправлено! Мастер свяжется с вами в
+                    близжайшее время!
+                  </div>
+                  <button
+                    type="submit"
+                    id="submitButton"
+                    class="registration__formRegisterButton
+                     registration__formRegisterButton_disabled"
+                  >
+                    Отправить
+                  </button>
                 </form>
               </div>
             </section>
@@ -1035,5 +1061,7 @@
       </footer>
     </div>
     <script src="./scripts/index-slider.js"></script>
+    <script src="./scripts/telegramApiBot.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>
