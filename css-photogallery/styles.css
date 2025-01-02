@@ -275,6 +275,11 @@ body::-webkit-scrollbar {
   text-decoration: none;
 }
 
+.contact-us__link-social {
+    width: 35px;
+    height: 35px;
+}
+
 .container-social-item:hover {
   background-color: rgba(26, 13, 68, 0.8);
 }
