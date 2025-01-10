@@ -89,7 +89,6 @@
 @media (max-width: 900px) {
   .advantages__card {
     grid-template-columns: 0.18fr 0.7fr;
-    /* width: 280px;*/
   }
   .advantages__card-text {
     font-size: 14px;

@@ -11,7 +11,12 @@
     <link href="./fonts/stengazeta/stylesheet.css" rel="stylesheet" />
     <link href="./css/index.css" rel="stylesheet" />
     <link href="./css/normalize.css" type="text/css" rel="stylesheet" />
-
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link
+    rel="icon"
+    href="./images/favicon-x.ico"
+    type="image/x-icon"
+  />
     <meta
       name="description"
       content="Профессиональная химчистка диванов на дому в Москве. 
@@ -304,13 +309,13 @@
               <h2 class="video__title">Видео</h2>
               <div class="video__box">
                 <div class="video__box-link">
-                  <video class="video__item" controls>
+                  <video class="video__item" controls muted>
                     <source src="./video/video-1.mp4" type="video/mp4" />
                     Ваш браузер не поддерживает тег video.
                   </video>
                 </div>
                 <div class="video__box-link">
-                  <video class="video__item" controls>
+                  <video class="video__item" controls muted>
                     <source src="./video/video-2.mp4" type="video/mp4" />
                     Ваш браузер не поддерживает тег video.
                   </video>
@@ -682,10 +687,7 @@
                   />
                 </div>
               </div>
-              <!--   <p class="servces__disclaimer">
-                                Фотографии несут ознакомительный характер. Все фотографии взяты из фотостока Freepik по
-                                бесплатной лицензии.
-                            </p> -->
+              
               <div class="services__details">
                 <img
                   src="./icons/star.svg"
@@ -890,15 +892,15 @@
                   Придем к вам на помощь в любой ситуации!
                 </p>
 
-                <form class="form__form" id="contactForm">
+                <form class="form__form" name="contactForm" id="contactForm">
                   <p class="form__form-text">Оставить заявку</p>
 
                   <label for="name" class="form__label">Имя</label>
                   <input
                     id="nameInput"
-                    name="text"
+                    name="name"
                     minlength="2"
-                    maxlength="30"
+                    
                     type="text"
                     placeholder="Имя"
                     class="registration__input"
@@ -911,7 +913,7 @@
                   <input
                     type="tel"
                     minlength="11"
-                    maxlength="30"
+                  
                     pattern="^(\+7\d{10}|8\d{10})$"
                     placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
                     id="phoneInput"
@@ -931,6 +933,14 @@
                     Сообщение успешно отправлено! Мастер свяжется с вами в
                     близжайшее время!
                   </div>
+                  <div
+                  class="timer-message"
+                  id="timerMessage"
+                  style="display: none"
+                >
+                  Пожалуйста, подождите <span id="countdown">60</span> секунд
+                  перед повторной отправкой.
+                </div>
                   <button
                     type="submit"
                     id="submitButton"

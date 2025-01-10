@@ -29,6 +29,7 @@
   display: flex;
   background-color: var(--color-white);
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .comments__content {
@@ -82,6 +83,47 @@
   border-radius: 4px;
   height: auto;
   border: 1px solid var(--color-primary);
+  background: #ffffff;
+}
+
+.container-page-console-button {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 290px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.comments-manage-buttons {
+  width: 60px;
+  height: 30px;
+  border: 2px solid gray;
+  border-radius: 3px;
+  margin-left: 55px;
+  cursor: pointer;
+}
+
+.page-console-button {
+  width: 30px;
+  height: 30px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin-right: 7px;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.page-console-button:hover {
+  border: 1px dotted blue;
 }
 .comments__item:last-of-type {
   margin-bottom: 65px;
@@ -140,18 +182,20 @@
   margin: 0;
   text-overflow: ellipsis;
   color: var(--color-black);
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .comments__item-texts {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  -webkit-line-clamp: 2; /* Ограничивает текст до двух строк. Не работает с Firefox */
+  -webkit-line-clamp: 2;
   transition: max-height 0.3s ease;
 }
 .comments__item-texts.expanded {
   display: block;
-  -webkit-line-clamp: unset; /* Убирает ограничение количества строк */
+  -webkit-line-clamp: unset;
 }
 
 .comments__item-button {
@@ -206,7 +250,6 @@
 }
 
 .comments__form {
-  max-height: 545px;
   padding: 30px;
   border-radius: 15px;
   border: 1px solid var(--color-gray);
@@ -233,7 +276,6 @@
   font-weight: 900;
   line-height: 23px;
   margin-bottom: 15px;
-  /* color: var(--color-primary); */
   color: var(--color-black);
 }
 
@@ -249,6 +291,7 @@
 }
 
 .comments__form-input {
+  outline: none;
   width: 100%;
   height: 40px;
   font-size: 17px;
@@ -262,6 +305,12 @@
   color: var(--color-black);
   transition: var(--transition);
 }
+
+.comments__form-input:focus {
+  border-color: #928686;
+  background: #d1c8c880;
+}
+
 .comments__form-input:hover {
   border: 1px solid var(--color-primary);
 }
@@ -297,6 +346,36 @@
 }
 .comments__form-button:hover {
   opacity: 0.8;
+}
+
+.comments-form-warning {
+  background: #5ad84a;
+  margin-top: 10px;
+  color: white;
+  display: none;
+  text-align: center;
+  padding: 7px 7px;
+}
+
+.comments-form-warning__text {
+  max-width: 486px;
+}
+
+.comments__form-button_disabled {
+  border: 1px solid #9c8d8d;
+  background-color: #ffffff;
+  color: #494646;
+  background: #fae6e6;
+  cursor: none;
+}
+
+.comments__form-button_valid {
+  background: #ff0080;
+  color: #fff;
+}
+
+.comments__form-input_type_errors {
+  border: 1px solid #ff0000;
 }
 
 .comments__form-img-wrapper {
@@ -354,7 +433,7 @@
     margin-bottom: 30px;
   }
   .comments__item:nth-child(4) {
-    display: flex; /* Открыть четвёртый элемент */
+    display: flex;
   }
 
   .comments__item-name {

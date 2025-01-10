@@ -171,35 +171,16 @@
 }
 
 @media (max-width: 757px) {
-  /*.footer__contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer__socials {
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
-
-  .footer__openingHours {
-    margin-left: 70px;
-  }
-
-  .footer__information {
-    margin-left: 70px;
-  }*/
   .footer__content {
     padding: 20px;
     display: grid;
-    /*  grid-template-columns: 1fr 1fr; */
-    gap: 10px; /* Уменьшаем отступы */
+
+    gap: 10px;
   }
 
   .footer__block-lists {
-    grid-column: 1 / 2; /* Первая колонка */
-    grid-row: 1 / 2; /* Первая строка */
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
   .footer__information {
     display: flex;
@@ -209,15 +190,14 @@
   .footer__information,
   .footer__openingHours,
   .footer__contacts {
-    grid-column: 2 / 3; /* Все эти элементы будут в первой колонке */
-    grid-row: 1 / 2; /* Первая строка */
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     max-width: 140px;
   }
   .footer__openingHours {
     display: flex;
     flex-direction: column;
     margin-top: 185px;
-    /*outline: red solid 5px;*/
   }
   .footer__contacts {
     margin-top: 235px;
@@ -297,7 +277,7 @@
 
   .footer__paragraph {
     margin-bottom: 20px;
-}
+  }
   .footer__openingHours {
     margin-left: 20px;
   }
@@ -310,86 +290,5 @@
 @media (max-width: 379px) {
   .footer__information {
     margin-left: 40px;
-}
-}
-/*@media (max-width: 520px) {
-  .footer__content {
-    padding: 20px;
-    display: grid;
-    
-    gap: 10px; 
-  }
-
-  .footer__block-lists {
-    grid-column: 1 / 2; 
-    grid-row: 1 / 2;
-  }
-  .footer__information {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer__information,
-  .footer__openingHours,
-  .footer__contacts {
-    grid-column: 2 / 3; 
-    grid-row: 1 / 2; 
-    max-width: 140px;
-  }
-  .footer__openingHours {
-    display: flex;
-    flex-direction: column;
-    margin-top: 185px;
-    
-  }
-  .footer__contacts {
-    margin-top: 235px;
-  }
-  h6.footer__title {
-    margin-bottom: 10px;
-    line-height: 15px;
-    text-align: left;
-  }
-  .footer__text {
-    margin-top: -15px;
-    margin-left: -30px;
-  }
-
-  .footer__title_span {
-    margin-left: -15px;
-  }
-
-  .footer__text_phone {
-    margin-top: 10px;
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16.8px;
-    text-align: center;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: auto;
-    margin-left: 7px;
-  }
-
-  .footer__lists_center {
-    align-items: center;
   }
 }
-@media (max-width: 380px) {
-  .footer__content {
-    grid-template-columns: 1fr 1fr; 
-    gap: 10px;
-    padding-right: 0;
-  }
-  .footer__information,
-  .footer__openingHours,
-  .footer__contacts {
-    margin-right: -20px;
-    max-width: 120px;
-  }
-  .footer__socials {
-    width: auto;
-  }
-}*/

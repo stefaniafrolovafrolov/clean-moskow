@@ -17,7 +17,6 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   min-height: 100vh;
-  /* outline: 100px black solid; */
 }
 
 html,
@@ -50,7 +49,6 @@ h2 {
 }
 
 .pricing__text {
-  /* 15% скидка всем новым клиентам ! Антибактериальная обработка в подарок, гарантия результате */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 800;
@@ -73,9 +71,9 @@ h2 {
 .promo-banner__text {
   position: absolute;
   top: 50%;
-  left: 0px; /* Увеличенный отступ от левого края */
+  left: 0px;
   transform: translateY(-50%);
-  color: white; /* Цвет текста */
+  color: white;
   z-index: 1;
   width: 60%;
   padding-left: 170px;

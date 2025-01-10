@@ -1,12 +1,9 @@
-const express = require('express');
 const https = require('https');
 const { schema } = require('../validation/validation');
 
-const router = express.Router();
-const { TOKEN, CHAT_ID } = process.env;
+const { TOKEN, CHAT_ID } = require('../env');
 
-// Эндпоинт для получения данных из формы
-router.post('/backend/submit-form', async (req, res) => {
+async function writingTo(req, res) {
   const err500 = 'Ошибка отправки сообщения в Telegram.';
   try {
     await schema.validateAsync(req.body);
@@ -16,10 +13,14 @@ router.post('/backend/submit-form', async (req, res) => {
 
     const message = `Новое сообщение:\nИмя: ${name}\nТелефон: ${phone}`;
 
+    console.log(message);
+
     const data = JSON.stringify({
       chat_id: CHAT_ID,
       text: message,
     });
+
+    console.log(data);
 
     const options = {
       hostname: 'api.telegram.org',
@@ -58,6 +59,6 @@ router.post('/backend/submit-form', async (req, res) => {
     }
     return res.status(400).json({ message: error.details[0].message });
   }
-});
+}
 
-module.exports = router;
+module.exports = { writingTo };

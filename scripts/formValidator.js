@@ -42,50 +42,37 @@ class formValidator {
     inputElement.classList.remove(this._config.inputErrorClass);
   }
 
-  /*_checkInputValidity(inputElement) {
-      if (inputElement.validity.valid) {
-        this._hideInputError(inputElement);
-      } else {
-        this._showInputError(inputElement);
-      }
-    }*/
-  /* _checkInputValidity(inputElement) {
-    // Проверка длины имени
-    if (inputElement.value.length < 2) {
-      inputElement.setCustomValidity(
-        "Имя должно содержать как минимум 2 символа."
-      );
-    } else {
-      inputElement.setCustomValidity(""); // Сбрасываем ошибку, если длина валидная
-    }
-
-    if (inputElement.validity.valid) {
-      this._hideInputError(inputElement);
-    } else {
-      this._showInputError(inputElement);
-    }
-  }*/
-
   _checkInputValidity(inputElement) {
-    // Проверка длины имени
     if (inputElement.name === "name") {
       if (inputElement.value.length < 2) {
         inputElement.setCustomValidity(
           "Имя должно содержать как минимум 2 символа."
         );
+      } else if (inputElement.value.length > 30) {
+        inputElement.setCustomValidity(
+          "Имя должно содержать не более 30 символов."
+        );
       } else {
-        inputElement.setCustomValidity(""); // Сбрасываем ошибку, если длина валидная
+        inputElement.setCustomValidity("");
       }
     }
-
-    // Проверка длины телефона
     if (inputElement.name === "phone") {
       if (inputElement.value.length < 11) {
         inputElement.setCustomValidity(
           "Телефон должен содержать как минимум 11 символов."
         );
       } else {
-        inputElement.setCustomValidity(""); // Сбрасываем ошибку, если длина валидная
+        inputElement.setCustomValidity("");
+      }
+    }
+
+    if (inputElement.name === "text") {
+      if (inputElement.value.length < 2 || inputElement.value.length > 1000) {
+        inputElement.setCustomValidity(
+          "Отзыв должен содержать от 2 до 1000 символов."
+        );
+      } else {
+        inputElement.setCustomValidity("");
       }
     }
 

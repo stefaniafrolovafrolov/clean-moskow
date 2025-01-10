@@ -276,8 +276,8 @@ body::-webkit-scrollbar {
 }
 
 .contact-us__link-social {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 .container-social-item:hover {

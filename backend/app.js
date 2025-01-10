@@ -2,31 +2,31 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const helmet = require('helmet');
+const router = require('./routes/index');
+const { loadCommentsArrays, saveCommentsArray } = require('./storage/comments');
 const handleError = require('./middlewares/handleError');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
-
-require('dotenv').config();
-
-const formRoutes = require('./routes/formRoutes');
+const { PORT } = require('./env');
 
 const app = express();
-const PORT = process.env.PORT || 3005;
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(requestLogger);
 app.use(helmet());
 
-// Подключение маршрутов
-app.use('/', formRoutes);
+app.use('/backend', router);
+
+loadCommentsArrays();
 
 app.use(errorLogger);
 
 app.use(handleError);
 
-// Запуск сервера
-app.listen(PORT, () => {
-  console.log(`Сервер запущен на порту ${PORT}`);
-});
-
+app.listen(
+  PORT,
+  () => {
+    setInterval(saveCommentsArray, 1000);
+    console.log(`Сервер запущен на порту ${PORT}`);
+  },
+);

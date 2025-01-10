@@ -11,7 +11,8 @@
     <link href="./css/index.css" rel="stylesheet" />
     <link href="./css-contacts/contacts.css" rel="stylesheet" />
     <link href="./css/normalize.css" type="text/css" rel="stylesheet" />
-
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link rel="icon" href="./images/favicon-x.ico" type="image/x-icon" />
     <meta
       name="description"
       content="Наши контакты. Компания Clean Moskow по химчистке мебели в Москве."
@@ -272,101 +273,68 @@
                       Прийдем к вам на помощь в любой ситуации!
                     </h3>
 
+                    <form
+                      class="form__form"
+                      name="contactForm"
+                      id="contactForm"
+                    >
+                      <p class="form__form-text">Оставить заявку</p>
 
+                      <label for="name" class="form__label">Имя</label>
+                      <input
+                        id="nameInput"
+                        name="name"
+                        minlength="2"
+                        type="text"
+                        placeholder="Имя"
+                        class="registration__input"
+                        required
+                      />
 
+                      <span class="nameInput-errors errors"></span>
 
-              <!--     <form class="contacts__form">
-                      <div class="contacts__form-box">
-                        <h4 class="contacts__form-title">Оставить заявку</h4>
+                      <label for="phone" class="form__label"
+                        >Номер Телефона</label
+                      >
+                      <input
+                        type="tel"
+                        minlength="11"
+                        pattern="^(\+7\d{10}|8\d{10})$"
+                        placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
+                        id="phoneInput"
+                        name="phone"
+                        class="registration__input"
+                        required
+                      />
 
-                        <label class="contacts__form-label">Ваше имя</label>
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          class="contacts__form-input contacts__form-input_ctrl_name"
-                          placeholder="Напишите Ваше имя"
-                          required
-                        />
+                      <span class="phoneInput-errors errors"></span>
 
-                        <label class="contacts__form-label"
-                          >Номер телефона</label
-                        >
-                        <input
-                          type="text"
-                          id="tel"
-                          name="tel"
-                          class="contacts__form-input contacts__form-input_ctrl_tel"
-                          placeholder="+7 999 999 99-99"
-                          required
-                        />
-                        <button class="contacts__form-button">Отправить</button>
+                      <span
+                        class="procedures__message-error"
+                        id="server-error-message"
+                      ></span>
+
+                      <div class="success-message">
+                        Сообщение успешно отправлено! Мастер свяжется с вами в
+                        близжайшее время!
                       </div>
-                    </form>--> 
-
-
-
-                <form class="form__form" id="contactForm">
-                  <p class="form__form-text">Оставить заявку</p>
-
-                  <label for="name" class="form__label">Имя</label>
-                  <input
-                    id="nameInput"
-                    name="text"
-                    minlength="2"
-                    maxlength="30"
-                    type="text"
-                    placeholder="Имя"
-                    class="registration__input"
-                    required
-                  />
-
-                  <span class="nameInput-errors errors"></span>
-
-                  <label for="phone" class="form__label">Номер Телефона</label>
-                  <input
-                    type="tel"
-                    minlength="11"
-                    maxlength="30"
-                    pattern="^(\+7\d{10}|8\d{10})$"
-                    placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
-                    id="phoneInput"
-                    name="phone"
-                    class="registration__input"
-                   required 
-                  />
-
-                  <span class="phoneInput-errors errors"></span>
-
-                  <span
-                    class="procedures__message-error"
-                    id="server-error-message"
-                  ></span>
-
-                  <div class="success-message">
-                    Сообщение успешно отправлено! Мастер свяжется с вами в
-                    близжайшее время!
-                  </div>
-                  <button
-                    type="submit"
-                    id="submitButton"
-                    class="registration__formRegisterButton
-                     registration__formRegisterButton_disabled"
-                  >
-                    Отправить
-                  </button>
-                </form>
-
-
-
-
-
-
-
-
-
-
-
+                      <div
+                        class="timer-message"
+                        id="timerMessage"
+                        style="display: none"
+                      >
+                        Пожалуйста, подождите
+                        <span id="countdown">60</span> секунд перед повторной
+                        отправкой.
+                      </div>
+                      <button
+                        type="submit"
+                        id="submitButton"
+                        class="registration__formRegisterButton registration__formRegisterButton_disabled"
+                      >
+                        Отправить
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>

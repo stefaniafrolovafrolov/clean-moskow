@@ -26,7 +26,6 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   min-height: 100vh;
-  /* outline: 100px black solid; */
 }
 
 .page__content {
@@ -35,13 +34,11 @@
   min-width: 320px;
   background: var(--color-white);
   min-height: 100vh;
-  /* outline: 8px red solid;*/
 }
 
 .content {
   min-height: 50vh;
   flex: 1;
-  /*outline: 8px rgb(12, 9, 185) solid;*/
 }
 
 .banner__questions {
@@ -98,7 +95,6 @@
 }
 
 .advantages__container {
- /* outline:  5px red solid;*/
   max-width: 1160px;
   display: flex;
   justify-content: center;
@@ -152,10 +148,8 @@
 }
 
 .container {
-  /*outline: red solid 5px;*/
   max-width: 1160px;
   margin: 0 auto;
-  /*padding: 0 20px;*/
   position: relative;
 }
 .bg-left {
@@ -517,8 +511,6 @@
   margin-bottom: 50px;
 }
 
-/* media запросы */
-
 @media screen and (max-width: 1750px) {
   .banner__questions-wrap {
     padding: 0 0 0px 300px;
@@ -536,7 +528,6 @@
     padding: 0 0 0px 20px;
   }
 }
-/* banner */
 @media screen and (max-width: 1360px) {
   .banner__questions-wrap {
     margin: 0;
@@ -609,26 +600,14 @@
   }
 }
 
-@media screen and (max-width: 806px) {
-  /* .banner__questions {
-    background-image: url(../images-blog/desktop-bg.png);
-    max-width: 800px;
-    margin-top: 108px;
-    padding: 0 10px;
-  }
-  .banner__questions-title {
-    margin-top: -112px;
-  }*/
-}
-
-@media screen and (max-width:735px){
+@media screen and (max-width: 735px) {
   .hamburger-menu__wrapper_blog_margin {
     position: fixed;
-        top: 13px;
-        left: 92.6%;
-        z-index: 3;
-        width: 40px;
-        height: 40px;
+    top: 13px;
+    left: 92.6%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -653,6 +632,7 @@
 
   .advantages__container {
     grid-gap: 0px;
+    margin-right: 30px;
     margin-top: -555px;
   }
 
@@ -726,6 +706,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .advantages__container {
+    margin-top: -960px;
+    margin-right: 0px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .banner__questions-title {
@@ -740,14 +726,14 @@
   .advantages__container {
     grid-gap: 0px;
     margin-top: -860px;
-}
+  }
 
-.banner__questions {
-  height: 1000px;
-}
+  .banner__questions {
+    height: 1000px;
+  }
   .banner__questions-wrap {
     height: 180px;
-}
+  }
   .banner__questions-subtitle {
     font-family: Roboto;
     font-size: 14px;
@@ -755,20 +741,10 @@
     line-height: 16px;
   }
 }
-@media screen and (max-width: 390px) {
- /* .banner__questions-title {
-    max-width: 213px;
-  }*/
 
-  .banner__questions-span {
-
-  }
-}
-
-@media screen and (max-width: 346px){
+@media screen and (max-width: 346px) {
   .banner__questions-title {
     max-width: 320px;
-    
   }
 
   .banner__questions-span-title {
@@ -799,11 +775,8 @@
   }
 
   .advantages__container {
-    
     margin-top: -860px;
-}
-
-
+  }
 }
 
 @media screen and (max-width: 1914px) {
@@ -815,7 +788,6 @@
   }
 }
 
-/* advantages */
 @media screen and (max-width: 1250px) {
   .container {
     max-width: 1040px;
@@ -898,51 +870,6 @@
   }
 }
 
-@media screen and (max-width: 340px) {
-  /*.advantages__images-blog {
-    height: 45px;
-    width: 45px;
-    margin-bottom: 8px;
-  }
-
-  .advantages__none {
-    display: none;
-  }
-  .advantages__flex {
-    display: flex;
-  }
-  .advantages__title {
-    line-height: 24px;
-    color: var(--color-white);
-    font-size: 20px;
-    margin-bottom: 8px;
-  }
-  .advantages__text {
-    color: var(--color-white);
-    line-height: 16px;
-  }
-  .advantages__container {
-    grid-gap: 0px;
-    margin-top: -555px;
-  }
-  .advantages__mb {
-    margin-bottom: 8px;
-  }
-  .advantages__order2 {
-    order: 4;
-  }
-  .advantages__order4 {
-    order: 2;
-  }
-  .advantages__height {
-    height: 46px;
-  }
-  .advantages {
-    padding: 0px 0px;
-  }*/
-}
-
-/* blog */
 @media screen and (max-width: 860px) {
   .blog {
     margin-top: -18px;
@@ -1010,9 +937,6 @@
     padding-left: 13px;
     margin-bottom: 5px;
   }
-  /*.container {
-    padding: 0 10px;
-  }*/
 
   .blog__container {
     padding: 0 10px;
@@ -1035,7 +959,6 @@
   }
 }
 
-/* cost */
 @media screen and (max-width: 1250px) {
   .const__name {
     font-size: 17px;
@@ -1106,8 +1029,6 @@
     grid-gap: 50px;
   }
 }
-
-/* social */
 
 @media screen and (max-width: 800px) {
   .social__text {

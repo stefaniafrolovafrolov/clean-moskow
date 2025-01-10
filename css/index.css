@@ -34,7 +34,6 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
   min-height: 100vh;
-  /* outline: 100px black solid; */
 }
 
 .page__content {
@@ -43,13 +42,11 @@
   min-width: 320px;
   background: #f4f7f7;
   min-height: 100vh;
-  /* outline: 8px red solid;*/
 }
 
 .content {
   min-height: 50vh;
   flex: 1;
-  /*outline: 8px rgb(12, 9, 185) solid;*/
 }
 
 @media (max-width: 900px) {

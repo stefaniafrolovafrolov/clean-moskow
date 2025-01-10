@@ -11,7 +11,8 @@
     <link href="./css/index.css" rel="stylesheet" />
     <link href="./css-prices/index.css" rel="stylesheet" />
     <link href="./css/normalize.css" type="text/css" rel="stylesheet" />
-
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link rel="icon" href="./images/favicon-x.ico" type="image/x-icon" />
     <meta
       name="description"
       content="Наши цены – стоимость услуг химчистки диванов,
@@ -284,8 +285,7 @@
                 </a>
               </div>
             </section>
-            <!-- поправь если надо и по BEM если надо -->
-            <!-- Раздел цен на химчистку диванов и мягкой мебели -->
+
             <section class="prices">
               <h2 class="prices__title">
                 Цены на химчистку диванов и мягкой мебели
@@ -297,9 +297,7 @@
               </p>
             </section>
 
-            <!-- Сетка с элементами -->
             <section class="coaches items">
-              <!-- <h2 class="section__title">Диваны</h2> -->
               <div class="coach__item item">
                 <h2 class="coach__title item__title">Диван</h2>
                 <img
@@ -519,7 +517,6 @@
               </div>
             </section>
 
-            <!-- Раздел цен на химчистку матрасов -->
             <h2 class="prices__title">Цены на химчистку матрасов</h2>
 
             <section class="mattresses items">
@@ -557,7 +554,6 @@
               </div>
             </section>
 
-            <!-- Раздел на химчистку автомобилей -->
             <h2 class="prices__title">Цены на химчистку автомобилей</h2>
 
             <section class="cars items">
@@ -836,41 +832,15 @@
                 <h3 class="cleaning__text">
                   Придём к вам на помощь в любой ситуации!
                 </h3>
-               <!--<form class="cleaning__form" >
-                  <h4 class="cleaning__form-title">Оставить заявку</h4>
-                  <label for="name" class="cleaning__form-label">Имя</label>
-                  <input
-                    id="name"
-                    type="text"
-                    class="cleaning__form-input"
-                    placeholder="Иван"
-                    required
-                  />
-                  <label for="phone_number" class="cleaning__form-label"
-                    >Номер телефона</label
-                  >
-                  <input
-                    id="phone_number"
-                    type="tel"
-                    class="cleaning__form-input"
-                    placeholder="+7 999 999 99-99"
-                    required
-                  />
-                  <button type="submit" class="cleaning__form-button">
-                    Отправить
-                  </button>
-                </form>--> 
 
-                
-                <form class="form__form" id="contactForm">
+                <form class="form__form" name="contactForm" id="contactForm">
                   <p class="form__form-text">Оставить заявку</p>
 
                   <label for="name" class="cleaning__form-label">Имя</label>
                   <input
                     id="nameInput"
-                    name="text"
+                    name="name"
                     minlength="2"
-                    maxlength="30"
                     type="text"
                     placeholder="Имя"
                     class="registration__input"
@@ -879,17 +849,18 @@
 
                   <span class="nameInput-errors errors"></span>
 
-                  <label for="phone" class="cleaning__form-label">Номер Телефона</label>
+                  <label for="phone" class="cleaning__form-label"
+                    >Номер Телефона</label
+                  >
                   <input
                     type="tel"
                     minlength="11"
-                    maxlength="30"
                     pattern="^(\+7\d{10}|8\d{10})$"
                     placeholder="+7XXXXXXXXXX или 8XXXXXXXXXX"
                     id="phoneInput"
                     name="phone"
                     class="registration__input"
-                   required 
+                    required
                   />
 
                   <span class="phoneInput-errors errors"></span>
@@ -903,19 +874,23 @@
                     Сообщение успешно отправлено! Мастер свяжется с вами в
                     близжайшее время!
                   </div>
+
+                  <div
+                    class="timer-message"
+                    id="timerMessage"
+                    style="display: none"
+                  >
+                    Пожалуйста, подождите <span id="countdown">60</span> секунд
+                    перед повторной отправкой.
+                  </div>
                   <button
                     type="submit"
                     id="submitButton"
-                    class="registration__formRegisterButton
-                     registration__formRegisterButton_disabled"
+                    class="registration__formRegisterButton registration__formRegisterButton_disabled"
                   >
                     Отправить
                   </button>
                 </form>
-
-
-
-
               </div>
             </div>
           </div>

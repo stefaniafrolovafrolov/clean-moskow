@@ -1,28 +1,41 @@
 const form = document.getElementById("contactForm");
-const errorMessage = document.getElementById("procedures-error"); // Сообщение об ошибке
-const submitButton = document.getElementById("submitButton"); // Кнопка отправки
-const serverErrorMessage = document.getElementById("server-error-message"); // Сообщение об ошибке сервера
+const errorMessage = document.getElementById("procedures-error");
+const submitButton = document.getElementById("submitButton");
+const serverErrorMessage = document.getElementById("server-error-message");
 
-// Устанавливаем изначальный класс кнопки
+let isSending = false;
+let countdownValue = 60;
+const timerMessage = document.getElementById("timerMessage");
+const countdownDisplay = document.getElementById("countdown");
+
 submitButton.classList.add("registration__formRegisterButton_disabled");
+submitButton.disabled = true;
 
-// Функция для проверки заполненности полей
 function areFieldsValid() {
   const formData = new FormData(form);
-  const nameValue = formData.get("text");
+  const nameValue = formData.get("name");
   const phoneValue = formData.get("phone");
 
-  const isNameValid = nameValue && nameValue.length >= 2; // Проверка имени
-  const isPhoneValid = phoneValue && phoneValue.length === 11; // Проверка телефона на 11 символов
+  const isNameValid = nameValue && nameValue.length >= 2;
+  const isPhoneValid = phoneValue && phoneValue.length === 11;
 
   return isNameValid && isPhoneValid;
 }
 
 form.addEventListener("input", function () {
+  if (isSending) {
+    submitButton.disabled = true;
+    submitButton.classList.add("registration__formRegisterButton_disabled");
+    submitButton.classList.remove("registration__formRegisterButton_valid");
+    return;
+  }
+
   if (areFieldsValid()) {
+    submitButton.disabled = false;
     submitButton.classList.remove("registration__formRegisterButton_disabled");
     submitButton.classList.add("registration__formRegisterButton_valid");
   } else {
+    submitButton.disabled = true;
     submitButton.classList.add("registration__formRegisterButton_disabled");
     submitButton.classList.remove("registration__formRegisterButton_valid");
   }
@@ -31,29 +44,49 @@ form.addEventListener("input", function () {
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
+  if (isSending) {
+    alert("Пожалуйста, подождите 1 минуту перед повторной отправкой.");
+    return;
+  }
+
+  timerMessage.style.display = "block";
+  countdownValue = 60;
+  countdownDisplay.textContent = countdownValue;
+
+  const countdownInterval = setInterval(() => {
+    countdownValue--;
+    countdownDisplay.textContent = countdownValue;
+    if (countdownValue <= 0) {
+      clearInterval(countdownInterval);
+      timerMessage.style.display = "none";
+      isSending = false;
+      form.reset();
+      submitButton.disabled = true;
+      submitButton.classList.add("registration__formRegisterButton_disabled");
+      submitButton.classList.remove("registration__formRegisterButton_valid");
+    }
+  }, 1000);
+
+  isSending = true;
+
   const formData = new FormData(form);
 
-  // Соберите данные для отправки
   const data = {
-    name: formData.get("text"),
+    name: formData.get("name"),
     phone: formData.get("phone"),
   };
 
-  // Проверяем заполнены ли все поля
   if (!areFieldsValid()) {
     console.error("Заполните все поля!");
-    return; // Возвращаемся, если хотя бы одно поле не заполнено
+    return;
   }
 
-  console.log(data); // Логи для дебага перед отправкой запроса
-
-  // Дизаблим кнопку и меняем класс перед отправкой
   submitButton.disabled = true;
   submitButton.textContent = "Отправка...";
   submitButton.classList.add("registration__formRegisterButton_disabled");
   serverErrorMessage.style.display = "none";
 
-  fetch("http://localhost:3005/backend/submit-form", {
+  fetch("http://cleanhost:3000/backend/submit-form", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -67,27 +100,29 @@ form.addEventListener("submit", function (e) {
       return response.json();
     })
     .then((data) => {
-      //console.log(data);
       const successMessage = document.querySelector(".success-message");
-      successMessage.style.display = "block"; // Показываем сообщение об успешной отправке
-      form.reset(); // Очищаем форму
+      successMessage.style.display = "block";
+      form.reset();
 
       setTimeout(() => {
-        successMessage.style.display = "none"; // Скрываем сообщение
+        successMessage.style.display = "none";
       }, 6000);
     })
     .catch((error) => {
       console.error("Ошибка:", error);
-      // Показать сообщение об ошибке сервера
-      serverErrorMessage.style.display = "block"; // Показываем сообщение об ошибке сервера
+      serverErrorMessage.style.display = "block";
       serverErrorMessage.textContent =
-        "Ошибка сервера. Пожалуйста, попробуйте позже."; // Текст сообщения
+        "Ошибка сервера. Пожалуйста, попробуйте позже.";
     })
     .finally(() => {
-      // Изменяем класс кнопки на disabled после завершения
       submitButton.classList.add("registration__formRegisterButton_disabled");
       submitButton.classList.remove("registration__formRegisterButton_valid");
       submitButton.textContent = "Оставить заявку";
-      submitButton.disabled = false; // Активируем кнопку
+      submitButton.disabled = true;
+
+      setTimeout(() => {
+        isSending = false;
+        submitButton.disabled = true;
+      }, 60000);
     });
 });

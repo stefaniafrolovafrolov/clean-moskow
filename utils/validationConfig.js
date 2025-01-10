@@ -1,5 +1,5 @@
 const validationConfig = {
-  formSelector: ".registration__formRegister",
+  formSelector: ".form__form",
   inputSelector: ".registration__input",
   submitButtonSelector: ".registration__formRegisterButton",
   inactiveButtonClass: "registration__formRegisterButton_disabled",

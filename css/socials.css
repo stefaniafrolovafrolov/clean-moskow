@@ -172,12 +172,7 @@
     max-width: 380px;
     padding: 5px 10px 5px 0px;
   }
-  /*.socials__buttonbox {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 0 20px;
-    gap: 20px;
-  }*/
+
   .socials-text {
     font-size: 12px;
     line-height: 16px;
@@ -212,5 +207,5 @@
   .socials-text {
     max-width: 280px;
     padding-top: 0px;
-}
+  }
 }

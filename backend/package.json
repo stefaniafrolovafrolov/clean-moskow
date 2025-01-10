@@ -1,7 +1,7 @@
 {
   "name": "express",
   "version": "1.0.0",
-  "description": "бэкенд для приложения ресницы",
+  "description": "Бэкенд для сайта химчистка мебели в Clean Moskow",
   "main": "app.js",
   "scripts": {
     "lint": "npx eslint .",

@@ -1,0 +1,11 @@
+.page-adminka {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(241, 204, 100);
+}
+
+.page-adminka__content {
+  max-width: 1280px;
+}
