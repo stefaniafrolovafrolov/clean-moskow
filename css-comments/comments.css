@@ -343,6 +343,7 @@
   animation-duration: 0.04s;
   background: var(--color-primary);
   cursor: pointer;
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
 }
 .comments__form-button:hover {
   opacity: 0.8;
