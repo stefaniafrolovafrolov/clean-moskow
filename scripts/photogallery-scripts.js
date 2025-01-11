@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentIndex = 0;
   const itemsToShow = 5;
 
-  // Функция для отображения фотографий
   function showItems() {
     for (
       let i = currentIndex;
@@ -15,15 +14,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     currentIndex += itemsToShow;
 
-    // Скрыть кнопку, если все фотографии отображены
     if (currentIndex >= items.length) {
       button.style.display = "none";
     }
   }
 
-  // Изначальное отображение первых 5 фотографий
   showItems();
 
-  // Обработчик клика по кнопке
   button.addEventListener("click", showItems);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const itemsDesctop = document.querySelectorAll(".images__item");
+  const buttonDesctop = document.querySelector(".images__btn");
+  const itemsToShowDesctop = 9;
+  let currentIndexDesctop = 0;
+
+  function showItems() {
+    const end = currentIndexDesctop + itemsToShowDesctop;
+    for (let i = currentIndexDesctop; i < end && i < itemsDesctop.length; i++) {
+      itemsDesctop[i].style.display = "block";
+    }
+    currentIndexDesctop += itemsToShowDesctop;
+
+    if (currentIndexDesctop >= itemsDesctop.length) {
+      buttonDesctop.style.display = "none";
+    }
+  }
+
+  showItems();
+
+  buttonDesctop.addEventListener("click", showItems);
 });
