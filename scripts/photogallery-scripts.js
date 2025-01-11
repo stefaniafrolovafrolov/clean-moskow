@@ -1,27 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".w320-images__item");
-  const btn = document.querySelector(".w320-images__btn");
+  const button = document.querySelector(".w320-images__btn");
+  let currentIndex = 0;
+  const itemsToShow = 5;
 
-  let currentIndex = 1;
-
-  function showNextBlock() {
-    if (currentIndex < items.length) {
-      const nextItem = items[currentIndex];
-      nextItem.style.display = "block";
-      setTimeout(() => nextItem.classList.add("visible"), 10);
-      currentIndex++;
+  // Функция для отображения фотографий
+  function showItems() {
+    for (
+      let i = currentIndex;
+      i < currentIndex + itemsToShow && i < items.length;
+      i++
+    ) {
+      items[i].classList.add("visible");
     }
+    currentIndex += itemsToShow;
 
-    if (currentIndex === items.length) {
-      btn.setAttribute("disabled", true);
+    // Скрыть кнопку, если все фотографии отображены
+    if (currentIndex >= items.length) {
+      button.style.display = "none";
     }
   }
 
-  items.forEach((item, index) => {
-    if (index !== 0) {
-      item.style.display = "none";
-    }
-  });
+  // Изначальное отображение первых 5 фотографий
+  showItems();
 
-  btn.addEventListener("click", showNextBlock);
+  // Обработчик клика по кнопке
+  button.addEventListener("click", showItems);
 });
