@@ -885,9 +885,10 @@ h2 {
   }
 
   .carousel {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     position: relative;
-    width: 30%;
+    width: 15%;
     max-width: 1200px;
     margin: 10px auto;
     overflow: hidden;
@@ -922,9 +923,15 @@ h2 {
   }
 }
 
+@media screen and (max-width: 524px) {
+  .carousel {
+    width: 20%;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .carousel {
-    width: 50%;
+    width: 20%;
   }
 
   .items {
@@ -1009,5 +1016,17 @@ h2 {
   .button img {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  .carousel {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  .carousel {
+    width: 26%;
   }
 }

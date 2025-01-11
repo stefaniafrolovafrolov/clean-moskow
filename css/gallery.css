@@ -125,10 +125,7 @@
   }
 }
 @media (max-width: 498px) {
-
- 
   .gallery__photos-photo {
-  
     max-width: 380px;
     min-height: 350px;
   }
@@ -139,15 +136,13 @@
 }
 
 @media (max-width: 426px) {
-.gallery__photos {
-  padding: 0 ;
-  
-}
+  .gallery__photos {
+    padding: 0;
+  }
 }
 
 @media (max-width: 380px) {
   .gallery__photos-photo {
-   
     max-width: 280px;
     height: 350px;
   }
