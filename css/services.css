@@ -66,7 +66,7 @@
 .services__item-img {
   flex-grow: 1;
   object-fit: contain;
-  margin-bottom: 20px;
+ /* margin-bottom: 20px;*/
   max-width: 400px;
   height: 246px;
 }
@@ -250,7 +250,7 @@
   }
   .services__item-img {
     width: 240px;
-    margin-bottom: 10px;
+   /* margin-bottom: 10px;*/
   }
   .services__item-text {
     font-size: 14px;
@@ -307,10 +307,10 @@
     min-height: 400px;
     max-height: 400px;
   }
-  .services__item-img_margin {
+ /* .services__item-img_margin {
     margin-bottom: 20px;
     margin-top: 20px;
-  }
+  }*/
 }
 @media (max-width: 500px) {
   .services__instructions-card {
