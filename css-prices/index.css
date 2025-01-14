@@ -63,6 +63,18 @@ h2 {
   display: none;
 }
 
+.item__title {
+  margin: 0;
+  line-height: 70px;
+   text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Stengazeta";
+  color: var(--color-primary);
+  text-align: center;
+  height: 70px;
+}
+
 .promo-banner__container {
   position: relative;
   width: 100%;
@@ -193,6 +205,17 @@ h2 {
   display: none;
 }
 
+.prices__title {
+  margin: 0;
+  font-family: Stengazeta;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44.28px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 .prices__title,
 .item,
 .prices__title_phone {
@@ -206,6 +229,7 @@ h2 {
 }
 
 .prices__clarification {
+  margin: 0;
   /* Уточните материал вашей обивки у менеджера */
   font-family: "Roboto";
   font-style: normal;
@@ -222,21 +246,22 @@ h2 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Увеличенное расстояние между элементами */
+  gap: 20px;
   padding: 20px;
   margin: 0 auto;
 }
 
 .item {
+ /* outline: 3px red solid;*/
   margin: auto;
-  overflow: hidden;
+ /* overflow: hidden;*/
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  flex-direction: column; /* Располагаем элементы вертикально */
-  justify-content: space-between; /* Равномерно распределяем пространство */
-  height: 100%; /* Убедитесь, что блок имеет достаточную высоту */
-  width: 100%; /* Ширина элемента равна ширине контейнера */
-  position: relative; /* Для контекста абсолютного позиционирования (если нужно) */
+  flex-direction: column; 
+  justify-content: space-between; 
+  min-height: 405px; 
+  width: 100%;
+  /*position: relative; */
 }
 
 .item:hover {
@@ -246,14 +271,15 @@ h2 {
 
 .item img {
   display: block;
-  height: 175px;
+  /*height: 175px;*/
+  height: 246px;
   object-fit: cover;
   margin: auto;
   margin-bottom: 20px;
 }
 
 .item p {
-  height: 60px;
+  min-height: 60px;
   font-size: 20px;
   color: #000;
   margin: 0 15px 10px;
@@ -557,9 +583,9 @@ h2 {
     width: 400%;
   }
 
-  .item img {
+ /* .item img {
     height: 160px;
-  }
+  }*/
 }
 
 @media (max-width: 1250px) {
@@ -616,9 +642,9 @@ h2 {
 }
 
 @media screen and (max-width: 1000px) {
-  .item img {
+ /* .item img {
     height: 160px;
-  }
+  }*/
 
   .side-banners__content {
     width: 100%;
@@ -695,9 +721,9 @@ h2 {
     font-size: 32px;
   }
 
-  .item img {
+ /* .item img {
     height: 130px;
-  }
+  }*/
 
   .item p {
     margin: 0 15px 20px;
@@ -805,9 +831,9 @@ h2 {
 }
 
 @media screen and (max-width: 625px) {
-  .item {
+ /* .item {
     height: 90%;
-  }
+  }*/
   .pricing {
     width: 100%;
   }
@@ -861,7 +887,7 @@ h2 {
   }
 
   .item img {
-    height: 160px;
+    /*height: 160px;*/
     object-fit: contain;
   }
 
@@ -939,17 +965,17 @@ h2 {
   }
 
   .item {
-    height: 300px;
+    min-height: 300px;
   }
 
-  .item img {
+  /*.item img {
     width: 160px;
-  }
+  }*/
 
   .item p {
     font-size: 14px;
     line-height: 16px;
-    height: auto;
+    min-height: 40px;
   }
 }
 
