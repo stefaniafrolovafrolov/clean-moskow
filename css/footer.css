@@ -60,6 +60,7 @@
 }
 
 .footer__text {
+  text-decoration: none;
   margin: 0;
   font-family: Roboto;
   font-size: 20px;
@@ -217,6 +218,7 @@
   }
 
   .footer__text_phone {
+    text-decoration: none;
     margin-top: 10px;
     font-family: Lato;
     font-size: 14px;
