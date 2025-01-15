@@ -209,7 +209,7 @@
 }
 @media (max-width: 380px) {
   .hamburger-menu__button {
-    left: 80%;
+    left: 78%;
   }
 }
 @media (max-width: 750px) {
@@ -326,7 +326,7 @@
     align-items: center;
     position: fixed;
     top: 11px;
-    left: 89%;
+    left: 87%;
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -349,6 +349,8 @@
 
   .hamburger-menu__button > span {
     width: 20px;
+    position: absolute;
+    right: 5px;
   }
 
   .hamburger-menu__button > span::before {
@@ -431,12 +433,18 @@
 }
 
 @media (max-width: 500px) {
+  .hamburger-menu__button {
+    left: 86%;
+  }
   .hamburger-menu__wrapper {
     left: 86%;
   }
 }
 
 @media (max-width: 386px) {
+  .hamburger-menu__button {
+    left: 84%;
+  }
   .hamburger-menu__wrapper {
     left: 85%;
   }

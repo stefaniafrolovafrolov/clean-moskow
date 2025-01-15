@@ -66,7 +66,7 @@ h2 {
 .item__title {
   margin: 0;
   line-height: 70px;
-   text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 40px;
   font-weight: 400;
   font-family: "Stengazeta";
@@ -252,14 +252,14 @@ h2 {
 }
 
 .item {
- /* outline: 3px red solid;*/
+  /* outline: 3px red solid;*/
   margin: auto;
- /* overflow: hidden;*/
+  /* overflow: hidden;*/
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
-  min-height: 405px; 
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 405px;
   width: 100%;
   /*position: relative; */
 }
@@ -583,7 +583,7 @@ h2 {
     width: 400%;
   }
 
- /* .item img {
+  /* .item img {
     height: 160px;
   }*/
 }
@@ -642,7 +642,7 @@ h2 {
 }
 
 @media screen and (max-width: 1000px) {
- /* .item img {
+  /* .item img {
     height: 160px;
   }*/
 
@@ -721,7 +721,7 @@ h2 {
     font-size: 32px;
   }
 
- /* .item img {
+  /* .item img {
     height: 130px;
   }*/
 
@@ -808,6 +808,7 @@ h2 {
   }
 
   .contact__buttons {
+    width: 86%;
     position: absolute;
     top: 100%; /* Смещаем элемент вниз за пределы родительского элемента */
     left: 50%;
@@ -830,8 +831,18 @@ h2 {
   }
 }
 
+@media screen and (max-width: 670px) {
+  .items {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px;
+    gap: 0px;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 625px) {
- /* .item {
+  /* .item {
     height: 90%;
   }*/
   .pricing {
@@ -878,13 +889,13 @@ h2 {
     flex-direction: column; /* Располагаем текст поочереди по вертикали */
   }
 
-  .items {
+  /* .items {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
     padding: 0px;
     gap: 0px;
     margin-bottom: 20px;
-  }
+  }*/
 
   .item img {
     /*height: 160px;*/
@@ -1048,6 +1059,10 @@ h2 {
 }
 
 @media screen and (max-width: 344px) {
+  .item img {
+    width: 290px;
+  }
+
   .carousel {
     width: 26%;
   }
