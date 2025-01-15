@@ -1,4 +1,4 @@
-const baseURL4API = "http://cleanhost:3000/backend";
+const baseURL4API = "https://clean-moskow.ru/backend";
 const commentsRateImages = [
   "/images/stars/starun.svg",
   "/images/stars/star00.svg",

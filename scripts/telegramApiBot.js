@@ -86,7 +86,7 @@ form.addEventListener("submit", function (e) {
   submitButton.classList.add("registration__formRegisterButton_disabled");
   serverErrorMessage.style.display = "none";
 
-  fetch("http://cleanhost:3000/backend/submit-form", {
+  fetch("https://clean-moskow.ru/backend/submit-form", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
