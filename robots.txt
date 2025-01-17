@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
 Disallow: /error-404.html
 Disallow: /adminka.html
+Allow: /
