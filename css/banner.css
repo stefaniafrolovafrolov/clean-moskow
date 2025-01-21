@@ -36,6 +36,18 @@
   margin-bottom: 80px;
 }
 
+.banner__action {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  max-width: 430px;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+}
+
+.banner__span {
+  color: red;
+}
+
 .banner__button {
   text-decoration: none;
   display: flex;
@@ -122,6 +134,14 @@
     font-size: 20px;
   }
 }
+
+@media (max-width: 809px) {
+  .banner__action {
+    font-size: 16px;
+    max-width: 280px;
+  }
+}
+
 @media (max-width: 800px) {
   .banner {
     background-image: url("../images/banner-800px.webp");
